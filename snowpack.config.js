@@ -4,7 +4,17 @@ module.exports = {
     public: '/',
     src: '/_dist_',
   },
-  plugins: ['@snowpack/plugin-react-refresh', '@snowpack/plugin-dotenv'],
+  plugins: [
+    [
+      "@snowpack/plugin-webpack",
+      {
+        sourceMap: true,
+        manifest: true
+      }
+    ],
+    '@snowpack/plugin-react-refresh',
+    '@snowpack/plugin-dotenv'
+  ],
   install: [
     /* ... */
   ],
@@ -14,9 +24,7 @@ module.exports = {
   devOptions: {
     /* ... */
   },
-  buildOptions: {
-    /* ... */
-  },
+  buildOptions: {},
   proxy: {
     /* ... */
   },

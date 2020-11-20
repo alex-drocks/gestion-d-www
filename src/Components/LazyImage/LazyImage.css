@@ -1,0 +1,17 @@
+.lazy-image.loaded:not(.has-error) {
+  transition: opacity .5s ease-in, transform .6s ease-out;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.lazy-image.img-zoom-fx:not(is-full-width):hover {
+  transform: scale(1.015);
+  transform-origin: 50% 50%;
+  cursor: zoom-in;
+}
+
+.lazy-image.img-zoom-fx.is-full-width:hover {
+  transform: scale(1);
+  transform-origin: 50% 50%;
+  cursor: zoom-out;
+}
