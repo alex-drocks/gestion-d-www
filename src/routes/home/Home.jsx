@@ -1,31 +1,56 @@
 import React from "react";
 
 // Components
-// import LazyImage from "../../Components/LazyImage/LazyImage";
+import LazyImage from "../../Components/LazyImage/LazyImage";
 
 // Images...
-// import previewResultats from "../../images/10_previewResultats.webp";
+import banner from "../../images/rapport_dimpots_quebec.webp";
+import CustomNavLink from "../../Components/CustomNavLink/CustomNavLink";
 
 
-export default function Home() {
+export default function Home({ siteName, siteDescription }) {
 
   return (
     <div className="route-container">
 
-      <section id="accueil">
-        <h1>Le logiciel de facturation et tenue de livres simplifié pour les Québécois.</h1>
+        <div className="full-width banner-container zoom-hover-fx">
+          <LazyImage
+            src={banner} alt="Rapport d'impôts Québec"
+            classNames={"banner-image"}
+            width={2000} height={800}
+          />
 
-        <h2 className={"spacer"}>
-          Avantages pour votre facturation avec <span className="no-wrap">Finance D:</span>
-        </h2>
+          <div className="banner-text--container">
+            <h2 className="banner-text--page-title no-wrap">{siteName}</h2>
+            <h1 className="banner-text--page-description">{siteDescription}</h1>
+          </div>
+
+        </div>
+
+      <h1>Nous aidons les particuliers et les petites entreprises à économiser de l'impôt depuis 2004</h1>
+
         <p>
-          En équilibrant efficacité et facilité,
-          le logiciel <span className="no-wrap"> Finance D</span>,
-          vous aide à mieux facturer vos clients
-          et à bien suivre la réception des paiements qui vous sont dus.
+          Gestion Desroches a vu le jour en 2004 alors Daniel Desroches,
+          notre fondateur, avait à cœur d'aider les travailleurs autonomes
+          qui se retrouvaient à payer des honoraires professionnels élevés
+          dans un contexte de revenu très bas.
         </p>
-      </section>
+        <p>
+          Avec les années, la croissance de l'entreprise a été constante
+          et aujourd'hui, nous desservons  plus de 1500 clients individuels
+          et commerciaux pour des dossiers de tenue de livres, services de paie,
+          fiscalités et conseils personnalisés. Nous avons toujours voulu
+          servir comme nous aimons nous-même être servis.
+        </p>
+        <p>
+          Aujourd'hui, l'entreprise est familiale et chaque personne
+          de la famille Desroches possède un rôle au sein de l'entreprise.
+        </p>
+
+        <CustomNavLink to="/apropos">
+          <button className="no-select">En savoir plus sur nous</button>
+        </CustomNavLink>
 
     </div>
-  )
+  );
 }

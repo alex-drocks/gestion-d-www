@@ -1,22 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&display=swap');
+
+/**
+ * @license
+ * MyFonts Webfont Build ID 3978059, 2020-11-21T15:20:03-0500
+ *
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are
+ * explicitly restricted from using the Licensed Webfonts(s).
+ *
+ * You may obtain a valid license at the URLs below.
+ *
+ * Webfont: Calluna-Regular by exljbris
+ * URL: https://www.myfonts.com/fonts/exljbris/calluna/regular/
+ * Copyright: &amp;#x00A9; 2009 exljbris Font Foundry. All rights reserved.
+ *
+ *
+ *
+ * © 2020 MyFonts Inc
+*/
+@font-face {
+  font-family: 'Calluna-Regular';
+  src: url('/fonts/Calluna-Regular.woff2') format('woff2'), url('/fonts/Calluna-Regular.woff') format('woff');
+}
+
 :root {
   --background: #fff;
   --main-text-color: #081b33;
+  --blue: #009be3;
+  --light-gray: #606060;
+
   --header-h: 100px;
   --header-bg: var(--background);
   --footer-h: 45px;
   --footer-bg: #efefef;
-  --desktop-padding: calc(var(--header-h) * 1.75) 20vw;
-  --ipadpro-padding: calc(var(--header-h) * 1.9) 15vw;
-  --mobile-padding: 0.8vh 16px calc(var(--footer-h) * 1.2) 16px;
-  --blue: #00aeef;
-  --light-gray: #606060;
+  --desktop-padding: 0 8vw;
+  --ipadpro-padding: 0 15vw;
+  --mobile-padding: 0 16px;
 }
 
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: 'Open Sans', "Arial", sans-serif;
   font-size: calc(100% + 0.4vw);
   color: var(--main-text-color);;
 }
@@ -37,9 +63,9 @@ body {
 
 #root {
   position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  /*display: flex;*/
+  /*flex-direction: column;*/
+  /*justify-content: space-between;*/
   min-height: 100vh;
 }
 
@@ -56,23 +82,28 @@ body {
 
 ::selection {
   color: black;
-  background-color: var(--green);
+  background-color: var(--blue);
+}
+
+.no-select {
+  user-select: none;
 }
 
 h1 {
   font-size: 2.1rem;
-  font-family: "Arial Black", sans-serif;
-  text-shadow: 2px 4px 2px rgba(0, 0, 0, .13);
+  font-family: Calluna-Regular, "Arial Black", sans-serif;
+  text-shadow: 2px 4px 2px rgba(0, 0, 0, .1);
 }
 
 h2 {
   font-size: 1.5rem;
-  text-shadow: 4px 2px 1px rgba(0, 0, 0, .05);
+  text-shadow: 4px 2px 1px rgba(0, 0, 0, .075);
   font-variant: petite-caps;
 }
 
 p, ul {
-  color: #262626;
+  color: var(--main-text-color);
+  font-size: 0.55em;
 }
 
 a {
@@ -81,33 +112,115 @@ a {
 }
 
 a button {
-  font-family: Arial, sans-serif;
-  background-color: var(--blue);
-  outline: 1px solid var(--header-bg);
   font-weight: 500;
-  font-size: calc(1rem + 1vh);
+  font-size: .7rem;
   -webkit-appearance: none;
-  color: #000;
-  border: 2px solid #171717;
-  padding: .65em 1.3em;
-  transition: all .2s ease-in-out;
-  box-shadow: 1px 3px 10px 1px rgba(0, 0, 0, .8);
+  padding: 1.5em 2.5em;
+  box-shadow: 1px 3px 10px 1px rgba(0, 0, 0, .15);
+
+  background: transparent;
+  display: inline-block;
+  width: auto;
+  height: auto;
+  text-align: center;
+  text-decoration: none;
+
+  appearance: none;
+  line-height: normal;
+
+  font-style: normal;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  border-color: #081b33;
+  border-width: 2px;
+  border-style: solid;
+
+  transition: 0.1s background-color linear, 0.1s color linear;
+  color: var(--main-text-color);
 }
 
 a button:hover {
-  box-shadow: 1px 2px 7px 1px rgba(0, 0, 0, .8);
+  box-shadow: 1px 2px 7px 1px rgba(0, 0, 0, .1);
   outline: 1px solid black;
+  background-color: var(--main-text-color);
+  color: white;
   cursor: pointer;
 }
 
 .container {
-  padding-right: 8vw;
-  padding-left: 8vw;
+  padding: var(--desktop-padding);
 }
 
 .spacer {
   margin-top: 100px;
 }
+
+.banner-container {
+  position: relative;
+  background-color: var(--main-text-color);
+
+  width: 100vw;
+  min-width: 800px;
+  max-width: 2000px;
+
+  height: 450px;
+  min-height: 450px;
+  max-height: 450px;
+
+  overflow: hidden;
+  cursor: default;
+}
+
+.banner-image,
+.banner-text--container {
+  position: absolute;
+}
+
+.banner-image {
+  width: inherit;
+  height: inherit;
+  min-width: inherit;
+  min-height: inherit;
+  max-width: inherit;
+  max-height: inherit;
+
+  object-fit: cover;
+  object-position: center 11%;
+
+  opacity: 0.95 !important;
+}
+
+.banner-text--container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: inherit;
+  height: 100%;
+}
+
+.banner-text--page-title {
+  color: var(--blue);
+  filter: brightness(121%);
+  font-size: 0.5em;
+  font-weight: 700;
+  letter-spacing: .15em;
+  text-transform: uppercase;
+}
+
+.banner-text--page-description {
+  color: white;
+  text-align: center;
+  width: 45%;
+  min-width: 250px;
+  font-size: 2.55em;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 1px;
+  margin: 0 auto;
+  line-height: 1em;
+}
+
 
 .full-width {
   position: relative;
@@ -116,6 +229,7 @@ a button:hover {
   right: 50%;
   margin-left: -50vw;
   margin-right: -50vw;
+  overflow: hidden;
 }
 
 .full-container-width {
@@ -135,18 +249,19 @@ a button:hover {
   color: var(--light-gray);
 }
 
-.img-zoom-fx {
-  transition: transform .6s;
+img.zoom-hover-fx,
+.zoom-hover-fx img {
+  transition: transform 1s ease-in-out;
 }
 
-.img-zoom-fx:hover {
-  transform: scale(1.09);
+img.zoom-hover-fx:hover,
+.zoom-hover-fx:hover img {
+  transform: scale(1.04);
   transform-origin: 50% 50%;
 }
 
 .start-hidden {
   opacity: 0;
-  transform: translateY(30px);
 }
 
 .initial-grow-fx {
@@ -222,7 +337,7 @@ a button:hover {
     transform: scale(1.055);
   }
 
-  img.img-zoom-fx:hover {
+  img.zoom-hover-fx:hover {
     transform: scale(1.1);
   }
 }

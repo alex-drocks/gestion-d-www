@@ -1,26 +1,9 @@
 import React, {useState, useEffect} from "react";
 import "./LazyImage.css";
 
-export default function LazyImage({src, alt}) {
+export default function LazyImage({src, alt, classNames, width, height}) {
   const [imageSrc, setImageSrc] = useState("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=");
   const [imageRef, setImageRef] = useState();
-
-  const toggleImageSizeOnClick = () => {
-    if (imageRef.style.maxWidth !== "100vw") {
-      // Set full Width
-      const paddingLeft = window.getComputedStyle(document.querySelector(".route-container"), null).getPropertyValue("padding-left")
-      imageRef.style.left = "-" + paddingLeft;
-      imageRef.style.maxWidth = "100vw";
-      imageRef.style.width = "100vw";
-      imageRef.classList.add("is-full-width");
-    } else {
-      // Remove full Width
-      imageRef.style.left = "-1%";
-      imageRef.style.maxWidth = "102%";
-      imageRef.style.width = "102%";
-      imageRef.classList.remove("is-full-width");
-    }
-  }
 
   const onError = event => {
     event.target.classList.add("has-error");
@@ -71,14 +54,13 @@ export default function LazyImage({src, alt}) {
 
   return (
     <img
-      className={"start-hidden preview lazy-image full-container-width img-zoom-fx"}
+      className={`${classNames && classNames.concat(" ")}`}
       ref={setImageRef}
       src={imageSrc}
       alt={alt}
-      width={1920}
-      height={1040}
+      width={width}
+      height={height}
       onError={onError}
-      onClick={toggleImageSizeOnClick}
     />
   );
 };

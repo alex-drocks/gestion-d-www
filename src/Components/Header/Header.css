@@ -2,12 +2,9 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-
   background-color: var(--header-bg);
 
-  margin-top: 60px;
-  height: var(--header-h);
-  min-height: var(--header-h);
+  margin: 55px 0;
 
   user-select: none;
   z-index: 2;
@@ -22,16 +19,13 @@
   height: auto;
   max-width: 100%;
   max-height: 70px;
+  min-width: 178px;
   outline: none;
-}
-
-.header nav {
-  margin-left: 10px;
 }
 
 .header nav ul {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: flex-end;
   list-style: none;
   flex-basis: auto;
@@ -43,13 +37,25 @@
 .header nav li {
   white-space: nowrap;
   text-transform: uppercase;
-  font-size: 0.70rem;
-  font-weight: 600;
-  line-height: 0;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  padding-left: 1em;
 }
 
 .header nav li a {
-  padding-left: 12px;
+  color: rgba(8, 27, 51, .8);
+}
+
+.header nav li a#link-rendez-vous {
+  color: var(--blue);
+  font-weight: 300;
+  font-size: 1.3em;
+  margin-left: 30px;
+  display: inline-block;
+}
+
+.header nav li a#link-rendez-vous:hover {
   color: var(--main-text-color);
 }
 
@@ -63,26 +69,37 @@
   color: var(--blue);
 }
 
+.header:not(.isMobileMenuOpen) nav ul a.active {
+  border-bottom: 1px solid var(--blue);
+}
+
 /*small width screen styles*/
-@media (max-width: 775px) {
+@media (max-width: 850px) {
   .header {
-    position: relative;
+    padding: 6vw;
+    margin: 0;
+  }
+
+  .header.isMobileMenuOpen {
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
   }
 
-  .header.isMobileMenuOpen {
-    position: fixed;
-  }
-
   .header nav button.toggle-mobile-menu-btn {
     display: block;
-    background: none;
     border: none;
-    width: 36px;
-    height: 30px;
-    padding: 6px;
+    background: none;
+    padding: 0;
+    outline: none;
+
+    width: auto;
+    height: auto;
+    max-width: 38px;
+    max-height: 38px;
+    min-width: 21px;
+    min-height: 21px;
   }
 
   .header nav .toggle-mobile-menu-btn:hover {
@@ -92,9 +109,9 @@
   .header nav .toggle-mobile-menu-btn svg {
     width: 100%;
     height: 100%;
-    transition: fill 0.5s;
+    min-width: inherit;
+    min-height: inherit;
     fill: rgba(8, 27, 51, .6);
-
   }
 
   .header:not(.isMobileMenuOpen) nav svg.toggle-mobile-menu-btn--open {
