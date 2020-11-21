@@ -3,3 +3,6 @@ build
 web_modules
 node_modules
 /.idea/
+/_iconsToOptimize/
+/_imagesToOptimize/
+/debug.log
