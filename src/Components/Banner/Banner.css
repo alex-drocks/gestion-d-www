@@ -1,0 +1,65 @@
+.banner-container {
+  position: relative;
+  background-color: var(--main-text-color);
+
+  width: 100vw;
+  min-width: 800px;
+  max-width: 2000px;
+
+  height: 450px;
+  min-height: 450px;
+  max-height: 450px;
+
+  overflow: hidden;
+  cursor: default;
+}
+
+.banner-image,
+.banner-text--container {
+  position: absolute;
+}
+
+.banner-image {
+  width: inherit;
+  height: inherit;
+  min-width: inherit;
+  min-height: inherit;
+  max-width: inherit;
+  max-height: inherit;
+
+  object-fit: cover;
+  object-position: center 11%;
+
+  opacity: 0.95 !important;
+}
+
+.banner-text--container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: inherit;
+  height: 100%;
+}
+
+.banner-text--page-title {
+  color: var(--blue);
+  filter: brightness(121%);
+  font-size: 0.5em;
+  font-weight: 700;
+  letter-spacing: .15em;
+  text-transform: uppercase;
+}
+
+.banner-text--page-description {
+  color: white;
+  text-align: center;
+  width: 45%;
+  min-width: 250px;
+  font-size: 2.55em;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 1px;
+  margin: 0 auto;
+  line-height: 1em;
+}

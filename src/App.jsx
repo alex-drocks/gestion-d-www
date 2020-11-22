@@ -7,7 +7,6 @@ import "./styles/globals.css";
 const { SNOWPACK_PUBLIC_WEBSITE_NAME, SNOWPACK_PUBLIC_WEBSITE_DESCRIPTION } = import.meta.env;
 
 // Components
-// import Loading from "./Components/Loading/Loading";
 import Header from "./Components/Header/Header";
 import Footer from "./Components/Footer/Footer";
 

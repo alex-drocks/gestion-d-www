@@ -29,6 +29,18 @@
   <meta name="twitter:description" content="%SNOWPACK_PUBLIC_WEBSITE_LONG_DESCRIPTION%" />
   <meta name="description" content="%SNOWPACK_PUBLIC_WEBSITE_LONG_DESCRIPTION%" />
 
+<!--  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin="">-->
+<!--  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">-->
+<!--  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&display=swap" />-->
+<!--  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&display=swap"-->
+<!--        media="print" onload="this.media='all'" />-->
+
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="%PUBLIC_URL%/fonts/Calluna-Regular.woff2" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="%PUBLIC_URL%/fonts/open-sans-v18-latin-700.woff2" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="%PUBLIC_URL%/fonts/open-sans-v18-latin-300.woff2" />
+  <link rel="stylesheet" href="%PUBLIC_URL%/fonts/local-font-loader.css"
+        media="print" onload="this.media='all'" />
+
   <link rel="apple-touch-icon" sizes="180x180" href="%PUBLIC_URL%/icons/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="%PUBLIC_URL%/icons/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="%PUBLIC_URL%/icons/favicon-16x16.png">
