@@ -1,5 +1,4 @@
 import React from "react";
-
 import "./Footer.css";
 
 import CustomNavLink from "../CustomNavLink/CustomNavLink";
@@ -19,7 +18,6 @@ export default function Footer(props) {
           />
         </div>
       </div>
-
       <div className="footer-bottom container">
         <nav className="footer-bottom--nav">
           <CustomNavLink to="/">Accueil</CustomNavLink>
@@ -49,8 +47,6 @@ export default function Footer(props) {
           </div>
         </div>
       </div>
-
-
     </footer>
   );
 }

@@ -5,12 +5,13 @@
   justify-content: space-between;
   min-height: var(--footer-h);
   user-select: none;
-  font-size: 0.7rem;
+  font-size: 0.75rem;
   margin-top: 100px;
   margin-bottom: 50px;
 }
 
-.footer-top, .footer-bottom {
+.footer-top,
+.footer-bottom {
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -81,9 +82,26 @@
   width: 40vmax;
   text-align: right;
   padding-top: 15px;
+  padding-left: 40px;
 }
 
 .footer-bottom--copyright {
-  color: #888;
+  color: #909090;
   padding: 15px 0;
+}
+
+@media (max-width: 675px) {
+  .footer-bottom--right {
+    display: block;
+    margin-top: 35px;
+  }
+
+  .footer-bottom--text {
+    text-align: left;
+    padding-left: 0;
+  }
+
+  .footer-bottom--copyright {
+    margin-top: 35px;
+  }
 }
