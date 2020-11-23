@@ -18,7 +18,9 @@ export default function Home({ siteName, siteDescription }) {
               pageDescription={siteDescription}
       />
 
-      <h1>Nous aidons les particuliers et les petites entreprises à économiser de l'impôt depuis 2004</h1>
+      <div className="spacer"/>
+
+      <h2>Nous aidons les particuliers et les entreprises à économiser de l'impôt depuis 2004.</h2>
 
       <p>
         Gestion Desroches a vu le jour en 2004 alors Daniel Desroches,

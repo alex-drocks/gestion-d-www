@@ -16,7 +16,7 @@ export default function Banner({ image, alt, width, height, pageTitle, pageDescr
 
       {pageTitle || pageDescription ?
         <div className="banner-text--container">
-          {pageTitle ? <h2 className="banner-text--page-title no-wrap">{pageTitle}</h2> : ""}
+          {pageTitle ? <h3 className="banner-text--page-title no-wrap">{pageTitle}</h3> : ""}
           {pageDescription ? <h1 className="banner-text--page-description">{pageDescription}</h1> : ""}
         </div> : ""
       }

@@ -1,5 +1,5 @@
-import React, {useEffect} from "react";
-import {Link, useLocation} from "react-router-dom";
+import React, { useEffect } from "react";
+import { Link, useLocation } from "react-router-dom";
 
 export default function CustomNavLink(props) {
   const location = useLocation();
@@ -15,7 +15,7 @@ export default function CustomNavLink(props) {
         !activeNavLink.classList.contains("active") && activeNavLink.classList.add("active");
         // Remove previous link class
         a !== activeNavLink && a.classList.contains("active") && a.classList.remove("active");
-      })
+      });
     }
   }, [location]);
 
@@ -23,7 +23,7 @@ export default function CustomNavLink(props) {
     <Link to={props.to} className={props.className}>
       {props.children}
     </Link>
-  )
+  );
 }
 
 /*

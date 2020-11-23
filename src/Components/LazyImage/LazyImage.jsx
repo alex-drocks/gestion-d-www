@@ -29,7 +29,7 @@ export default function LazyImage({src, alt, classNames, width, height}) {
             },
             {
               threshold: 0.01,
-              rootMargin: "55%"
+              rootMargin: "0%"
             }
           );
           observer.observe(imageRef);
