@@ -41,22 +41,33 @@
   font-weight: 700;
   letter-spacing: 0.02em;
   padding-left: 1em;
+  margin-bottom: 10px;
 }
 
 .header nav li a {
   color: rgba(8, 27, 51, .8);
 }
 
+
 .header nav li a#link-rendez-vous {
   color: var(--blue);
   font-weight: 300;
-  font-size: 1.3em;
-  margin-left: 30px;
-  display: inline-block;
+  font-size: 1.35em;
+  margin-left: 40px;
+  /*display: inline-block;*/
+  display: flex;
+  align-items: center;
 }
 
 .header nav li a#link-rendez-vous:hover {
   color: var(--main-text-color);
+}
+
+.header nav li a#link-rendez-vous svg {
+  width: auto;
+  height: 1em;
+  margin-right: 7px;
+  fill: var(--blue);
 }
 
 .header nav .toggle-mobile-menu-btn, .header nav .toggle-mobile-menu-btn--close {
