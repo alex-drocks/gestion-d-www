@@ -7,8 +7,8 @@
   max-width: 2000px;
 
   height: auto;
-  min-height: 400px;
-  max-height: 450px;
+  min-height: 450px;
+  max-height: 470px;
 
   overflow: hidden;
   cursor: default;
@@ -47,7 +47,7 @@ h1.banner-text--page-description {
   text-align: center;
   width: 45%;
   min-width: 250px;
-  font-size: 2.52em;
+  font-size: 2.56em;
   font-weight: 400;
   font-style: normal;
   letter-spacing: 0.01em;

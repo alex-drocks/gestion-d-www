@@ -4,7 +4,7 @@
   justify-content: space-between;
   background-color: var(--header-bg);
 
-  margin: 55px 0;
+  margin: 57px 0;
 
   user-select: none;
   z-index: 2;
@@ -19,7 +19,7 @@
   height: auto;
   max-width: 100%;
   max-height: 70px;
-  min-width: 178px;
+  min-width: 180px;
   outline: none;
 }
 
@@ -32,6 +32,7 @@
   flex-grow: 1;
   flex-shrink: 1;
   flex-wrap: wrap;
+  padding-inline-start: 30px;
 }
 
 .header nav li {
@@ -54,7 +55,6 @@
   font-weight: 300;
   font-size: 1.35em;
   margin-left: 40px;
-  /*display: inline-block;*/
   display: flex;
   align-items: center;
 }
@@ -62,6 +62,11 @@
 .header nav li a#link-rendez-vous:hover {
   color: var(--main-text-color);
 }
+
+.header nav li a#link-rendez-vous:hover svg {
+  fill: var(--main-text-color);
+}
+
 
 .header nav li a#link-rendez-vous svg {
   width: auto;
@@ -85,7 +90,19 @@
 }
 
 /*small width screen styles*/
-@media (max-width: 850px) {
+@media (max-width: 1260px) {
+  .header .branding-logo {
+    min-width: 340px;
+  }
+}
+
+@media (max-width: 975px) {
+  .header nav ul {
+    padding-inline-start: 0;
+  }
+}
+
+@media (max-width: 940px) {
   .header {
     padding: 6vw;
     margin: 0;
@@ -181,6 +198,10 @@
   .header.isMobileMenuOpen nav a.active {
     font-weight: bold;
     letter-spacing: 1px;
+  }
+
+  .header .branding-logo {
+    min-width: 180px;
   }
 
 }
