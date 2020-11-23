@@ -19,7 +19,7 @@ export default function Header() {
 
       <nav>
         <button className="toggle-mobile-menu-btn"
-                name="Afficher ou cacher le menu de navigation"
+                aria-label="Afficher ou cacher le menu de navigation"
                 onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
           <svg className="toggle-mobile-menu-btn--open" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
             <path d="M24 18v1H0v-1h24zm0-6v1H0v-1h24zm0-6v1H0V6h24z" />

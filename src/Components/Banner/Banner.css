@@ -6,8 +6,8 @@
   min-width: 800px;
   max-width: 2000px;
 
-  height: 450px;
-  min-height: 450px;
+  height: auto;
+  min-height: 400px;
   max-height: 450px;
 
   overflow: hidden;
@@ -28,9 +28,9 @@
   max-height: inherit;
 
   object-fit: cover;
-  object-position: center 11%;
+  object-position: right 11%; /*focus on hands as much as possible*/
 
-  opacity: 0.95 !important;
+  opacity: 0.952 !important;
 }
 
 .banner-text--container {
@@ -42,24 +42,44 @@
   height: 100%;
 }
 
-.banner-text--page-title {
-  color: var(--blue);
-  filter: brightness(121%);
-  font-size: 0.5em;
-  font-weight: 700;
-  letter-spacing: .15em;
-  text-transform: uppercase;
-}
-
-.banner-text--page-description {
+h1.banner-text--page-description {
   color: white;
   text-align: center;
   width: 45%;
   min-width: 250px;
-  font-size: 2.55em;
+  font-size: 2.52em;
   font-weight: 400;
   font-style: normal;
-  letter-spacing: 1px;
+  letter-spacing: 0.01em;
   margin: 0 auto;
   line-height: 1em;
+  text-shadow: 2px 4px 2px rgba(0, 0, 0, .1);
+}
+
+h2.banner-text--page-title {
+  margin-bottom: 24px;
+  color: var(--blue);
+  filter: brightness(125%);
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: .13em;
+  text-transform: uppercase;
+  text-shadow: 4px 2px 1px rgba(0, 0, 0, .06);
+}
+
+@media (max-width: 1245px) {
+  h1.banner-text--page-description {
+    font-size: 2.2em;
+  }
+}
+
+@media (max-width: 1000px) {
+  h2.banner-text--page-title {
+    font-size: 14px;
+  }
+}
+@media (max-width: 700px) {
+  h2.banner-text--page-title {
+    font-size: 13px;
+  }
 }

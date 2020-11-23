@@ -18,20 +18,6 @@ export default function Home({ siteName, siteDescription }) {
               pageDescription={siteDescription}
       />
 
-      {/*<div className="full-width banner-container zoom-hover-fx">*/}
-      {/*  <LazyImage*/}
-      {/*    src={banner} alt="Rapport d'impôts Québec"*/}
-      {/*    classNames={"banner-image"}*/}
-      {/*    width={2000} height={800}*/}
-      {/*  />*/}
-
-      {/*  <div className="banner-text--container">*/}
-      {/*    <h2 className="banner-text--page-title no-wrap">{siteName}</h2>*/}
-      {/*    <h1 className="banner-text--page-description">{siteDescription}</h1>*/}
-      {/*  </div>*/}
-
-      {/*</div>*/}
-
       <h1>Nous aidons les particuliers et les petites entreprises à économiser de l'impôt depuis 2004</h1>
 
       <p>
@@ -53,7 +39,7 @@ export default function Home({ siteName, siteDescription }) {
       </p>
 
       <CustomNavLink to="/apropos">
-        <button>En savoir plus sur nous</button>
+        <button aria-label='En savoir plus sur nous'>En savoir plus sur nous</button>
       </CustomNavLink>
 
     </div>

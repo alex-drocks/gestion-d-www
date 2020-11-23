@@ -66,19 +66,18 @@ body {
 
 h1 {
   font-size: 2.1rem;
-  font-family: Calluna-Regular, "Arial Black", sans-serif;
-  text-shadow: 2px 4px 2px rgba(0, 0, 0, .1);
+  font-family: Calluna-Regular, "Georgia", sans-serif;
 }
 
 h2 {
   font-size: 1.5rem;
-  text-shadow: 4px 2px 1px rgba(0, 0, 0, .075);
   font-variant: petite-caps;
 }
 
-p, ul {
+p,
+ul {
   color: var(--main-text-color);
-  font-size: 0.55em;
+  font-size: 18px;
 }
 
 a {
@@ -110,7 +109,6 @@ a button {
   border-width: 2px;
   border-style: solid;
 
-  transition: 0.1s background-color linear, 0.1s color linear;
   color: var(--main-text-color);
 }
 
@@ -240,7 +238,6 @@ img.zoom-hover-fx:hover,
   .spacer {
     margin-top: 50px;
   }
-
 
   img.initial-grow-fx {
     transform: scale(1.055);
