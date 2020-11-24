@@ -4,7 +4,7 @@
   align-items: center;
   justify-content: space-between;
   user-select: none;
-  font-size: 0.75rem;
+  font-size: 16px;
 }
 
 .footer-top,
@@ -96,6 +96,13 @@
 .footer-bottom--copyright {
   color: black;
   padding: 15px 0;
+}
+
+@media (max-width: 1024px) {
+  .footer {
+    /*font-size: 18px;*/
+    margin-bottom: 50px;
+  }
 }
 
 @media (max-width: 700px) {
