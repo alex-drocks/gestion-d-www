@@ -3,11 +3,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  min-height: var(--footer-h);
   user-select: none;
   font-size: 0.75rem;
-  margin-top: 100px;
-  margin-bottom: 50px;
 }
 
 .footer-top,
@@ -22,7 +19,7 @@
   align-items: center;
   border-top: 1px solid var(--light-gray);
   border-bottom: 1px solid var(--light-gray);
-  margin-bottom: 50px;
+  margin-bottom: 35px;
 }
 
 .footer-row {
@@ -34,13 +31,13 @@
 }
 
 .footer-top--text {
-  margin-right: 15px; /*to distanciate from the icon on the right*/
+  margin-right: 20px; /*to distanciate from the icon on the right*/
 }
 
 .footer-top--logo {
   width: auto;
   height: 20vmax;
-  max-height: 100px;
+  max-height: var(--vertical-spacing);
 }
 
 .footer-bottom {
@@ -97,7 +94,7 @@
 }
 
 .footer-bottom--copyright {
-  color: #909090;
+  color: black;
   padding: 15px 0;
 }
 

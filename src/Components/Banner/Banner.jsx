@@ -6,7 +6,7 @@ import "./Banner.css";
 
 export default function Banner({ image, alt, width, height, pageTitle, pageDescription }) {
   return (
-    <div className="full-width banner-container zoom-hover-fx">
+    <div className="full-width banner-container zoom-hover-fx spacer-bottom">
 
       {image ? <LazyImage src={image} alt={alt}
                           classNames={"banner-image"}

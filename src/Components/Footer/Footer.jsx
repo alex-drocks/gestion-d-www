@@ -8,7 +8,7 @@ import logo from "../../images/logo192.webp";
 
 export default function Footer(props) {
   return (
-    <footer className="footer">
+    <footer className="footer spacer-top spacer-bottom">
       <div className="footer-top container">
         <div className="footer-row">
           <h3 className="footer-top--text">Services comptables sur la rive-sud de Montréal</h3>
@@ -22,8 +22,8 @@ export default function Footer(props) {
         <nav className="footer-bottom--nav">
           <CustomNavLink to="/">Accueil</CustomNavLink>
           <CustomNavLink to="/apropos">À propos de nous</CustomNavLink>
-          <CustomNavLink to="/impots-particuliers">Impôts particuliers</CustomNavLink>
-          <CustomNavLink to="/impots-societes">Impôts sociétés</CustomNavLink>
+          <CustomNavLink to="/impots-particuliers">Impôts de particuliers</CustomNavLink>
+          <CustomNavLink to="/impots-societes">Impôts de sociétés</CustomNavLink>
           <CustomNavLink to="/impots-entreprises">Comptabilité d'entreprise</CustomNavLink>
           <CustomNavLink to="/liens">Liens utiles</CustomNavLink>
           <CustomNavLink to="/contact">Contactez-nous</CustomNavLink>
@@ -42,8 +42,7 @@ export default function Footer(props) {
             d'économiser de l'argent.
           </i>
           <div className="footer-bottom--copyright">
-            &copy; {new Date().getFullYear()} {props.siteName}
-            {" "}-{" "}Tous droits réservés
+            &copy; {new Date().getFullYear()} {props.siteName} Inc.
           </div>
         </div>
       </div>

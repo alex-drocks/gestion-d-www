@@ -18,8 +18,6 @@ export default function Home({ siteName, siteDescription }) {
               pageDescription={siteDescription}
       />
 
-      <div className="spacer"/>
-
       <h2>Nous aidons les particuliers et les entreprises à économiser de l'impôt depuis 2004.</h2>
 
       <p>

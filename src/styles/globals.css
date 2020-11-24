@@ -3,13 +3,11 @@
   --main-text-color: #081b33;
   --blue: #0096e1;
   --light-gray: rgba(8, 27, 51, 0.3);
-  --header-h: 100px;
   --header-bg: var(--background);
-  --footer-h: 45px;
-  --footer-bg: #efefef;
-  --desktop-padding: 0 8vw;
-  --ipadpro-padding: 0 15vw;
-  --mobile-padding: 0 16px;
+  --vertical-spacing: 100px;
+  --desktop-padding-horizontal: 0 8vw;
+  --ipadpro-padding-horizontal: 0 15vw;
+  --mobile-padding-horizontal: 0 16px;
 }
 
 html,
@@ -37,9 +35,6 @@ body {
 
 #root {
   position: relative;
-  /*display: flex;*/
-  /*flex-direction: column;*/
-  /*justify-content: space-between;*/
   min-height: 100vh;
 }
 
@@ -47,16 +42,37 @@ body {
   overflow-x: hidden;
   animation: fadeIn ease 1.5s;
   -webkit-animation: fadeIn ease 1.5s;
-  padding-bottom: 10px;
 }
 
-::selection {
-  color: black;
-  background-color: var(--blue);
+.container {
+  padding: var(--desktop-padding-horizontal);
 }
 
-.no-select {
-  user-select: none;
+.spacer-top {
+  margin-top: var(--vertical-spacing);
+}
+
+.spacer-bottom {
+  margin-bottom: var(--vertical-spacing);
+}
+
+.full-width {
+  position: relative;
+  width: 100vw;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  overflow: hidden;
+}
+
+.full-container-width {
+  position: relative;
+  left: -1%;
+  max-width: 102%;
+  width: 102%;
+  height: 100%;
+  margin: 0 auto;
 }
 
 h1, h2, h3 {
@@ -92,61 +108,30 @@ a button {
   font-size: .7rem;
   -webkit-appearance: none;
   padding: 1.5em 2.5em;
-  box-shadow: 1px 4px 5px 1px rgba(0, 0, 0, .1);
+  background-color: var(--main-text-color);
 
-  background: transparent;
   display: inline-block;
   width: auto;
   height: auto;
   text-align: center;
   text-decoration: none;
-
   appearance: none;
   line-height: normal;
-
   font-style: normal;
   text-transform: uppercase;
-  letter-spacing: .1em;
+  letter-spacing: .05em;
   border-color: #081b33;
   border-width: 2px;
   border-style: solid;
-
-  color: var(--main-text-color);
+  color: white;
+  margin-top: 1em;
 }
 
 a button:hover {
-  box-shadow: 1px 2px 7px 1px rgba(0, 0, 0, .1);
   outline: 1px solid black;
-  background-color: var(--main-text-color);
-  color: white;
+  background: transparent;
+  color: var(--main-text-color);
   cursor: pointer;
-}
-
-.container {
-  padding: var(--desktop-padding);
-}
-
-.spacer {
-  margin-top: 130px;
-}
-
-.full-width {
-  position: relative;
-  width: 100vw;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
-  overflow: hidden;
-}
-
-.full-container-width {
-  position: relative;
-  left: -1%;
-  max-width: 102%;
-  width: 102%;
-  height: 100%;
-  margin: 0 auto;
 }
 
 .no-wrap {
@@ -177,6 +162,16 @@ img.zoom-hover-fx:hover,
   opacity: 1;
   transform: scale(1.06);
   transform-origin: 50% 50%;
+}
+
+
+::selection {
+  color: black;
+  background-color: var(--blue);
+}
+
+.no-select {
+  user-select: none;
 }
 
 
@@ -238,5 +233,9 @@ img.zoom-hover-fx:hover,
 
   img.zoom-hover-fx:hover {
     transform: scale(1.1);
+  }
+
+  a button {
+    padding: 1.4em 2.2em;
   }
 }
