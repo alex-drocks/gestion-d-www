@@ -21,13 +21,13 @@ export default function Footer(props) {
       <div className="footer-bottom container">
         <nav className="footer-bottom--nav">
           <CustomNavLink to="/">Accueil</CustomNavLink>
-          <CustomNavLink to="/apropos" className="no-wrap">À propos de nous</CustomNavLink>
-          <CustomNavLink to="/impots-particuliers" className="no-wrap">Impôts particuliers</CustomNavLink>
-          <CustomNavLink to="/impots-societes" className="no-wrap">Impôts sociétés</CustomNavLink>
-          <CustomNavLink to="/impots-societes" className="no-wrap">Comptabilité d'entreprise</CustomNavLink>
-          <CustomNavLink to="/liens" className="no-wrap">Liens utiles</CustomNavLink>
-          <CustomNavLink to="/contact" className="no-wrap">Contactez-nous</CustomNavLink>
-          <a id="link-rendez-vous" className="no-wrap" href="https://calendly.com/danieldesroches/30min">
+          <CustomNavLink to="/apropos">À propos de nous</CustomNavLink>
+          <CustomNavLink to="/impots-particuliers">Impôts particuliers</CustomNavLink>
+          <CustomNavLink to="/impots-societes">Impôts sociétés</CustomNavLink>
+          <CustomNavLink to="/impots-entreprises">Comptabilité d'entreprise</CustomNavLink>
+          <CustomNavLink to="/liens">Liens utiles</CustomNavLink>
+          <CustomNavLink to="/contact">Contactez-nous</CustomNavLink>
+          <a id="link-rendez-vous" href="https://calendly.com/danieldesroches/30min">
             Prendre un rendez-vous
           </a>
         </nav>

@@ -10,7 +10,7 @@ import banner from "../../images/rapport_dimpots_quebec.webp";
 
 export default function Home({ siteName, siteDescription }) {
   return (
-    <div className="route-container">
+    <div className="route-container container">
 
       <Banner image={banner} alt="Un comptable au travail"
               width={2000} height={800}

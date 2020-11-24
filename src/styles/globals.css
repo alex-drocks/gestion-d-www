@@ -1,7 +1,7 @@
 :root {
   --background: #fff;
   --main-text-color: #081b33;
-  --blue: #009be3;
+  --blue: #0096e1;
   --light-gray: rgba(8, 27, 51, 0.3);
   --header-h: 100px;
   --header-bg: var(--background);
@@ -44,7 +44,6 @@ body {
 }
 
 .route-container {
-  padding: var(--desktop-padding);
   overflow-x: hidden;
   animation: fadeIn ease 1.5s;
   -webkit-animation: fadeIn ease 1.5s;
@@ -130,7 +129,6 @@ a button:hover {
 .spacer {
   margin-top: 130px;
 }
-
 
 .full-width {
   position: relative;
@@ -227,16 +225,8 @@ img.zoom-hover-fx:hover,
   }
 }
 
-@media (max-width: 1024px) {
-  .route-container {
-    padding: var(--ipadpro-padding);
-  }
-}
 
 @media (max-width: 775px) {
-  div.route-container {
-    padding: var(--mobile-padding);
-  }
 
   .spacer {
     margin-top: 50px;

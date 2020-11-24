@@ -7,20 +7,26 @@ export default function CustomNavLink(props) {
     //1- Scroll to Top of page
     window.scrollTo(0, 0);
 
-    //2- Set link "active" class
-    const activeNavLink = document.querySelector(`header nav ul a[href='${location.pathname}']`);
-    if (activeNavLink) {
-      document.querySelectorAll(`header nav ul a[href]`).forEach(a => {
-        // Set active link class
-        !activeNavLink.classList.contains("active") && activeNavLink.classList.add("active");
-        // Remove previous link class
-        a !== activeNavLink && a.classList.contains("active") && a.classList.remove("active");
+    //2- Set route link "active" class
+    const navLinks = document.querySelectorAll("nav a.custom-router-link");
+    if (navLinks && navLinks.length) {
+      navLinks.forEach(a => {
+        if (a.dataset.pathname === location.pathname) {
+          // Set active link class
+          !a.classList.contains("active") && a.classList.add("active");
+        } else {
+          // Remove previous link class
+          a.classList.contains("active") && a.classList.remove("active");
+        }
       });
     }
   }, [location]);
 
   return (
-    <Link to={props.to} className={props.className}>
+    <Link to={props.to} data-pathname={props.to} className={props.className ?
+      props.className + " no-wrap custom-router-link"
+      : "no-wrap custom-router-link"}
+    >
       {props.children}
     </Link>
   );
