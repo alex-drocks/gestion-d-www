@@ -27,7 +27,7 @@ export default function Footer(props) {
           <CustomNavLink to="/impots-entreprises">Comptabilité d'entreprise</CustomNavLink>
           <CustomNavLink to="/liens">Liens utiles</CustomNavLink>
           <CustomNavLink to="/contact">Contactez-nous</CustomNavLink>
-          <a id="link-rendez-vous" href="https://calendly.com/danieldesroches/30min">
+          <a href="https://calendly.com/danieldesroches/30min">
             Prendre un rendez-vous
           </a>
         </nav>

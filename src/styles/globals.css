@@ -1,7 +1,9 @@
 :root {
   --background: #fff;
   --main-text-color: #081b33;
-  --blue: #0096e1;
+  /*--blue: #0096e1;*/
+  /*--blue: #0171ae;*/
+  --blue: #006ebb;
   --light-gray: rgba(8, 27, 51, 0.3);
   --header-bg: var(--background);
   --vertical-spacing: 100px;
@@ -246,7 +248,7 @@ img.zoom-hover-fx:hover,
   }
 }
 
-@media (max-width: 1350px) {
+@media (max-width: 1200px) {
   .content-block {
     flex-direction: column;
   }

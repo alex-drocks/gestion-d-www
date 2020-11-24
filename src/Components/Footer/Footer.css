@@ -90,7 +90,7 @@
   width: 40vmax;
   text-align: right;
   padding-top: 15px;
-  padding-left: 40px;
+  padding-left: 1px;
 }
 
 .footer-bottom--copyright {
@@ -100,12 +100,11 @@
 
 @media (max-width: 1024px) {
   .footer {
-    /*font-size: 18px;*/
     margin-bottom: 50px;
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 675px) {
   .footer-bottom--right {
     display: block;
     margin-top: 35px;
