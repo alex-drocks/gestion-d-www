@@ -60,13 +60,12 @@ h3.banner-text--page-title {
   font-family: "Open Sans", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 700;
-  letter-spacing: .135em;
+  letter-spacing: .14em;
   text-transform: uppercase;
-  text-shadow: 4px 2px 1px rgba(0, 0, 0, .06);
+  text-shadow: 4px 2px 1px rgba(0, 0, 0, .07);
   margin-bottom: 24px;
   color: var(--blue);
-  filter: brightness(167%);
-  /*filter: brightness(125%);*/
+  filter: brightness(168%);
 }
 
 @media (max-width: 1245px) {

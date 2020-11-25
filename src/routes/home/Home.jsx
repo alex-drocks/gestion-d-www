@@ -19,7 +19,7 @@ export default function Home({ siteName, siteDescription }) {
       />
       <div className="content-block spacer-top">
 
-        <div className="flex-col">
+        <div className="flex-col flex-col--50w flex-col--justify-left">
           <h2>Nous aidons les particuliers et les entreprises à économiser de l'impôt depuis 2004.</h2>
           <p>
             Gestion Desroches a vu le jour en 2004 alors Daniel Desroches,
@@ -43,7 +43,7 @@ export default function Home({ siteName, siteDescription }) {
           </CustomNavLink>
         </div>
 
-        <div className="flex-col">
+        <div className="flex-col flex-col--40w flex-margin-left--10w flex-col--justify-left">
           <div className="contactez-nous">
             <h2>Contactez-nous</h2>
             <div className="no-wrap">☎ (514) 293-0200</div>

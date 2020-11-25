@@ -1,8 +1,6 @@
 :root {
   --background: #fff;
   --main-text-color: #081b33;
-  /*--blue: #0096e1;*/
-  /*--blue: #0171ae;*/
   --blue: #006ebb;
   --light-gray: rgba(8, 27, 51, 0.3);
   --header-bg: var(--background);
@@ -58,8 +56,34 @@ body {
 .flex-col {
   display: flex;
   flex-direction: column;
+}
+
+.flex-col--justify-left {
   justify-content: flex-start;
+}
+
+.flex-col--justify-right {
+  justify-content: flex-end;
+}
+
+.flex-col--50w {
   width: 50%;
+}
+
+.flex-col--40w {
+  width: 40%;
+}
+
+.flex-col--30w {
+  width: 30%;
+}
+
+.flex-margin-left--10w {
+  margin-left: 10%;
+}
+
+.flex-margin-left--3w {
+  margin-left: 3%;
 }
 
 .flex-col h2 {
@@ -68,11 +92,6 @@ body {
 
 .flex-col a {
   width: min-content;
-}
-
-.flex-col:last-of-type {
-  width: 40%;
-  margin-left: 10%;
 }
 
 .spacer-top {
