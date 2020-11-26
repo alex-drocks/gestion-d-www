@@ -271,7 +271,7 @@ img.zoom-hover-fx:hover,
 
 
 ::selection {
-  color: black;
+  color: white;
   background-color: var(--blue);
 }
 

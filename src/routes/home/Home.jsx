@@ -56,8 +56,9 @@ export default function Home({ siteName, siteDescription }) {
             question, n'hésitez pas à nous contacter.
           </p>
           <NotificationCard>
-            Veuillez noter que notre capacité est présentement
-            à son maximum. Nous sommes dans l'impossibilité d'accepter de nouveaux clients.
+            Veuillez noter que pour la période actuelle,
+            notre capacité est à son maximum.
+            Nous sommes dans l'impossibilité d'accepter de nouveaux clients.
             Merci de votre compréhension.
           </NotificationCard>
         </div>
