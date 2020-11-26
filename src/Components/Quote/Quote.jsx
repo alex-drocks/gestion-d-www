@@ -5,7 +5,7 @@ export default function Quote(props) {
   return (
     <div className="content-block spacer-top">
       <div className="flex-row flex--justify-center">
-        <div className="quote flex-card flex-col">
+        <div className="quote flex-card-border-top flex-col">
           <h2 className="quote--text">
             {props.children}
           </h2>

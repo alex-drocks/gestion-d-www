@@ -54,9 +54,9 @@ export default function Home({ pageTitle, pageDescription }) {
       </div>
       <div className="content-block">
         <div className="flex-row">
-          <div className="flex-col flex-col--30w flex-card">
-            <h3 className="flex-card--title">Déclaration d'impôts de particuliers</h3>
-            <p className="flex-card--text">
+          <div className="flex-col flex-col--30w flex-card-border-top">
+            <h3 className="flex-card-border-top--title">Déclaration d'impôts de particuliers</h3>
+            <p className="flex-card-border-top--text">
               Nous produisons des déclarations de revenus de particuliers
               depuis plus de 16 ans et aidons plus de 1200 personnes
               à chaque année.
@@ -65,9 +65,9 @@ export default function Home({ pageTitle, pageDescription }) {
               EN SAVOIR PLUS
             </CustomNavLink>
           </div>
-          <div className="flex-col flex-col--30w flex-card">
-            <h3 className="flex-card--title">Déclaration d'impôts de sociétés</h3>
-            <p className="flex-card--text">
+          <div className="flex-col flex-col--30w flex-card-border-top">
+            <h3 className="flex-card-border-top--title">Déclaration d'impôts de sociétés</h3>
+            <p className="flex-card-border-top--text">
               Si vous avez une société incorporée, nous avons l'expertise
               pour produire vos déclarations d'impôts T2 (fédéral)
               et CO-17 (provincial).
@@ -76,9 +76,9 @@ export default function Home({ pageTitle, pageDescription }) {
               EN SAVOIR PLUS
             </CustomNavLink>
           </div>
-          <div className="flex-col flex-col--30w flex-card">
-            <h3 className="flex-card--title">Comptabilité pour petites entreprises</h3>
-            <p className="flex-card--text">
+          <div className="flex-col flex-col--30w flex-card-border-top">
+            <h3 className="flex-card-border-top--title">Comptabilité pour petites entreprises</h3>
+            <p className="flex-card-border-top--text">
               Si vous possédez une petite entreprise ou êtes un travailleur
               autonome, nous pouvons prendre en charge la gestion
               de votre comptabilité.

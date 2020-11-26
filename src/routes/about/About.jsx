@@ -51,10 +51,11 @@ export default function About({ pageTitle, pageDescription }) {
         </div>
       </div>
 
-      <div className="content-block spacer-top">
-        <h2 className="flex-row">Notre équipe</h2>
-      </div>
       <div className="content-block">
+        <div className="content-block spacer-top">
+          <h2 className="flex-row">Notre équipe</h2>
+        </div>
+
         <Bio image={daniel}
              name="Daniel Desroches"
              role="PRÉSIDENT & FONDATEUR"
@@ -65,19 +66,6 @@ export default function About({ pageTitle, pageDescription }) {
           un diplôme en comptabilité à l'Université du Québec à Trois-Rivières.
           En 2004, il a décidé de fonder son propre cabinet et il sert
           aujourd'hui plus de 1500 clients satisfaits.
-        </Bio>
-        <Bio image={alex}
-             name="Alexandre Desroches"
-             role="TENUE DE LIVRES, DÉVELOPPEMENT INFORMATIQUE"
-        >
-          Alexandre détient une attestation professionnelle en comptabilité
-          et s'occupe de la tenue de livres de plus de 60 entreprises.
-          Il est rapide, perfectionniste et capable de trouver des solutions
-          pour améliorer la situation de ses clients. Il est également passionné
-          par la programmation et la musique. Il développe actuellement un
-          logiciel de tenue de livres simplifiée pour les petites entreprises
-          du Québec. Vous pouvez visiter son site pour le logiciel Finance D,
-          ou celui du studio D Rocks Records.
         </Bio>
         <Bio image={will}
              name="William Desroches"
@@ -92,6 +80,19 @@ export default function About({ pageTitle, pageDescription }) {
           collaboration avec Daniel. Parmi ses nombreuses compétences
           remarquables, il est entre autres précis dans son travail et
           habile pour communiquer.
+        </Bio>
+        <Bio image={alex}
+             name="Alexandre Desroches"
+             role="TENUE DE LIVRES, DÉVELOPPEMENT INFORMATIQUE"
+        >
+          Alexandre détient une attestation professionnelle en comptabilité
+          et s'occupe de la tenue de livres de plus de 60 entreprises.
+          Il est rapide, perfectionniste et capable de trouver des solutions
+          pour améliorer la situation de ses clients. Il est également passionné
+          par la programmation et la musique. Il développe actuellement un
+          logiciel de tenue de livres simplifiée pour les petites entreprises
+          du Québec. Vous pouvez visiter son site pour le logiciel Finance D,
+          ou celui du studio D Rocks Records.
         </Bio>
         <Bio image={matt}
              name="Matthieu Desroches"

@@ -68,16 +68,16 @@ body {
   flex-wrap: wrap;
 }
 
-.flex-card {
+.flex-card-border-top {
   border-top: 1px solid var(--light-gray);
 }
 
-.flex-card--title {
+.flex-card-border-top--title {
   margin-top: 1em;
   margin-bottom: 1em;
 }
 
-.flex-card--text {
+.flex-card-border-top--text {
   margin-top: 0;
   margin-bottom: 1em;
 }

@@ -27,7 +27,7 @@ export default function ContactezNous({ renderParagraph, renderNotification, ren
       }
       {renderLink
         ? <CustomNavLink to="/contact" className="text-link blue-text">
-          Formulaire de Contact
+          Contact
         </CustomNavLink>
         : ""
       }
