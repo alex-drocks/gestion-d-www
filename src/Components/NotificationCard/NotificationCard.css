@@ -1,0 +1,16 @@
+.notification-card {
+  position: relative;
+  border-left: 0.3em solid var(--blue);
+  border-radius: 10px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, .2);
+  padding: 10px 45px 10px 20px;
+  margin-left: 2px;
+  color: black;
+}
+
+.notification-card svg {
+  position: absolute;
+  top: calc(50% - 12px);
+  right: 12px;
+  fill: var(--blue);
+}

@@ -26,10 +26,16 @@
   .quote--text {
     width: 70%;
   }
+  .quote--author {
+    font-size: 0.55em;
+  }
 }
 
 @media (max-width: 330px) {
   .quote--text {
     width: 82%;
+  }
+  .quote--author {
+    font-size: 0.66em;
   }
 }

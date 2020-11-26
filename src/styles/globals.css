@@ -54,7 +54,6 @@ body {
   flex-wrap: wrap;
 }
 
-
 .flex-col {
   display: flex;
   flex-direction: column;
@@ -238,6 +237,14 @@ a button:hover {
 
 .light-gray {
   color: var(--light-gray);
+}
+
+.border-top {
+  border-top: 1px solid var(--light-gray);
+}
+
+.border-bottom {
+  border-bottom: 1px solid var(--light-gray);
 }
 
 img.zoom-hover-fx,

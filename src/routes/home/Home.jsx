@@ -3,7 +3,8 @@ import React from "react";
 // Components
 import Banner from "../../Components/Banner/Banner";
 import CustomNavLink from "../../Components/CustomNavLink/CustomNavLink";
-import Quote from "../../Components/quote/Quote";
+import Quote from "../../Components/Quote/Quote";
+import NotificationCard from "../../Components/NotificationCard/NotificationCard";
 
 // Images...
 import banner from "../../images/rapport_dimpots_quebec.webp";
@@ -54,13 +55,14 @@ export default function Home({ siteName, siteDescription }) {
             Pour plus d'informations sur nos services et notre entreprise, ou tout simplement pour nous poser une
             question, n'hésitez pas à nous contacter.
           </p>
-          <p>
-            Veuillez noter que pour la période actuelle, nous sommes dans
-            l'impossibilité d'accepter de nouveaux clients. Notre capacité
-            maximale est atteinte. Merci de votre compréhension.
-          </p>
+          <NotificationCard>
+            Veuillez noter que notre capacité est présentement
+            à son maximum. Nous sommes dans l'impossibilité d'accepter de nouveaux clients.
+            Merci de votre compréhension.
+          </NotificationCard>
         </div>
       </div>
+
       <div className="content-block spacer-top">
         <h2 className="flex-row">Notre expertise</h2>
       </div>
