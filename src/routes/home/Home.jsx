@@ -18,7 +18,6 @@ export default function Home({ siteName, siteDescription }) {
               pageDescription={siteDescription}
       />
       <div className="content-block spacer-top">
-
         <div className="flex-col flex-col--50w flex-col--justify-left">
           <h2>Nous aidons les particuliers et les entreprises à économiser de l'impôt depuis 2004.</h2>
           <p>
@@ -59,6 +58,46 @@ export default function Home({ siteName, siteDescription }) {
             l'impossibilité d'accepter de nouveaux clients. Notre capacité
             maximale est atteinte. Merci de votre compréhension.
           </p>
+        </div>
+      </div>
+      <div className="content-block spacer-top">
+        <h2 className="flex-row">Notre expertise</h2>
+      </div>
+      <div className="content-block">
+        <div className="flex-row">
+          <div className="flex-col flex-col--30w flex-card">
+            <h3 className="flex-card--title">Déclaration d'impôts de particuliers</h3>
+            <p className="flex-card--text">
+              Nous produisons des déclarations de revenus de particuliers
+              depuis plus de 16 ans et aidons plus de 1200 personnes
+              à chaque année.
+            </p>
+            <CustomNavLink to="/impots-particuliers" className="blue-link">
+              EN SAVOIR PLUS >>
+            </CustomNavLink>
+          </div>
+          <div className="flex-col flex-col--30w flex-card">
+            <h3 className="flex-card--title">Déclaration d'impôts de sociétés</h3>
+            <p className="flex-card--text">
+              Si vous avez une société incorporée, nous avons l'expertise
+              pour produire vos déclarations d'impôts T2 (fédéral)
+              et CO-17 (provincial).
+            </p>
+            <CustomNavLink to="/impots-societes" className="blue-link">
+              EN SAVOIR PLUS >>
+            </CustomNavLink>
+          </div>
+          <div className="flex-col flex-col--30w flex-card">
+            <h3 className="flex-card--title">Comptabilité pour petites entreprises</h3>
+            <p className="flex-card--text">
+              Si vous possédez une petite entreprise ou êtes un travailleur
+              autonome, nous pouvons prendre en charge la gestion
+              de votre comptabilité.
+            </p>
+            <CustomNavLink to="/comptabilite-entreprise" className="blue-link">
+              EN SAVOIR PLUS >>
+            </CustomNavLink>
+          </div>
         </div>
 
       </div>
