@@ -16,6 +16,7 @@
   font-weight: 700;
   letter-spacing: 0.25em;
   filter: brightness(140%);
+  text-transform: capitalize;
 }
 
 .quote--author:before {

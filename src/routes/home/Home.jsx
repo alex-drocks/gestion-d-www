@@ -8,16 +8,16 @@ import NotificationCard from "../../Components/NotificationCard/NotificationCard
 
 // Images...
 import banner from "../../images/rapport_dimpots_quebec.webp";
+import ContactezNous from "../../Components/ContactezNous/ContactezNous";
 
 
-export default function Home({ siteName, siteDescription }) {
+export default function Home({ pageTitle, pageDescription }) {
   return (
     <div className="route-container container">
-
       <Banner image={banner} alt="Un comptable au travail"
               width={2000} height={800}
-              pageTitle={siteName}
-              pageDescription={siteDescription}
+              pageTitle={pageTitle}
+              pageDescription={pageDescription}
       />
       <div className="content-block spacer-top">
         <div className="flex-col flex-col--50w flex--justify-left">
@@ -39,28 +39,13 @@ export default function Home({ siteName, siteDescription }) {
             Aujourd'hui, l'entreprise est familiale et chaque personne
             de la famille Desroches possède un rôle au sein de l'entreprise.
           </p>
-          <CustomNavLink to="/apropos">
+          <CustomNavLink to="/a-propos">
             <button aria-label='En savoir plus sur nous'>En savoir plus sur nous</button>
           </CustomNavLink>
         </div>
 
         <div className="flex-col flex-col--40w flex-margin-left--10w flex--justify-left">
-          <div className="contactez-nous">
-            <h2>Contactez-nous</h2>
-            <div className="no-wrap">☎ (514) 293-0200</div>
-            <div className="no-wrap">✉ daniel@gestiondesroches.com</div>
-          </div>
-          <p>
-            <br />
-            Pour plus d'informations sur nos services et notre entreprise, ou tout simplement pour nous poser une
-            question, n'hésitez pas à nous contacter.
-          </p>
-          <NotificationCard>
-            Veuillez noter que pour la période actuelle,
-            notre capacité est à son maximum.
-            Nous sommes dans l'impossibilité d'accepter de nouveaux clients.
-            Merci de votre compréhension.
-          </NotificationCard>
+          <ContactezNous renderParagraph={true} renderLink={true} renderNotification={true}/>
         </div>
       </div>
 
@@ -76,7 +61,7 @@ export default function Home({ siteName, siteDescription }) {
               depuis plus de 16 ans et aidons plus de 1200 personnes
               à chaque année.
             </p>
-            <CustomNavLink to="/impots-particuliers" className="blue-link">
+            <CustomNavLink to="/impots-particuliers" className="text-link blue-text">
               EN SAVOIR PLUS
             </CustomNavLink>
           </div>
@@ -87,7 +72,7 @@ export default function Home({ siteName, siteDescription }) {
               pour produire vos déclarations d'impôts T2 (fédéral)
               et CO-17 (provincial).
             </p>
-            <CustomNavLink to="/impots-societes" className="blue-link">
+            <CustomNavLink to="/impots-societes" className="text-link blue-text">
               EN SAVOIR PLUS
             </CustomNavLink>
           </div>
@@ -98,7 +83,7 @@ export default function Home({ siteName, siteDescription }) {
               autonome, nous pouvons prendre en charge la gestion
               de votre comptabilité.
             </p>
-            <CustomNavLink to="/comptabilite-entreprise" className="blue-link">
+            <CustomNavLink to="/comptabilite-entreprise" className="text-link blue-text">
               EN SAVOIR PLUS
             </CustomNavLink>
           </div>

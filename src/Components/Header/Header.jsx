@@ -28,7 +28,7 @@ export default function Header() {
 
       <nav>
         <ul onClick={() => isMobileMenuOpen && setIsMobileMenuOpen(false)}>
-          <li><CustomNavLink to="/apropos">À propos</CustomNavLink></li>
+          <li><CustomNavLink to="/a-propos">À propos</CustomNavLink></li>
           <li><CustomNavLink to="/services">Services</CustomNavLink></li>
           <li><CustomNavLink to="/liens">Liens utiles</CustomNavLink></li>
           <li><CustomNavLink to="/contact">Contact</CustomNavLink></li>

@@ -6,7 +6,7 @@ import LazyImage from "../LazyImage/LazyImage";
 
 import logo from "../../images/logo192.webp";
 
-export default function Footer(props) {
+export default function Footer({copyrightName}) {
   return (
     <footer className="footer spacer-top spacer-bottom">
       <div className="footer-top container">
@@ -42,7 +42,7 @@ export default function Footer(props) {
             d'économiser de l'argent.
           </i>
           <div className="footer-bottom--copyright">
-            &copy; {new Date().getFullYear()} {props.siteName} Inc.
+            &copy; {new Date().getFullYear()} {copyrightName}
           </div>
         </div>
       </div>
