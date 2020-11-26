@@ -4,14 +4,13 @@ import React from "react";
 import Banner from "../../Components/Banner/Banner";
 import CustomNavLink from "../../Components/CustomNavLink/CustomNavLink";
 import Quote from "../../Components/Quote/Quote";
-import NotificationCard from "../../Components/NotificationCard/NotificationCard";
 
 // Images...
 import banner from "../../images/rapport_dimpots_quebec.webp";
 import ContactezNous from "../../Components/ContactezNous/ContactezNous";
 
 
-export default function Home({ pageTitle, pageDescription }) {
+export default function Home({ pageTitle, pageDescription, nombreClients, establishedDate }) {
   return (
     <div className="route-container container">
       <Banner image={banner} alt="Un comptable au travail"
@@ -21,16 +20,17 @@ export default function Home({ pageTitle, pageDescription }) {
       />
       <div className="content-block spacer-top">
         <div className="flex-col flex-col--50w flex--justify-left">
-          <h2>Nous aidons les particuliers et les entreprises à économiser de l'impôt depuis 2004.</h2>
+          <h2>Nous aidons les particuliers et les entreprises à économiser de
+            l'impôt depuis {establishedDate}.</h2>
           <p>
-            Gestion Desroches a vu le jour en 2004 alors Daniel Desroches,
-            notre fondateur, avait à cœur d'aider les travailleurs autonomes
-            qui se retrouvaient à payer des honoraires professionnels élevés
-            dans un contexte de revenu très bas.
+            Gestion Desroches a vu le jour en {establishedDate} alors que
+            Daniel Desroches, avait à cœur d'aider les travailleurs autonomes
+            qui se retrouvaient à payer des honoraires professionnels trop
+            élevés malgré leur contexte de faibles revenus.
           </p>
           <p>
             Avec les années, la croissance de l'entreprise a été constante
-            et aujourd'hui, nous desservons plus de 1500 clients individuels
+            et aujourd'hui, nous desservons plus de {nombreClients} clients individuels
             et commerciaux pour des dossiers de tenue de livres, services de paie,
             fiscalités et conseils personnalisés. Nous avons toujours voulu
             servir comme nous aimons nous-même être servis.
@@ -45,7 +45,7 @@ export default function Home({ pageTitle, pageDescription }) {
         </div>
 
         <div className="flex-col flex-col--40w flex-margin-left--10w flex--justify-left">
-          <ContactezNous renderParagraph={true} renderLink={true} renderNotification={true}/>
+          <ContactezNous renderParagraph={true} renderLink={true} renderNotification={true} />
         </div>
       </div>
 
@@ -58,11 +58,12 @@ export default function Home({ pageTitle, pageDescription }) {
             <h3 className="flex-card-border-top--title">Déclaration d'impôts de particuliers</h3>
             <p className="flex-card-border-top--text">
               Nous produisons des déclarations de revenus de particuliers
-              depuis plus de 16 ans et aidons plus de 1200 personnes
+              depuis plus de {new Date().getFullYear() - establishedDate} ans
+              et aidons plus de {nombreClients} personnes
               à chaque année.
             </p>
             <CustomNavLink to="/impots-particuliers" className="text-link blue-text">
-              EN SAVOIR PLUS
+              Impôts de particuliers
             </CustomNavLink>
           </div>
           <div className="flex-col flex-col--30w flex-card-border-top">
@@ -73,18 +74,18 @@ export default function Home({ pageTitle, pageDescription }) {
               et CO-17 (provincial).
             </p>
             <CustomNavLink to="/impots-societes" className="text-link blue-text">
-              EN SAVOIR PLUS
+              Impôts de sociétés
             </CustomNavLink>
           </div>
           <div className="flex-col flex-col--30w flex-card-border-top">
-            <h3 className="flex-card-border-top--title">Comptabilité pour petites entreprises</h3>
+            <h3 className="flex-card-border-top--title">Comptabilité pour entreprises</h3>
             <p className="flex-card-border-top--text">
               Si vous possédez une petite entreprise ou êtes un travailleur
               autonome, nous pouvons prendre en charge la gestion
               de votre comptabilité.
             </p>
             <CustomNavLink to="/comptabilite-entreprise" className="text-link blue-text">
-              EN SAVOIR PLUS
+              Comptabilité d'entreprise
             </CustomNavLink>
           </div>
         </div>

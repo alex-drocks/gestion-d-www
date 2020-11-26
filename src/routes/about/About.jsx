@@ -2,8 +2,6 @@ import React from "react";
 
 // Components
 import Banner from "../../Components/Banner/Banner";
-import CustomNavLink from "../../Components/CustomNavLink/CustomNavLink";
-import Quote from "../../Components/Quote/Quote";
 import ContactezNous from "../../Components/ContactezNous/ContactezNous";
 import Bio from "../../Components/Bio/Bio";
 
@@ -14,7 +12,7 @@ import will from "../../images/will-bio.webp";
 import matt from "../../images/matt-bio.webp";
 
 
-export default function About({ pageTitle, pageDescription }) {
+export default function About({ pageTitle, pageDescription, nombreClients, establishedDate }) {
   return (
     <div className="route-container container">
 
@@ -25,11 +23,12 @@ export default function About({ pageTitle, pageDescription }) {
         <div className="flex-col flex-col--50w flex--justify-left">
           <h2>Notre histoire</h2>
           <p>
-            Gestion Desroches inc. est une société familiale de services
-            comptables fondée et dirigée par Daniel Desroches,
-            expert dans le domaine de la comptabilité depuis plus de 20 ans.
-            Fondée en 2004, l'entreprise familiale sert aujourd'hui plus de 1500
-            particuliers et entreprises par année.
+            Gestion Desroches Inc est une société familiale de services
+            comptables établie et dirigée par Daniel Desroches,
+            expert dans le domaine de la comptabilité depuis
+            plus de {(new Date().getFullYear() - establishedDate) + 4} ans.
+            Fondée en {establishedDate}, l'entreprise familiale sert aujourd'hui plus de
+            {nombreClients} particuliers et entreprises par année.
           </p>
           <p>
             Notre équipe offre un service personnalisé de déclaration d'impôts
@@ -64,8 +63,8 @@ export default function About({ pageTitle, pageDescription }) {
           Gestion Desroches Inc. Passionné par la comptabilité depuis l'âge
           de 16 ans, il s'est toujours intéressé à la fiscalité et a décroché
           un diplôme en comptabilité à l'Université du Québec à Trois-Rivières.
-          En 2004, il a décidé de fonder son propre cabinet et il sert
-          aujourd'hui plus de 1500 clients satisfaits.
+          En {establishedDate}, il a décidé de fonder son propre cabinet
+          et il sert aujourd'hui plus de {nombreClients} clients satisfaits.
         </Bio>
         <Bio image={will}
              name="William Desroches"

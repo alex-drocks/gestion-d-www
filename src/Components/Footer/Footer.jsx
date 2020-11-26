@@ -6,7 +6,7 @@ import LazyImage from "../LazyImage/LazyImage";
 
 import logo from "../../images/logo192.webp";
 
-export default function Footer({copyrightName}) {
+export default function Footer({ copyrightName, establishedDate }) {
   return (
     <footer className="footer spacer-top spacer-bottom">
       <div className="footer-top container">
@@ -34,11 +34,13 @@ export default function Footer({copyrightName}) {
 
         <div className="footer-bottom--right">
           <i className="footer-bottom--text">
-            Depuis 2004, Gestion Desroches se spécialise dans les déclarations d'impôts
-            de particuliers et de sociétés ainsi que dans la comptabilité de
+            Depuis {establishedDate}, Gestion Desroches se spécialise dans les
+            déclarations d'impôts de particuliers et de sociétés ainsi que
+            dans la comptabilité de
             petites et moyennes entreprises.
             Grâce à nos conseils et à notre expertise,
-            nous avons avons permis à des milliers de personnes et d'entreprises
+            nous avons avons permis à des milliers de personnes
+            et d'entreprises
             d'économiser de l'argent.
           </i>
           <div className="footer-bottom--copyright">
