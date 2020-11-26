@@ -3,6 +3,7 @@ import React from "react";
 // Components
 import Banner from "../../Components/Banner/Banner";
 import CustomNavLink from "../../Components/CustomNavLink/CustomNavLink";
+import Quote from "../../Components/quote/Quote";
 
 // Images...
 import banner from "../../images/rapport_dimpots_quebec.webp";
@@ -18,7 +19,7 @@ export default function Home({ siteName, siteDescription }) {
               pageDescription={siteDescription}
       />
       <div className="content-block spacer-top">
-        <div className="flex-col flex-col--50w flex-col--justify-left">
+        <div className="flex-col flex-col--50w flex--justify-left">
           <h2>Nous aidons les particuliers et les entreprises à économiser de l'impôt depuis 2004.</h2>
           <p>
             Gestion Desroches a vu le jour en 2004 alors Daniel Desroches,
@@ -42,7 +43,7 @@ export default function Home({ siteName, siteDescription }) {
           </CustomNavLink>
         </div>
 
-        <div className="flex-col flex-col--40w flex-margin-left--10w flex-col--justify-left">
+        <div className="flex-col flex-col--40w flex-margin-left--10w flex--justify-left">
           <div className="contactez-nous">
             <h2>Contactez-nous</h2>
             <div className="no-wrap">☎ (514) 293-0200</div>
@@ -73,7 +74,7 @@ export default function Home({ siteName, siteDescription }) {
               à chaque année.
             </p>
             <CustomNavLink to="/impots-particuliers" className="blue-link">
-              EN SAVOIR PLUS >>
+              EN SAVOIR PLUS
             </CustomNavLink>
           </div>
           <div className="flex-col flex-col--30w flex-card">
@@ -84,7 +85,7 @@ export default function Home({ siteName, siteDescription }) {
               et CO-17 (provincial).
             </p>
             <CustomNavLink to="/impots-societes" className="blue-link">
-              EN SAVOIR PLUS >>
+              EN SAVOIR PLUS
             </CustomNavLink>
           </div>
           <div className="flex-col flex-col--30w flex-card">
@@ -95,12 +96,18 @@ export default function Home({ siteName, siteDescription }) {
               de votre comptabilité.
             </p>
             <CustomNavLink to="/comptabilite-entreprise" className="blue-link">
-              EN SAVOIR PLUS >>
+              EN SAVOIR PLUS
             </CustomNavLink>
           </div>
         </div>
-
       </div>
+
+      <Quote author="Jean Yanne">
+        J’ai déjà essayé de payer mes impôts avec le sourire,
+        ils préfèrent un chèque.
+      </Quote>
+
+
     </div>
   );
 }
