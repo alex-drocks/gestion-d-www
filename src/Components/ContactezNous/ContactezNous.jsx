@@ -46,12 +46,13 @@ export default function ContactezNous({ renderTitle, renderDirects, renderParagr
           notre capacité est à son maximum.
           Nous sommes dans l'impossibilité d'accepter de nouveaux clients.
           Merci de votre compréhension.
-          <br/>
-          <br/>
           {renderLink
-            ? <CustomNavLink to="/contact" className="text-link blue-text">
-              Contact
-            </CustomNavLink>
+            ? <>
+              <br /><br />
+              <CustomNavLink to="/contact" className="text-link blue-text">
+                Contact
+              </CustomNavLink>
+            </>
             : ""
           }
         </NotificationCard>

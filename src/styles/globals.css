@@ -199,7 +199,8 @@ a {
   color: #000;
 }
 
-a button {
+a button,
+a input[type="submit"] {
   font-weight: 500;
   font-size: .7rem;
   -webkit-appearance: none;
@@ -224,7 +225,8 @@ a button {
   transition: background-color 0.3s, color 0.7s;
 }
 
-a button:hover {
+a button:hover,
+a input[type="submit"]:hover {
   outline: 1px solid black;
   background: transparent;
   color: var(--main-text-color);
