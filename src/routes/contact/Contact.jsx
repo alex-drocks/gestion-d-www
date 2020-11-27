@@ -1,12 +1,35 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Contact.css";
 
 // Components
 import Banner from "../../Components/Banner/Banner";
 import ContactezNous from "../../Components/ContactezNous/ContactezNous";
 
+export default function Contact({ pageTitle, pageDescription }) {
 
-export default function Contact({ pageTitle, pageDescription, nombreClients, establishedDate }) {
+  function onSubmit(e) {
+    console.log("submitForm");
+    const url = "https://gestiond.finance-d.com/api/contactform.php";
+
+    const form = e.target;
+    const formData = new FormData(form);
+    const queryString = new URLSearchParams(formData).toString();
+
+    const httpRequest = url + "?" + queryString;
+    console.log(httpRequest);
+
+    // fetch(httpRequest, {
+    //   method: form.method,
+    //   mode: "no-cors"
+    // })
+    //   .then(response => response.json())
+    //   .then(data => console.log(data));
+
+
+    // Prevent the default form submit
+    e.preventDefault();
+  }
+
   return (
     <div className="route-container container">
 
@@ -32,10 +55,16 @@ export default function Contact({ pageTitle, pageDescription, nombreClients, est
             renderLink={false}
           />
 
-          <form action="" className="flex-col">
+          <form className="flex-col"
+                id="formulaire_contact"
+                name="formulaire_contact"
+                method="POST"
+                action="https://gestiond.finance-d.com/api/contactform.php"
+                onSubmit={onSubmit}
+          >
             <div className="form-field contact--nom flex-col flex-col--100w">
               <h3 className="form-field--title">Nom complet:</h3>
-              <input type="text" name="name"
+              <input required type="text" name="name"
                      className="form-field--control"
                      spellCheck={false} maxLength={70} aria-required={true}
                      placeholder="Votre prénom et nom de famille..." />
@@ -43,7 +72,7 @@ export default function Contact({ pageTitle, pageDescription, nombreClients, est
 
             <div className="form-field contact--courriel flex-col flex-col--100w">
               <h3 className="form-field--title">Adresse courriel:</h3>
-              <input type="email" name="email"
+              <input required type="email" name="email"
                      className="form-field--control"
                      spellCheck={false} maxLength={70} aria-required={true}
                      placeholder="Votre adresse e-mail..." />
@@ -51,41 +80,59 @@ export default function Contact({ pageTitle, pageDescription, nombreClients, est
 
             <div className="form-field contact--phone flex-col flex-col--100w">
               <h3 className="form-field--title">Numéro de téléphone:</h3>
-              <input type="tel" name="tel"
+              <input type="tel"
+                     name="phone"
                      className="form-field--control"
-                     spellCheck={false} maxLength={70} aria-required={true}
+                     spellCheck={false}
+                     maxLength={17}
+                     aria-required={true}
                      placeholder="Votre numéro de téléphone..." />
             </div>
 
             <div className="form-field contact--sujet flex-col flex-col--100w">
               <h3 className="form-field--title">Sujet:</h3>
               <label className="checkbox" htmlFor="impots-particuliers">
-                <input type="checkbox" id="impots-particuliers" />
+                <input type="checkbox"
+                       id="impots-particuliers"
+                       name="Sujet Déclaration d'impôts de particuliers"
+                />
                 Déclaration d'impôts de particuliers
               </label>
               <label className="checkbox" htmlFor="impots-societes">
-                <input type="checkbox" id="impots-societes" />
+                <input type="checkbox"
+                       id="impots-societes"
+                       name="Sujet Déclaration d'impôts de sociétés"
+                />
                 Déclaration d'impôts de sociétés
               </label>
               <label className="checkbox" htmlFor="comptabilite-entreprise">
-                <input type="checkbox" id="comptabilite-entreprise" />
+                <input type="checkbox"
+                       id="comptabilite-entreprise"
+                       name="Sujet Comptabilité d'entreprise & Tenue de livres"
+                />
                 Comptabilité d'entreprise & Tenue de livres
               </label>
               <label className="checkbox" htmlFor="autres">
-                <input type="checkbox" id="autres" />
+                <input type="checkbox"
+                       id="autres"
+                       name="Sujet Autres"
+                />
                 Autres
               </label>
             </div>
 
             <div className="form-field contact--message flex-col flex-col--100w">
               <h3 className="form-field--title">Message:</h3>
-              <textarea className="form-field--control"
-                        name="" id="" cols="30" rows="4" placeholder="Votre message (max. 500 caractères)" maxLength={500} />
+              <textarea required
+                        className="form-field--control"
+                        name="message" cols="30" rows="4"
+                        placeholder="Votre message (max. 500 caractères)"
+                        maxLength={500} />
             </div>
 
             <div className="form-field contact--send-btn">
               <a href="#">
-                <input type="submit" className="form-field--control" />
+                <button className="form-field--control" type="submit">Envoyer</button>
               </a>
             </div>
           </form>
@@ -101,7 +148,6 @@ export default function Contact({ pageTitle, pageDescription, nombreClients, est
           />
         </div>
       </div>
-
 
     </div>
   );

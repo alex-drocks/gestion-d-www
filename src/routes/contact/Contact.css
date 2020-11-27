@@ -2,25 +2,31 @@
   margin-top: 20px;
 }
 
-.form-field--title {
+.form-field .form-field--title {
   margin-bottom: 4px;
 }
 
-.form-field--control {
+.form-field .form-field--control {
   font-family: "Open Sans", "Arial", sans-serif;
   font-size: 16px;
   padding: 1.5em 2.5em;
 }
 
-.checkbox {
+.form-field .checkbox {
   display: flex;
   align-items: center;
   justify-content: flex-start;
   font-size: 1rem;
+  cursor: pointer;
 }
 
-.checkbox input[type="checkbox"] {
+.form-field .checkbox input[type="checkbox"] {
   margin-right: 0.7rem;
   min-width: 24px;
   min-height: 24px;
+}
+
+.form-field input[type="submit"],
+.form-field button {
+  font-weight: 700;
 }
