@@ -11,6 +11,7 @@ import Footer from "./Components/Footer/Footer";
 // Pages (Routes)
 const Home = lazy(() => import("./routes/home/Home"));
 const About = lazy(() => import("./routes/about/About"));
+const Contact = lazy(() => import("./routes/contact/Contact"));
 
 // Meta data from .env file
 const {
@@ -31,6 +32,11 @@ export default function App() {
                      pageDescription="Expertise. Experience. Excellence."
                      nombreClients={SNOWPACK_PUBLIC_NOMBRE_CLIENTS}
                      establishedDate={SNOWPACK_PUBLIC_ESTABLISHED_DATE} />
+            </Route>
+            <Route exact path="/contact">
+              <Contact pageTitle="Contact"
+                       pageDescription="Besoin d'information&nbsp;?"
+              />
             </Route>
             <Route path="/">
               <Home pageTitle={SNOWPACK_PUBLIC_WEBSITE_NAME}

@@ -47,10 +47,11 @@ export default function ContactezNous({ renderTitle, renderDirects, renderParagr
           Nous sommes dans l'impossibilité d'accepter de nouveaux clients.
           Merci de votre compréhension.
           <br/>
+          <br/>
           {renderLink
-            ? <>{" "}<CustomNavLink to="/contact" className="text-link blue-text">
+            ? <CustomNavLink to="/contact" className="text-link blue-text">
               Contact
-            </CustomNavLink></>
+            </CustomNavLink>
             : ""
           }
         </NotificationCard>
