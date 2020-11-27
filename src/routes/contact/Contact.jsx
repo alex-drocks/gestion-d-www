@@ -80,7 +80,7 @@ export default function Contact({ pageTitle, pageDescription, nombreClients, est
             <div className="form-field contact--message flex-col flex-col--100w">
               <h3 className="form-field--title">Message:</h3>
               <textarea className="form-field--control"
-                        name="" id="" cols="30" rows="10" placeholder="Votre message..." maxLength={500} />
+                        name="" id="" cols="30" rows="4" placeholder="Votre message (max. 500 caractères)" maxLength={500} />
             </div>
 
             <div className="form-field contact--send-btn">
