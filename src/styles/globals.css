@@ -5,7 +5,7 @@
   --light-gray: rgba(8, 27, 51, 0.3);
   --header-bg: var(--background);
   --vertical-spacing: 100px;
-  --horizontal-spacing: 0 8vw;
+  --horizontal-spacing: 8vw;
 }
 
 html,
@@ -43,14 +43,14 @@ body {
 }
 
 .container {
-  padding: var(--horizontal-spacing);
+  padding-left: var(--horizontal-spacing);
+  padding-right: var(--horizontal-spacing);
 }
 
 .content-block {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
-  width: calc(100vw - var(--horizontal-spacing));
   flex-wrap: wrap;
 }
 

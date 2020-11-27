@@ -21,7 +21,7 @@ export default function Footer({ copyrightName, establishedDate }) {
       <div className="footer-bottom container">
         <nav className="footer-bottom--nav">
           <CustomNavLink to="/">Accueil</CustomNavLink>
-          <CustomNavLink to="/apropos">À propos de nous</CustomNavLink>
+          <CustomNavLink to="/a-propos">À propos de nous</CustomNavLink>
           <CustomNavLink to="/impots-particuliers">Impôts de particuliers</CustomNavLink>
           <CustomNavLink to="/impots-societes">Impôts de sociétés</CustomNavLink>
           <CustomNavLink to="/impots-entreprises">Comptabilité d'entreprise</CustomNavLink>

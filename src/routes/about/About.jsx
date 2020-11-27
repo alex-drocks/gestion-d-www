@@ -10,6 +10,7 @@ import daniel from "../../images/daniel-bio.webp";
 import alex from "../../images/alex-bio.webp";
 import will from "../../images/will-bio.webp";
 import matt from "../../images/matt-bio.webp";
+import Quote from "../../Components/Quote/Quote";
 
 
 export default function About({ pageTitle, pageDescription, nombreClients, establishedDate }) {
@@ -23,10 +24,10 @@ export default function About({ pageTitle, pageDescription, nombreClients, estab
         <div className="flex-col flex-col--50w flex--justify-left">
           <h2>Notre histoire</h2>
           <p>
-            Gestion Desroches Inc est une société familiale de services
+            Gestion Desroches Inc., est une société familiale de services
             comptables établie et dirigée par Daniel Desroches,
             expert dans le domaine de la comptabilité depuis
-            plus de {(new Date().getFullYear() - establishedDate) + 4} ans.
+            plus de {(new Date().getFullYear() - establishedDate)} ans.
             Fondée en {establishedDate}, l'entreprise familiale sert aujourd'hui plus de
             {nombreClients} particuliers et entreprises par année.
           </p>
@@ -46,7 +47,13 @@ export default function About({ pageTitle, pageDescription, nombreClients, estab
           </p>
         </div>
         <div className="flex-col flex-col--40w flex-margin-left--10w flex--justify-left">
-          <ContactezNous renderParagraph={true} renderNotification={true} renderLink={true} />
+          <ContactezNous
+            renderTitle={true}
+            renderDirects={false}
+            renderParagraph={true}
+            renderNotification={true}
+            renderLink={true}
+          />
         </div>
       </div>
 
@@ -105,6 +112,11 @@ export default function About({ pageTitle, pageDescription, nombreClients, estab
           gestion du temps et publie des articles chaque semaine sur son blog.
         </Bio>
       </div>
+
+      <Quote author="Gestion Desroches">
+        Nous avons toujours voulu servir comme
+        nous aimons nous-même être servis.
+      </Quote>
 
     </div>
   );
