@@ -53,7 +53,6 @@ echo (function () {
             </body>
             </html>';
 
-    return $htmlMsg;
     // To send HTML messages, the Content-type header must be set:
     $headers = "MIME-Version: 1.0\r\n";
     $headers .= "Content-Type: text/html; charset=utf-8\r\n";
@@ -61,12 +60,13 @@ echo (function () {
     // define sender address for the default php sendmail method otherwise it's financed@rockland.dns...
     $fdSendingAdress = '-f ne-pas-repondre@finance-d.com';
 
-    if (mail(
-        "alexandre_d_7@hotmail.com",
-        "GestionDesroches.com - Formulaire de contact",
-        $htmlMsg, $headers, $fdSendingAdress)
+    if (true
+//        mail(
+//        "alexandre_d_7@hotmail.com",
+//        "GestionDesroches.com - Formulaire de contact",
+//        $htmlMsg, $headers, $fdSendingAdress)
     ) {
-        return "EMAIL_SENT";
+        return "EMAIL_SENT_SUCCESSFULLY";
     }
     return "ERROR";
 

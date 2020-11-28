@@ -8,23 +8,28 @@ import ContactezNous from "../../Components/ContactezNous/ContactezNous";
 export default function Contact({ pageTitle, pageDescription }) {
 
   function onSubmit(e) {
-    console.log("submitForm");
-    const url = "https://gestiond.finance-d.com/api/contactform.php";
-
     const form = e.target;
     const formData = new FormData(form);
-    const queryString = new URLSearchParams(formData).toString();
+    const urlEncodedQuery = new URLSearchParams(formData);
 
-    const httpsRequest = url + "?" + queryString;
-    console.log(httpsRequest);
+    const headers = new Headers();
+    headers.append("Content-Type", "application/x-www-form-urlencoded");
 
-    // fetch(httpsRequest, {
-    //   method: form.method,
-    //   mode: "no-cors"
-    // })
-    //   .then(response => response.json())
-    //   .then(data => console.log(data));
-
+    fetch("https://gestiond.finance-d.com/api/submit-contact-form.php", {
+      method: "POST",
+      headers: headers,
+      body: urlEncodedQuery,
+      redirect: "follow"
+    })
+      .then(response => response.text())
+      .then(result => {
+        if (result && result === "EMAIL_SENT_SUCCESSFULLY") {
+          alert("Votre message a été envoyé avec succès. " +
+            "Nous vous répondrons dès que possible. " +
+            "Merci.")
+        }
+      })
+      .catch(error => console.log("error", error));
 
     // Prevent the default form submit
     e.preventDefault();
@@ -58,8 +63,6 @@ export default function Contact({ pageTitle, pageDescription }) {
           <form className="flex-col"
                 id="formulaire_contact"
                 name="formulaire_contact"
-                method="POST"
-                action="https://gestiond.finance-d.com/api/contactform.php"
                 onSubmit={onSubmit}
           >
             <div className="form-field contact--nom flex-col flex-col--100w">
