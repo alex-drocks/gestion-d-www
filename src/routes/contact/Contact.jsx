@@ -15,10 +15,10 @@ export default function Contact({ pageTitle, pageDescription }) {
     const formData = new FormData(form);
     const queryString = new URLSearchParams(formData).toString();
 
-    const httpRequest = url + "?" + queryString;
-    console.log(httpRequest);
+    const httpsRequest = url + "?" + queryString;
+    console.log(httpsRequest);
 
-    // fetch(httpRequest, {
+    // fetch(httpsRequest, {
     //   method: form.method,
     //   mode: "no-cors"
     // })
@@ -91,31 +91,35 @@ export default function Contact({ pageTitle, pageDescription }) {
 
             <div className="form-field contact--sujet flex-col flex-col--100w">
               <h3 className="form-field--title">Sujet:</h3>
-              <label className="checkbox" htmlFor="impots-particuliers">
-                <input type="checkbox"
+              <label className="radio" htmlFor="impots-particuliers">
+                <input type="radio"
                        id="impots-particuliers"
-                       name="Sujet Déclaration d'impôts de particuliers"
+                       name="subject"
+                       value="Déclaration d'impôts de particuliers"
                 />
                 Déclaration d'impôts de particuliers
               </label>
-              <label className="checkbox" htmlFor="impots-societes">
-                <input type="checkbox"
+              <label className="radio" htmlFor="impots-societes">
+                <input type="radio"
                        id="impots-societes"
-                       name="Sujet Déclaration d'impôts de sociétés"
+                       name="subject"
+                       value="Déclaration d'impôts de sociétés"
                 />
                 Déclaration d'impôts de sociétés
               </label>
-              <label className="checkbox" htmlFor="comptabilite-entreprise">
-                <input type="checkbox"
+              <label className="radio" htmlFor="comptabilite-entreprise">
+                <input type="radio"
                        id="comptabilite-entreprise"
-                       name="Sujet Comptabilité d'entreprise & Tenue de livres"
+                       name="subject"
+                       value="Comptabilité d'entreprise & Tenue de livres"
                 />
                 Comptabilité d'entreprise & Tenue de livres
               </label>
-              <label className="checkbox" htmlFor="autres">
-                <input type="checkbox"
+              <label className="radio" htmlFor="autres">
+                <input type="radio"
                        id="autres"
-                       name="Sujet Autres"
+                       name="subject"
+                       value="Autres"
                 />
                 Autres
               </label>
