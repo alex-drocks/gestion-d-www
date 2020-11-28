@@ -3,7 +3,7 @@ import "./NotificationCard.css";
 
 export default function NotificationCard(props) {
   return (
-    <p className="notification-card">
+    <div className="notification-card">
       <span className="svg-background">
         <svg width={24} height={24} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
           <path
@@ -11,6 +11,6 @@ export default function NotificationCard(props) {
         </svg>
       </span>
       {props.children}
-    </p>
+    </div>
   );
 }

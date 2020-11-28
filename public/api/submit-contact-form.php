@@ -7,14 +7,19 @@ echo (function () {
 
 
     // form person's name
-    $name = urldecode(filter_input(INPUT_POST, "name", FILTER_SANITIZE_FULL_SPECIAL_CHARS));
+    $name = filter_input(INPUT_POST, "name", FILTER_SANITIZE_FULL_SPECIAL_CHARS);
+    $name = urldecode($name);
     if (!$name) {
         return "Error: name empty";
     }
 
 
     // form person's email address
-    $email = urldecode(filter_input(INPUT_POST, "email", FILTER_SANITIZE_EMAIL));
+    $email = filter_input(INPUT_POST, "email", FILTER_SANITIZE_EMAIL);
+    $email = urldecode($email);
+    if (!$email) {
+        return "Error: email empty after sanitizing";
+    }
     if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
         return "Error: email format failed";
     }
@@ -24,18 +29,21 @@ echo (function () {
 
 
     // form person's phone number
-    $phone = urldecode(filter_input(INPUT_POST, "phone", FILTER_SANITIZE_FULL_SPECIAL_CHARS));
+    $phone = filter_input(INPUT_POST, "phone", FILTER_SANITIZE_FULL_SPECIAL_CHARS);
+    $phone = urldecode($phone);
 
 
     // form person's subject
-    $subject = urldecode(filter_input(INPUT_POST, "subject", FILTER_SANITIZE_FULL_SPECIAL_CHARS));
+    $subject = filter_input(INPUT_POST, "subject", FILTER_SANITIZE_FULL_SPECIAL_CHARS);
+    $subject = urldecode($subject);
     if (!$subject) {
         return "Error: subject empty";
     }
 
 
     // form person's message
-    $message = urldecode(filter_input(INPUT_POST, "message", FILTER_SANITIZE_FULL_SPECIAL_CHARS));
+    $message = filter_input(INPUT_POST, "message", FILTER_SANITIZE_FULL_SPECIAL_CHARS);
+    $message = urldecode($message);
     if (!$message) {
         return "Error: message empty";
     }
@@ -60,11 +68,10 @@ echo (function () {
     // define sender address for the default php sendmail method otherwise it's financed@rockland.dns...
     $fdSendingAdress = '-f ne-pas-repondre@finance-d.com';
 
-    if (true
-//        mail(
-//        "alexandre_d_7@hotmail.com",
-//        "GestionDesroches.com - Formulaire de contact",
-//        $htmlMsg, $headers, $fdSendingAdress)
+    if (mail(
+        "alexandre_d_7@hotmail.com",
+        "GestionDesroches.com - Formulaire de contact",
+        $htmlMsg, $headers, $fdSendingAdress)
     ) {
         return "EMAIL_SENT_SUCCESSFULLY";
     }

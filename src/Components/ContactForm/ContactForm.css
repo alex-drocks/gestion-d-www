@@ -9,7 +9,7 @@
 .form-field .form-field--control {
   font-family: "Open Sans", "Arial", sans-serif;
   font-size: 16px;
-  padding: 1.5em 2.5em;
+  padding: 1.25em 1.5em;
 }
 
 .form-field .radio {
@@ -29,4 +29,8 @@
 .form-field input[type="submit"],
 .form-field button {
   font-weight: 700;
+}
+
+.form-field textarea {
+  resize: none;
 }
