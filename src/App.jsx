@@ -18,38 +18,45 @@ const {
   SNOWPACK_PUBLIC_WEBSITE_NAME,
   SNOWPACK_PUBLIC_WEBSITE_DESCRIPTION,
   SNOWPACK_PUBLIC_NOMBRE_CLIENTS,
-  SNOWPACK_PUBLIC_ESTABLISHED_DATE
+  SNOWPACK_PUBLIC_ESTABLISHED_DATE,
 } = import.meta.env;
 
 export default function App() {
-  return (<>
+  return (
+    <>
       <BrowserRouter>
         <Header />
         <Suspense fallback={<></>}>
           <Switch>
             <Route exact path="/a-propos">
-              <About pageTitle="À propos"
-                     pageDescription="Expertise. Experience. Excellence."
-                     nombreClients={SNOWPACK_PUBLIC_NOMBRE_CLIENTS}
-                     establishedDate={SNOWPACK_PUBLIC_ESTABLISHED_DATE} />
+              <About
+                pageTitle="À propos"
+                pageDescription="Expertise. Experience. Excellence."
+                nombreClients={SNOWPACK_PUBLIC_NOMBRE_CLIENTS}
+                establishedDate={SNOWPACK_PUBLIC_ESTABLISHED_DATE}
+              />
             </Route>
             <Route exact path="/contact">
-              <Contact pageTitle="Contact"
-                       pageDescription="Besoin d'information&nbsp;?"
+              <Contact
+                pageTitle="Contact"
+                pageDescription="Besoin d'information&nbsp;?"
               />
             </Route>
             <Route path="/">
-              <Home pageTitle={SNOWPACK_PUBLIC_WEBSITE_NAME}
-                    pageDescription={SNOWPACK_PUBLIC_WEBSITE_DESCRIPTION}
-                    nombreClients={SNOWPACK_PUBLIC_NOMBRE_CLIENTS}
-                    establishedDate={SNOWPACK_PUBLIC_ESTABLISHED_DATE} />
+              <Home
+                pageTitle={SNOWPACK_PUBLIC_WEBSITE_NAME}
+                pageDescription={SNOWPACK_PUBLIC_WEBSITE_DESCRIPTION}
+                nombreClients={SNOWPACK_PUBLIC_NOMBRE_CLIENTS}
+                establishedDate={SNOWPACK_PUBLIC_ESTABLISHED_DATE}
+              />
             </Route>
           </Switch>
-          <Footer copyrightName={`${SNOWPACK_PUBLIC_WEBSITE_NAME} Inc.`}
-                  establishedDate={SNOWPACK_PUBLIC_ESTABLISHED_DATE} />
+          <Footer
+            copyrightName={`${SNOWPACK_PUBLIC_WEBSITE_NAME} Inc.`}
+            establishedDate={SNOWPACK_PUBLIC_ESTABLISHED_DATE}
+          />
         </Suspense>
       </BrowserRouter>
     </>
-  )
-    ;
+  );
 }

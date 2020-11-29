@@ -10,7 +10,7 @@ export default function CustomNavLink(props) {
     //2- Set route link "active" class
     const navLinks = document.querySelectorAll("nav a.custom-router-link");
     if (navLinks && navLinks.length) {
-      navLinks.forEach(a => {
+      navLinks.forEach((a) => {
         if (a.dataset.pathname === location.pathname) {
           // Set active link class
           !a.classList.contains("active") && a.classList.add("active");
@@ -23,9 +23,14 @@ export default function CustomNavLink(props) {
   }, [location]);
 
   return (
-    <Link to={props.to} data-pathname={props.to} className={props.className ?
-      props.className + " no-wrap custom-router-link"
-      : "no-wrap custom-router-link"}
+    <Link
+      to={props.to}
+      data-pathname={props.to}
+      className={
+        props.className
+          ? props.className + " no-wrap custom-router-link"
+          : "no-wrap custom-router-link"
+      }
     >
       {props.children}
     </Link>

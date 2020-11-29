@@ -7,8 +7,12 @@ export default function Bio(props) {
   return (
     <div className="bio-container flex-row flex-card-border-top">
       <div className="flex-col bio-image-container">
-        <LazyImage src={props.image} classNames={""}
-                   height={250} width={250} alt={props.name}
+        <LazyImage
+          src={props.image}
+          classNames={""}
+          height={250}
+          width={250}
+          alt={props.name}
         />
       </div>
       <div className="flex-col bio-info-container">
