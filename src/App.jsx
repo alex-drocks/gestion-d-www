@@ -13,13 +13,14 @@ const Home = lazy(() => import("./routes/home/Home"));
 const About = lazy(() => import("./routes/about/About"));
 const Contact = lazy(() => import("./routes/contact/Contact"));
 const Liens = lazy(() => import("./routes/liens/Liens"));
+const Services = lazy(() => import("./routes/services/Services"));
 
 // Meta data from .env file
 const {
   SNOWPACK_PUBLIC_WEBSITE_NAME,
   SNOWPACK_PUBLIC_WEBSITE_DESCRIPTION,
   SNOWPACK_PUBLIC_NOMBRE_CLIENTS,
-  SNOWPACK_PUBLIC_ESTABLISHED_DATE,
+  SNOWPACK_PUBLIC_ESTABLISHED_DATE
 } = import.meta.env;
 
 export default function App() {
@@ -37,16 +38,24 @@ export default function App() {
                 establishedDate={SNOWPACK_PUBLIC_ESTABLISHED_DATE}
               />
             </Route>
-            <Route exact path="/contact">
-              <Contact
-                pageTitle="Contact"
-                pageDescription="Besoin d'information&nbsp;?"
+            <Route exact path="/services">
+              <Services
+                pageTitle="Services"
+                pageDescription="Notre expertise"
+                nombreClients={SNOWPACK_PUBLIC_NOMBRE_CLIENTS}
+                establishedDate={SNOWPACK_PUBLIC_ESTABLISHED_DATE}
               />
             </Route>
             <Route exact path="/liens">
               <Liens
-                pageTitle="Liens utiles"
+                pageTitle="Services utiles"
                 pageDescription="Outils & ressources pratiques"
+              />
+            </Route>
+            <Route exact path="/contact">
+              <Contact
+                pageTitle="Contact"
+                pageDescription="Besoin d'information&nbsp;?"
               />
             </Route>
             <Route path="/">
