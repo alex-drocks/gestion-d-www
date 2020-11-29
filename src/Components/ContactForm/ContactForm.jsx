@@ -3,12 +3,22 @@ import "../../Components/ContactForm/ContactForm.css";
 
 import NotificationCard from "../NotificationCard/NotificationCard";
 
+/**
+ * Initial state is showing the contact form.
+ * While async sending the state removes the submit button.
+ * When sending returns the result can be success or error and
+ * a notification card will be shown accordingly.
+ * @param classNames is for custom styles.
+ * @param fetchUrl is the url of the php form handler.
+ * @returns {JSX.Element}
+ * @constructor
+ */
 export default function ContactForm({ classNames, fetchUrl }) {
   const [formSent, setFormSent] = useState("");
   const [isSending, setIsSending] = useState(false);
 
   function onSubmit(e) {
-    if (!window.fetch || formSent) return; //internet explorer does not support fetch
+    if (!window.fetch || formSent) return;
 
     setIsSending(true);
 
@@ -19,10 +29,10 @@ export default function ContactForm({ classNames, fetchUrl }) {
     fetch(fetchUrl, {
       method: "POST",
       headers: {
-        "Content-Type": "application/x-www-form-urlencoded"
+        "Content-Type": "application/x-www-form-urlencoded",
       },
       redirect: "follow",
-      body: urlEncodedQuery
+      body: urlEncodedQuery,
     })
       .then((response) => response.text())
       .then((result) => {

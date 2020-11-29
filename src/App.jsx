@@ -12,6 +12,7 @@ import Footer from "./Components/Footer/Footer";
 const Home = lazy(() => import("./routes/home/Home"));
 const About = lazy(() => import("./routes/about/About"));
 const Contact = lazy(() => import("./routes/contact/Contact"));
+const Liens = lazy(() => import("./routes/liens/Liens"));
 
 // Meta data from .env file
 const {
@@ -40,6 +41,12 @@ export default function App() {
               <Contact
                 pageTitle="Contact"
                 pageDescription="Besoin d'information&nbsp;?"
+              />
+            </Route>
+            <Route exact path="/liens">
+              <Liens
+                pageTitle="Liens utiles"
+                pageDescription="Outils & ressources pratiques"
               />
             </Route>
             <Route path="/">
