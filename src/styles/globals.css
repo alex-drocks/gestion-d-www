@@ -144,6 +144,11 @@ body {
   text-decoration: underline;
 }
 
+.force-flex-align-center {
+  flex-direction: row !important;
+  justify-content: center !important;
+}
+
 .spacer-top {
   margin-top: var(--vertical-spacing);
 }

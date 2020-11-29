@@ -83,6 +83,12 @@ export default function Services({ pageTitle, pageDescription, nombreClients, es
           </div>
         </div>
       </div>
+
+      <div className="content-block spacer-top force-flex-align-center">
+        <CustomNavLink to="/contact">
+          <button>Contactez-nous</button>
+        </CustomNavLink>
+      </div>
     </div>
   );
 }

@@ -11,13 +11,14 @@ import alex from "../../images/alex-bio.webp";
 import will from "../../images/will-bio.webp";
 import matt from "../../images/matt-bio.webp";
 import Quote from "../../Components/Quote/Quote";
+import CustomNavLink from "../../Components/CustomNavLink/CustomNavLink";
 
 export default function About({
-  pageTitle,
-  pageDescription,
-  nombreClients,
-  establishedDate,
-}) {
+                                pageTitle,
+                                pageDescription,
+                                nombreClients,
+                                establishedDate
+                              }) {
   return (
     <div className="route-container container">
       <Banner pageTitle={pageTitle} pageDescription={pageDescription} />
@@ -121,6 +122,13 @@ export default function About({
         Nous avons toujours voulu servir comme nous aimons nous-même être
         servis.
       </Quote>
+
+      <div className="content-block spacer-top force-flex-align-center">
+        <CustomNavLink to="/services">
+          <button>Voir nos services</button>
+        </CustomNavLink>
+      </div>
+
     </div>
   );
 }
