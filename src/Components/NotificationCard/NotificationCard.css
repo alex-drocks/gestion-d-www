@@ -15,13 +15,15 @@
   align-items: center;
   justify-content: center;
   position: absolute;
-  /*top: calc(50% - 12px);;*/
-  /*top: -14px;*/
   bottom: 8px;
   left: -17px;
   border-radius: 50%;
   width: 28px;
   height: 28px;
+}
+
+.svg-background.align-icon-top {
+  top: calc(1em + 12px);
 }
 
 .notification-card svg {
