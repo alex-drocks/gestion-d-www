@@ -23,6 +23,8 @@ export default function DeclarationParticuliers({
       <div className="etapes content-block spacer-top">
 
         <div id="etape1" className="etape">
+          <div className="dividing-line full-width" />
+
           <div className="flex-row">
             <h2>Étape #1: Complétez notre questionnaire d'impôts</h2>
             <p>
@@ -80,6 +82,8 @@ export default function DeclarationParticuliers({
         </div>
 
         <div id="etape2" className="etape">
+          <div className="dividing-line full-width" />
+
           <div className="flex-row">
             <h2>Étape #2: Préparez votre dossier</h2>
             <p>
@@ -120,6 +124,8 @@ export default function DeclarationParticuliers({
         </div>
 
         <div id="etape3" className="etape">
+          <div className="dividing-line full-width" />
+
           <div className="flex-row">
             <h2>Étape #3: Transmettre votre dossier</h2>
             <p>
@@ -163,6 +169,8 @@ export default function DeclarationParticuliers({
 
 
         <div id="etape4" className="etape">
+          <div className="dividing-line full-width" />
+
           <div className="flex-row">
             <h2>Étape #4: Obtenir vos résultats et effectuer le paiement</h2>
             <p>
@@ -205,11 +213,13 @@ export default function DeclarationParticuliers({
           </div>
 
           <div id="etape-terminee" className="etape">
+            <div className="dividing-line full-width" />
             <div className="flex-row">
               <h1>Vous avez enfin terminé :)</h1>
               <p>
-                Nous vous remercions infiniment de nous avoir fait confiance pour votre déclaration d'Impôts cette année
-                et nous nous tenons à votre entière disposition si vous avez besoin d'information supplémentaire sur
+                Nous vous remercions de nous avoir fait confiance pour votre
+                déclaration d'Impôts cette année et nous nous tenons à votre
+                disposition si vous avez besoin d'information supplémentaire sur
                 votre déclaration.
               </p>
               <CustomNavLink to="/contact">
