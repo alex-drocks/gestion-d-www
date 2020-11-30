@@ -19,7 +19,7 @@
 }
 
 .banner-container:not(.has-image) {
-  min-height: 255px;
+  min-height: 265px;
   background-color: transparent;
 }
 

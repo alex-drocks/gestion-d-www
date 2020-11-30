@@ -21,7 +21,7 @@ const DeclarationParticuliers = lazy(() =>
   import("./routes/services/impots-particuliers/DeclarationParticuliers")
 );
 const ImpotsSocietes = lazy(() => import("./routes/services/impots-societes/ImpotsSocietes"));
-// const ComptabiliteEntreprise = lazy(() => import("./routes/services/ComptabiliteEntreprise"));
+const ComptabiliteEntreprises = lazy(() => import("./routes/services/comptabilite-entreprises/ComptabiliteEntreprises"));
 
 // Meta data from .env file
 const {
@@ -62,10 +62,7 @@ export default function App() {
                 establishedDate={SNOWPACK_PUBLIC_ESTABLISHED_DATE}
               />
             </Route>
-            <Route
-              exact
-              path="/services/impots-particuliers/produire-declaration"
-            >
+            <Route exact path="/services/impots-particuliers/produire-declaration">
               <DeclarationParticuliers
                 pageTitle="Produire ma déclaration"
                 pageDescription="Les 4 étapes pour produire vos impôts"
@@ -82,13 +79,15 @@ export default function App() {
               />
             </Route>
             <Route exact path="/services/comptabilite-entreprises">
-              <h1>comptabilite-entreprises</h1>
+              <ComptabiliteEntreprises
+                pageTitle="COMPTABILITÉ D'ENTREPRISE"
+                pageDescription="Services comptables pour entreprises"
+                nombreClients={SNOWPACK_PUBLIC_NOMBRE_CLIENTS}
+                establishedDate={SNOWPACK_PUBLIC_ESTABLISHED_DATE}
+              />
             </Route>
             <Route exact path="/services/creation-incorporations">
               <h1>creation-incorporations</h1>
-            </Route>
-            <Route exact path="/services/succession">
-              <h1>succession</h1>
             </Route>
             <Route exact path="/liens">
               <Liens
@@ -99,7 +98,7 @@ export default function App() {
             <Route exact path="/contact">
               <Contact
                 pageTitle="Contact"
-                pageDescription="Besoin d'information&nbsp;?"
+                pageDescription="Il est simple de nous joindre"
               />
             </Route>
             <Route path="/">

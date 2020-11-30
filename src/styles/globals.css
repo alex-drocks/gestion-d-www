@@ -161,6 +161,10 @@ body {
   margin-bottom: var(--vertical-spacing);
 }
 
+.no-spacer-top {
+  margin-top: 0 !important;
+}
+
 .full-width {
   position: relative;
   width: 100vw;
