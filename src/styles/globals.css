@@ -95,6 +95,10 @@ body {
   text-align: center;
 }
 
+.text-align--left {
+  text-align: left;
+}
+
 .flex-col--100w {
   width: 100%;
 }
