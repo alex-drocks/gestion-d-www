@@ -22,13 +22,6 @@ export default function Contact({ pageTitle, pageDescription }) {
             Il nous fera plaisir de vous
             répondre dans les plus brefs délais.
           </p>
-          {/*<ContactezNous*/}
-          {/*  renderTitle={false}*/}
-          {/*  renderDirects={false}*/}
-          {/*  renderParagraph={false}*/}
-          {/*  renderNotification={true}*/}
-          {/*  renderLink={false}*/}
-          {/*/>*/}
           <ContactForm
             fetchUrl="https://gestiond.finance-d.com/api/submit-contact-form.php"
             classNames={"spacer-top flex-col"}
@@ -40,6 +33,7 @@ export default function Contact({ pageTitle, pageDescription }) {
             renderTitle={false}
             renderDirects={true}
             renderParagraph={false}
+            renderRendezVous={true}
             renderNotification={true}
             renderLink={false}
           />
