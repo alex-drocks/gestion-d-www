@@ -1,16 +1,16 @@
 import React from "react";
-// import "./Services.css";
 
 // Components
 import Banner from "../../Components/Banner/Banner";
 import CustomNavLink from "../../Components/CustomNavLink/CustomNavLink";
 
+
 export default function Services({
-  pageTitle,
-  pageDescription,
-  nombreClients,
-  establishedDate,
-}) {
+                                   pageTitle,
+                                   pageDescription,
+                                   nombreClients,
+                                   establishedDate
+                                 }) {
   return (
     <div className="route-container container page-services">
       <Banner pageTitle={pageTitle} pageDescription={pageDescription} />
@@ -78,7 +78,7 @@ export default function Services({
               <br />
               <br />
               <CustomNavLink
-                to="/creation-incorporations"
+                to="/services/creation-incorporations"
                 className="text-link blue-text"
               >
                 Création d'incorporations
@@ -91,7 +91,7 @@ export default function Services({
               Nous pouvons vous aider avec un dossier de succession.
               <br />
               <br />
-              <CustomNavLink to="/succession" className="text-link blue-text">
+              <CustomNavLink to="/services/succession" className="text-link blue-text">
                 Succession
               </CustomNavLink>
             </p>
@@ -104,6 +104,7 @@ export default function Services({
           <button>Contactez-nous</button>
         </CustomNavLink>
       </div>
+
     </div>
   );
 }

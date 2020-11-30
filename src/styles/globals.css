@@ -286,6 +286,11 @@ img.zoom-hover-fx:hover,
   user-select: none;
 }
 
+.graphique-clients {
+  max-width: 100%;
+  height: auto;
+}
+
 
 @keyframes fadeIn {
   0% {

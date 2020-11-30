@@ -1,0 +1,148 @@
+import React from "react";
+import "./ImpotsParticuliers.css";
+
+//Components
+import Banner from "../../Components/Banner/Banner";
+import CustomNavLink from "../../Components/CustomNavLink/CustomNavLink";
+
+
+export default function ImpotsParticuliers({
+                                             pageTitle,
+                                             pageDescription,
+                                             nombreClients,
+                                             establishedDate
+                                           }) {
+  return (
+    <div className="route-container container">
+      <Banner pageTitle={pageTitle} pageDescription={pageDescription} />
+
+      <div className="content-block spacer-top">
+        <div className="flex-col flex-col--50w flex--justify-left">
+          <div className="content-block">
+            {/*<h2>Confiez vos impôts à un professionnel</h2>*/}
+            <p>
+              Nous nous spécialisons dans la production de déclaration de revenus
+              de particuliers depuis {establishedDate} et nous
+              saurons vous conseiller de façon professionnelle pour que
+              vous puissiez récupérer le maximum d'impôts
+              auquel vous avez droit, et ce, quelque soit votre statut
+              (célibataire, couple, nouvel arrivant,
+              travailleur autonome, etc.).
+            </p>
+            <div className="content-block spacer-top">
+              <h2>Tarifs impôts des particuliers</h2>
+              <div className="flex-col--100w">
+                <h3>Étudiant | 60$</h3>
+                <p>
+                  Étudiant à temps plein avec revenu annuel inférieur à 15 000$.
+                </p>
+              </div>
+              <div className="flex-col--100w">
+                <h3>Retraité | 60$</h3>
+                <p>
+                  Personne vivant seule à la retraite.
+                </p>
+              </div>
+              <div className="flex-col--100w">
+                <h3>Individuel | 70$</h3>
+                <p>
+                  Personne vivant seule, célibataire, veuf(ve).
+                </p>
+              </div>
+              <div className="flex-col--100w">
+                <h3>Couple | 125$</h3>
+                <p>
+                  Conjoints de fait, couple marié ou couple retraité
+                  avec ou sans enfant à charge.
+                </p>
+              </div>
+              <div className="flex-col--100w">
+                <h3>Famille | 140$</h3>
+                <p>
+                  Couple avec un ou plusieurs enfants de plus de 18 ans
+                  dont il faut produire une déclaration.
+                </p>
+              </div>
+              <div className="flex-col--100w">
+                <h3>Travailleur autonome | prix selon le dossier</h3>
+                <p>
+                  Travailleur autonome ou petite entreprise avec revenus
+                  et dépenses d'entreprises.
+                </p>
+              </div>
+              <div className="flex-col--100w">
+                <h3>Dépenses d'emploi | prix selon le dossier</h3>
+                <p>
+                  Salarié avec dépenses d'emploi à déclarer.
+                </p>
+              </div>
+              <div className="flex-col--100w">
+                <h3>Immeuble à revenu | prix selon le dossier</h3>
+                <p>
+                  Personne ayant un ou plusieurs immeubles à revenu.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="flex-col flex-col--40w flex-margin-left--10w flex--justify-left">
+          <div className="content-block">
+            <h2>Faites vos impôts en 4 étapes</h2>
+            <div className="flex-col--100w">
+              <h3>Étape 1: Remplir le questionnaire d'impôts</h3>
+              <p>
+                Vous devrez premièrement remplir notre questionnaire d'impôts
+                en ligne et nous fournir les renseignements nécessaires
+                concernant votre situation en {new Date().getFullYear()}.
+              </p>
+            </div>
+
+            <div className="flex-col--100w">
+              <h3>Étape 2: Préparer votre dossier</h3>
+              <p>
+                Vous devrez ensuite préparer votre dossier d'impôts en
+                rassemblant vos feuillets et pièces justificatives nécessaires
+                pour votre déclaration. Nous vous fournirons un aide-mémoire
+                pour vous aider à identifier les documents que vous avez besoin
+                de rassembler.
+              </p>
+            </div>
+
+            <div className="flex-col--100w">
+              <h3>Étape 3: Transmettre vos documents</h3>
+              <p>
+                Lorsque vous aurez rempli le questionnaire d'impôts et que
+                vous aurez terminé de rassembler vos feuillets et pièces
+                justificatives, vous pourrez nous transmettre vos documents
+                soit (1) Par courriel, (2) Par la poste ou (3) En personne.
+              </p>
+            </div>
+
+            <div className="flex-col--100w">
+              <h3>Étape 4: Recevoir vos résultats et effectuer le paiement</h3>
+              <p>
+                Lorsque votre déclaration de revenu sera terminée, nous vous
+                acheminerons vos résultats ainsi que votre dossier par le même
+                biais que vous nous les aviez envoyés. Nous vous fournirons
+                également une explication sommaire de vos résultats ainsi que
+                des recommandations personnalisées pour économiser de l'impôt
+                l'année suivante. Nous transmettrons ensuite votre déclaration
+                au gouvernement par le biais du service de déclaration en
+                ligne TED.
+              </p>
+            </div>
+
+
+
+          </div>
+        </div>
+      </div>
+
+      <div className="content-block spacer-top force-flex-align-center">
+        <CustomNavLink to="/contact">
+          <button>Contactez-nous</button>
+        </CustomNavLink>
+      </div>
+    </div>
+  );
+}
