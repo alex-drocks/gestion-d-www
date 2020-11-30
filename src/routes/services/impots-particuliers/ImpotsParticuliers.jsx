@@ -30,31 +30,24 @@ export default function ImpotsParticuliers({
             <div className="content-block spacer-top">
               <h2>Tarifs impôts des particuliers</h2>
               <div className="flex-col--100w">
-                <h3>Étudiant | 60$</h3>
+                <h3>Étudiant | 80$</h3>
                 <p>
                   Étudiant à temps plein avec revenu annuel inférieur à 15 000$.
                 </p>
               </div>
               <div className="flex-col--100w">
-                <h3>Retraité | 60$</h3>
-                <p>Personne vivant seule à la retraite.</p>
+                <h3>Retraité | 75$</h3>
+                <p>Par personne à la retraite.</p>
               </div>
               <div className="flex-col--100w">
-                <h3>Individuel | 70$</h3>
+                <h3>Individuel | 90$</h3>
                 <p>Personne vivant seule, célibataire, veuf(ve).</p>
               </div>
               <div className="flex-col--100w">
-                <h3>Couple | 125$</h3>
+                <h3>Couple | 145$</h3>
                 <p>
                   Conjoints de fait, couple marié ou couple retraité avec ou
                   sans enfant à charge.
-                </p>
-              </div>
-              <div className="flex-col--100w">
-                <h3>Famille | 140$</h3>
-                <p>
-                  Couple avec un ou plusieurs enfants de plus de 18 ans dont il
-                  faut produire une déclaration.
                 </p>
               </div>
               <div className="flex-col--100w">
@@ -73,9 +66,11 @@ export default function ImpotsParticuliers({
                 <p>Personne ayant un ou plusieurs immeubles à revenu.</p>
               </div>
               <div className="content-block">
-                <CustomNavLink to="/contact">
-                  <button>Contactez-nous</button>
-                </CustomNavLink>
+                <p>
+                  <CustomNavLink to="/contact">
+                    <button>Contactez-nous</button>
+                  </CustomNavLink>
+                </p>
               </div>
             </div>
           </div>
@@ -125,17 +120,18 @@ export default function ImpotsParticuliers({
                 au gouvernement par le biais du service de déclaration en ligne
                 TED.
               </p>
+              <br />
             </div>
 
-            <div className="content-block spacer-top">
+            <div className="content-block card flex-card-border-top">
               <h2>Prêt à faire vos impôts?</h2>
               <p>
-                Appuyez sur le bouton ci-dessous afin de suivre les 4 étapes qui
-                vont vous aider à bien nous transmettre votre dossier pour
-                produire votre déclaration d'impôts.
+                Appuyez sur le bouton ci-dessous pour suivre les 4 étapes qui
+                vont vous aider à bien nous transmettre votre dossier de
+                déclaration d'impôts.
               </p>
               <CustomNavLink to="/services/impots-particuliers/produire-declaration">
-                <button>Produire ma déclaration</button>
+                <button>Commencer</button>
               </CustomNavLink>
             </div>
           </div>
