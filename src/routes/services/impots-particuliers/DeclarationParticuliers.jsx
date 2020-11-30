@@ -329,26 +329,26 @@ export default function DeclarationParticuliers({
               </p>
             </NotificationCard>
           </div>
-
-          <div id="etape-terminee" className="etape">
-            <div className="dividing-line full-width" />
-            <div className="flex-row">
-              <div>
-                <h1>Vous avez enfin terminé :)</h1>
-                <p>
-                  Nous vous remercions de nous avoir fait confiance pour votre
-                  déclaration d'Impôts cette année et nous nous tenons à votre
-                  disposition si vous avez besoin d'information supplémentaire
-                  sur votre déclaration.
-                </p>
-              </div>
-
-              <CustomNavLink to="/contact">
-                <button>Contactez-nous au besoin</button>
-              </CustomNavLink>
+        </div>
+        <div id="etape-terminee" className="etape">
+          <div className="dividing-line full-width" />
+          <div className="flex-row">
+            <div>
+              <h1>Vous avez enfin terminé :)</h1>
+              <p>
+                Nous vous remercions de nous avoir fait confiance pour votre
+                déclaration d'Impôts cette année et nous nous tenons à votre
+                disposition si vous avez besoin d'information supplémentaire
+                sur votre déclaration.
+              </p>
             </div>
+
+            <CustomNavLink to="/contact">
+              <button>Contactez-nous au besoin</button>
+            </CustomNavLink>
           </div>
         </div>
+
       </div>
     </div>
   );

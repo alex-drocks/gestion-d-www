@@ -15,22 +15,20 @@ const Contact = lazy(() => import("./routes/contact/Contact"));
 const Liens = lazy(() => import("./routes/liens/Liens"));
 const Services = lazy(() => import("./routes/services/Services"));
 const ImpotsParticuliers = lazy(() =>
-  import("./routes/services/impots-particuliers/ImpotsParticuliers"),
+  import("./routes/services/impots-particuliers/ImpotsParticuliers")
 );
 const DeclarationParticuliers = lazy(() =>
-  import("./routes/services/impots-particuliers/DeclarationParticuliers"),
+  import("./routes/services/impots-particuliers/DeclarationParticuliers")
 );
-// const ImpotsSocietes = lazy(() => import("./routes/services/ImpotsSocietes"));
+const ImpotsSocietes = lazy(() => import("./routes/services/impots-societes/ImpotsSocietes"));
 // const ComptabiliteEntreprise = lazy(() => import("./routes/services/ComptabiliteEntreprise"));
-// const CreationIncorporation = lazy(() => import("./routes/services/CreationIncorporation"));
-// const Succession = lazy(() => import("./routes/services/Succession"));
 
 // Meta data from .env file
 const {
   SNOWPACK_PUBLIC_WEBSITE_NAME,
   SNOWPACK_PUBLIC_WEBSITE_DESCRIPTION,
   SNOWPACK_PUBLIC_NOMBRE_CLIENTS,
-  SNOWPACK_PUBLIC_ESTABLISHED_DATE,
+  SNOWPACK_PUBLIC_ESTABLISHED_DATE
 } = import.meta.env;
 
 export default function App() {
@@ -76,7 +74,12 @@ export default function App() {
               />
             </Route>
             <Route exact path="/services/impots-societes">
-              <h1>impots-societes</h1>
+              <ImpotsSocietes
+                pageTitle="IMPÔTS DES SOCIÉTÉS"
+                pageDescription="Déclaration d'impôts pour incorporations"
+                nombreClients={SNOWPACK_PUBLIC_NOMBRE_CLIENTS}
+                establishedDate={SNOWPACK_PUBLIC_ESTABLISHED_DATE}
+              />
             </Route>
             <Route exact path="/services/comptabilite-entreprises">
               <h1>comptabilite-entreprises</h1>
