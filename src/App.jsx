@@ -51,7 +51,7 @@ export default function App() {
             <Route exact path="/services">
               <Services
                 pageTitle="Services"
-                pageDescription="Notre expertise"
+                pageDescription="Nos principaux services"
                 nombreClients={SNOWPACK_PUBLIC_NOMBRE_CLIENTS}
                 establishedDate={SNOWPACK_PUBLIC_ESTABLISHED_DATE}
               />

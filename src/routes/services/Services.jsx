@@ -17,7 +17,7 @@ export default function Services({
       <div className="content-block spacer-top">
         <div className="flex-col flex-col--50w flex--justify-left">
           <div className="content-block card">
-            <h2>Déclaration d'impôts des particuliers</h2>
+            <h2>Déclaration d'impôts de particuliers</h2>
             <p>
               Nous produisons des déclarations de revenus de particuliers depuis
               plus de {new Date().getFullYear() - establishedDate} ans et aidons
@@ -32,7 +32,7 @@ export default function Services({
               </CustomNavLink>
             </p>
           </div>
-          <div className="content-block spacer-top">
+          <div className="content-block card spacer-top">
             <h2>Déclaration d'impôts de sociétés</h2>
             <p>
               Si vous êtes propriétaire d'une société incorporée, nous avons
@@ -50,8 +50,7 @@ export default function Services({
               </CustomNavLink>
             </p>
           </div>
-
-          <div className="content-block spacer-top">
+          <div className="content-block card spacer-top">
             <h2>Comptabilité d'entreprise et tenue de livres</h2>
             <p>
               Si vous possédez une petite entreprise ou êtes un travailleur
@@ -63,14 +62,14 @@ export default function Services({
                 to="/services/comptabilite-entreprises"
                 className="text-link blue-text"
               >
-                Comptabilité d'entreprises
+                Comptabilité
               </CustomNavLink>
             </p>
           </div>
         </div>
         <div className="flex-col flex-col--40w flex-margin-left--10w flex--justify-left">
-          <div className="content-block">
-            <h2>Création d'incorporations</h2>
+          <div className="content-block card">
+            <h2>Création d'une incorporation</h2>
             <p>
               Nous offrons un service personnalisé pour la création d'entreprise
               en vous accompagnant du début à la fin.
@@ -80,11 +79,11 @@ export default function Services({
                 to="/services/creation-incorporations"
                 className="text-link blue-text"
               >
-                Création d'incorporations
+                Incorporations
               </CustomNavLink>
             </p>
           </div>
-          <div className="content-block spacer-top">
+          <div className="content-block card spacer-top">
             <h2>Services de succession</h2>
             <p>
               Nous pouvons prendre en charge un dossier de succession
