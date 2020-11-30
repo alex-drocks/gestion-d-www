@@ -7,7 +7,6 @@ import Quote from "../../Components/Quote/Quote";
 import CustomNavLink from "../../Components/CustomNavLink/CustomNavLink";
 import LazyImage from "../../Components/LazyImage/LazyImage";
 
-
 // Images
 import daniel from "../../images/daniel-bio.webp";
 import alex from "../../images/alex-bio.webp";
@@ -15,13 +14,12 @@ import will from "../../images/will-bio.webp";
 import matt from "../../images/matt-bio.webp";
 import graphiqueClients from "../../images/graphique-clients-2019.webp";
 
-
 export default function About({
-                                pageTitle,
-                                pageDescription,
-                                nombreClients,
-                                establishedDate
-                              }) {
+  pageTitle,
+  pageDescription,
+  nombreClients,
+  establishedDate,
+}) {
   return (
     <div className="route-container container">
       <Banner pageTitle={pageTitle} pageDescription={pageDescription} />
@@ -54,8 +52,13 @@ export default function About({
         <div className="flex-col flex-col--40w flex-margin-left--10w flex--justify-left">
           <h2>Croissance de notre clientèle</h2>
           <p>
-            <LazyImage src={graphiqueClients} alt={"Graphique de nos clients"} width={781} height={390}
-                       classNames="graphique-clients" />
+            <LazyImage
+              src={graphiqueClients}
+              alt={"Graphique de nos clients"}
+              width={781}
+              height={390}
+              classNames="graphique-clients"
+            />
           </p>
         </div>
       </div>

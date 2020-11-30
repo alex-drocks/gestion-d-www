@@ -14,8 +14,12 @@ const About = lazy(() => import("./routes/about/About"));
 const Contact = lazy(() => import("./routes/contact/Contact"));
 const Liens = lazy(() => import("./routes/liens/Liens"));
 const Services = lazy(() => import("./routes/services/Services"));
-const ImpotsParticuliers = lazy(() => import("./routes/services/impots-particuliers/ImpotsParticuliers"));
-const DeclarationParticuliers = lazy(() => import("./routes/services/impots-particuliers/DeclarationParticuliers"));
+const ImpotsParticuliers = lazy(() =>
+  import("./routes/services/impots-particuliers/ImpotsParticuliers"),
+);
+const DeclarationParticuliers = lazy(() =>
+  import("./routes/services/impots-particuliers/DeclarationParticuliers"),
+);
 // const ImpotsSocietes = lazy(() => import("./routes/services/ImpotsSocietes"));
 // const ComptabiliteEntreprise = lazy(() => import("./routes/services/ComptabiliteEntreprise"));
 // const CreationIncorporation = lazy(() => import("./routes/services/CreationIncorporation"));
@@ -26,7 +30,7 @@ const {
   SNOWPACK_PUBLIC_WEBSITE_NAME,
   SNOWPACK_PUBLIC_WEBSITE_DESCRIPTION,
   SNOWPACK_PUBLIC_NOMBRE_CLIENTS,
-  SNOWPACK_PUBLIC_ESTABLISHED_DATE
+  SNOWPACK_PUBLIC_ESTABLISHED_DATE,
 } = import.meta.env;
 
 export default function App() {
@@ -60,7 +64,10 @@ export default function App() {
                 establishedDate={SNOWPACK_PUBLIC_ESTABLISHED_DATE}
               />
             </Route>
-            <Route exact path="/services/impots-particuliers/produire-declaration">
+            <Route
+              exact
+              path="/services/impots-particuliers/produire-declaration"
+            >
               <DeclarationParticuliers
                 pageTitle="Produire ma déclaration"
                 pageDescription="Les 4 étapes pour produire vos impôts"
@@ -109,6 +116,5 @@ export default function App() {
         </Suspense>
       </BrowserRouter>
     </>
-  )
-    ;
+  );
 }

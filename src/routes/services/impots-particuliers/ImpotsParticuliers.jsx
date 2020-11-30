@@ -4,7 +4,6 @@ import React from "react";
 import Banner from "../../../Components/Banner/Banner";
 import CustomNavLink from "../../../Components/CustomNavLink/CustomNavLink";
 
-
 export default function ImpotsParticuliers({
                                              pageTitle,
                                              pageDescription,
@@ -20,19 +19,16 @@ export default function ImpotsParticuliers({
           <div className="content-block">
             {/*<h2>Confiez vos impôts à un professionnel</h2>*/}
             <p>
-              Nous nous spécialisons dans la production de déclaration de revenus
-              de particuliers depuis {establishedDate} et nous
-              saurons vous conseiller de façon professionnelle pour que
-              vous puissiez récupérer le maximum d'impôts
-              auquel vous avez droit, et ce, quelque soit votre statut
-              (célibataire, couple, nouvel arrivant,
+              Nous nous spécialisons dans la production de déclaration de
+              revenus de particuliers depuis {establishedDate} et nous saurons
+              vous conseiller de façon professionnelle pour que vous puissiez
+              récupérer le maximum d'impôts auquel vous avez droit, et ce,
+              quelque soit votre statut (célibataire, couple, nouvel arrivant,
               travailleur autonome, etc.).
             </p>
 
-            <div className="content-block spacer-top flex-card-border-top ">
-              <div className="flex-card-border-top--title">
-                <h2>Tarifs impôts des particuliers</h2>
-              </div>
+            <div className="content-block spacer-top">
+              <h2>Tarifs impôts des particuliers</h2>
               <div className="flex-col--100w">
                 <h3>Étudiant | 60$</h3>
                 <p>
@@ -41,48 +37,40 @@ export default function ImpotsParticuliers({
               </div>
               <div className="flex-col--100w">
                 <h3>Retraité | 60$</h3>
-                <p>
-                  Personne vivant seule à la retraite.
-                </p>
+                <p>Personne vivant seule à la retraite.</p>
               </div>
               <div className="flex-col--100w">
                 <h3>Individuel | 70$</h3>
-                <p>
-                  Personne vivant seule, célibataire, veuf(ve).
-                </p>
+                <p>Personne vivant seule, célibataire, veuf(ve).</p>
               </div>
               <div className="flex-col--100w">
                 <h3>Couple | 125$</h3>
                 <p>
-                  Conjoints de fait, couple marié ou couple retraité
-                  avec ou sans enfant à charge.
+                  Conjoints de fait, couple marié ou couple retraité avec ou
+                  sans enfant à charge.
                 </p>
               </div>
               <div className="flex-col--100w">
                 <h3>Famille | 140$</h3>
                 <p>
-                  Couple avec un ou plusieurs enfants de plus de 18 ans
-                  dont il faut produire une déclaration.
+                  Couple avec un ou plusieurs enfants de plus de 18 ans dont il
+                  faut produire une déclaration.
                 </p>
               </div>
               <div className="flex-col--100w">
                 <h3>Travailleur autonome | prix selon le dossier</h3>
                 <p>
-                  Travailleur autonome ou petite entreprise avec revenus
-                  et dépenses d'entreprises.
+                  Travailleur autonome ou petite entreprise avec revenus et
+                  dépenses d'entreprises.
                 </p>
               </div>
               <div className="flex-col--100w">
                 <h3>Dépenses d'emploi | prix selon le dossier</h3>
-                <p>
-                  Salarié avec dépenses d'emploi à déclarer.
-                </p>
+                <p>Salarié avec dépenses d'emploi à déclarer.</p>
               </div>
               <div className="flex-col--100w">
                 <h3>Immeuble à revenu | prix selon le dossier</h3>
-                <p>
-                  Personne ayant un ou plusieurs immeubles à revenu.
-                </p>
+                <p>Personne ayant un ou plusieurs immeubles à revenu.</p>
               </div>
               <div className="content-block">
                 <CustomNavLink to="/contact">
@@ -98,9 +86,9 @@ export default function ImpotsParticuliers({
             <div className="flex-col--100w">
               <h3>Étape 1: Remplir le questionnaire d'impôts</h3>
               <p>
-                Vous devrez premièrement remplir notre questionnaire d'impôts
-                en ligne et nous fournir les renseignements nécessaires
-                concernant votre situation en {new Date().getFullYear()}.
+                Vous devrez premièrement remplir notre questionnaire d'impôts en
+                ligne et nous fournir les renseignements nécessaires concernant
+                votre situation en {new Date().getFullYear()}.
               </p>
             </div>
 
@@ -118,10 +106,10 @@ export default function ImpotsParticuliers({
             <div className="flex-col--100w">
               <h3>Étape 3: Transmettre vos documents</h3>
               <p>
-                Lorsque vous aurez rempli le questionnaire d'impôts et que
-                vous aurez terminé de rassembler vos feuillets et pièces
-                justificatives, vous pourrez nous transmettre vos documents
-                soit (1) Par courriel, (2) Par la poste ou (3) En personne.
+                Lorsque vous aurez rempli le questionnaire d'impôts et que vous
+                aurez terminé de rassembler vos feuillets et pièces
+                justificatives, vous pourrez nous transmettre vos documents soit
+                (1) Par courriel, (2) Par la poste ou (3) En personne.
               </p>
             </div>
 
@@ -134,28 +122,25 @@ export default function ImpotsParticuliers({
                 également une explication sommaire de vos résultats ainsi que
                 des recommandations personnalisées pour économiser de l'impôt
                 l'année suivante. Nous transmettrons ensuite votre déclaration
-                au gouvernement par le biais du service de déclaration en
-                ligne TED.
+                au gouvernement par le biais du service de déclaration en ligne
+                TED.
               </p>
             </div>
 
             <div className="content-block spacer-top">
               <h2>Prêt à faire vos impôts?</h2>
               <p>
-                Appuyez sur le bouton ci-dessous afin de suivre les 4 étapes
-                qui vont vous aider à bien nous transmettre votre dossier pour
+                Appuyez sur le bouton ci-dessous afin de suivre les 4 étapes qui
+                vont vous aider à bien nous transmettre votre dossier pour
                 produire votre déclaration d'impôts.
               </p>
               <CustomNavLink to="/services/impots-particuliers/produire-declaration">
                 <button>Produire ma déclaration</button>
               </CustomNavLink>
             </div>
-
           </div>
         </div>
       </div>
-
-
     </div>
   );
 }

@@ -13,7 +13,8 @@ export default function CustomNavLink(props) {
       navLinks.forEach((a) => {
         const { pathname } = a.dataset;
         const isExactPath = pathname === location.pathname;
-        const isSubRoute = location.pathname.includes(pathname) && pathname !== "/";
+        const isSubRoute =
+          location.pathname.includes(pathname) && pathname !== "/";
         if (isExactPath || isSubRoute) {
           // Set active link class
           !a.classList.contains("active") && a.classList.add("active");
