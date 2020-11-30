@@ -5,18 +5,18 @@ import Banner from "../../Components/Banner/Banner";
 import CustomNavLink from "../../Components/CustomNavLink/CustomNavLink";
 
 export default function Services({
-  pageTitle,
-  pageDescription,
-  nombreClients,
-  establishedDate,
-}) {
+                                   pageTitle,
+                                   pageDescription,
+                                   nombreClients,
+                                   establishedDate
+                                 }) {
   return (
     <div className="route-container container page-services">
       <Banner pageTitle={pageTitle} pageDescription={pageDescription} />
 
       <div className="content-block spacer-top">
         <div className="flex-col flex-col--50w flex--justify-left">
-          <div className="content-block">
+          <div className="content-block card">
             <h2>Déclaration d'impôts des particuliers</h2>
             <p>
               Nous produisons des déclarations de revenus de particuliers depuis
@@ -73,7 +73,7 @@ export default function Services({
             <h2>Création d'incorporations</h2>
             <p>
               Nous offrons un service personnalisé pour la création d'entreprise
-              incorporées vous accompagnant du début à la fin.
+              en vous accompagnant du début à la fin.
               <br />
               <br />
               <CustomNavLink
@@ -87,14 +87,16 @@ export default function Services({
           <div className="content-block spacer-top">
             <h2>Services de succession</h2>
             <p>
-              Nous pouvons vous aider avec un dossier de succession.
+              Nous pouvons prendre en charge un dossier de succession
+              en nous adaptant au cas par cas pour bien vous servir.
               <br />
               <br />
               <CustomNavLink
-                to="/services/succession"
+                // to="/services/succession"
+                to="/contact"
                 className="text-link blue-text"
               >
-                Succession
+                Contactez-nous
               </CustomNavLink>
             </p>
           </div>

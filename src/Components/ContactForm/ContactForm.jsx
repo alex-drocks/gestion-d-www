@@ -135,6 +135,24 @@ export default function ContactForm({ classNames, fetchUrl }) {
           />
           Comptabilité d'entreprise & Tenue de livres
         </label>
+        <label className="radio" htmlFor="dossier-succession">
+          <input
+            type="radio"
+            id="dossier-succession"
+            name="subject"
+            value="Prise en charge de succession"
+          />
+          Prise en charge de succession
+        </label>
+        <label className="radio" htmlFor="creation-incorporation">
+          <input
+            type="radio"
+            id="creation-incorporation"
+            name="subject"
+            value="Création d'une incorporation"
+          />
+          Création d'une incorporation
+        </label>
         <label className="radio" htmlFor="autres">
           <input type="radio" id="autres" name="subject" value="Autres" />
           Autres
