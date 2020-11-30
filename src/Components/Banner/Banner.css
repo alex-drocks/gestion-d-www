@@ -106,10 +106,16 @@ h3.banner-text--page-title {
   h2.banner-text--page-title {
     font-size: 14px;
   }
+  .banner-container:not(.has-image) .banner-text--container {
+    justify-content: center;
+  }
 }
 
 @media (max-width: 700px) {
   h2.banner-text--page-title {
     font-size: 13px;
+  }
+  .banner-container:not(.has-image) .banner-text--container {
+    justify-content: flex-end;
   }
 }
