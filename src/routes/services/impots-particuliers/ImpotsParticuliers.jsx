@@ -5,11 +5,11 @@ import Banner from "../../../Components/Banner/Banner";
 import CustomNavLink from "../../../Components/CustomNavLink/CustomNavLink";
 
 export default function ImpotsParticuliers({
-                                             pageTitle,
-                                             pageDescription,
-                                             nombreClients,
-                                             establishedDate
-                                           }) {
+  pageTitle,
+  pageDescription,
+  nombreClients,
+  establishedDate,
+}) {
   return (
     <div className="route-container container">
       <Banner pageTitle={pageTitle} pageDescription={pageDescription} />

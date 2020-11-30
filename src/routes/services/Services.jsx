@@ -76,18 +76,19 @@ export default function Services({
               <br />
               <br />
               <CustomNavLink
-                to="/services/creation-incorporations"
+                // to="/services/succession"
+                to="/contact"
                 className="text-link blue-text"
               >
-                Incorporations
+                Contactez-nous
               </CustomNavLink>
             </p>
           </div>
           <div className="content-block card spacer-top">
             <h2>Services de succession</h2>
             <p>
-              Nous pouvons prendre en charge un dossier de succession
-              en nous adaptant au cas par cas pour bien vous servir.
+              Nous pouvons prendre en charge un dossier de succession en nous
+              adaptant au cas par cas pour bien vous servir.
               <br />
               <br />
               <CustomNavLink

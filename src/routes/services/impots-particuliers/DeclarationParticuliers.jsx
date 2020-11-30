@@ -10,11 +10,11 @@ import NotificationCard from "../../../Components/NotificationCard/NotificationC
 const { SNOWPACK_PUBLIC_WEBSITE_URL } = import.meta.env;
 
 export default function DeclarationParticuliers({
-                                                  pageTitle,
-                                                  pageDescription,
-                                                  nombreClients,
-                                                  establishedDate
-                                                }) {
+  pageTitle,
+  pageDescription,
+  nombreClients,
+  establishedDate,
+}) {
   return (
     <div className="route-container container">
       <Banner pageTitle={pageTitle} pageDescription={pageDescription} />
@@ -275,14 +275,13 @@ export default function DeclarationParticuliers({
               </p>
               <p>
                 Lorsque votre déclaration de revenu sera terminée, nous vous
-                acheminerons vos résultats ainsi que votre
-                dossier par le même biais que vous nous les aviez envoyés.
-                Nous vous fournirons également une
-                explication sommaire de vos résultats ainsi que des
-                recommandations personnalisées pour économiser de
-                l'impôt l'année suivante. Nous transmettrons ensuite votre
-                déclaration au gouvernement par le biais du
-                service de déclaration en ligne TED.
+                acheminerons vos résultats ainsi que votre dossier par le même
+                biais que vous nous les aviez envoyés. Nous vous fournirons
+                également une explication sommaire de vos résultats ainsi que
+                des recommandations personnalisées pour économiser de l'impôt
+                l'année suivante. Nous transmettrons ensuite votre déclaration
+                au gouvernement par le biais du service de déclaration en ligne
+                TED.
               </p>
             </div>
           </div>
@@ -338,8 +337,8 @@ export default function DeclarationParticuliers({
               <p>
                 Nous vous remercions de nous avoir fait confiance pour votre
                 déclaration d'Impôts cette année et nous nous tenons à votre
-                disposition si vous avez besoin d'information supplémentaire
-                sur votre déclaration.
+                disposition si vous avez besoin d'information supplémentaire sur
+                votre déclaration.
               </p>
             </div>
 
@@ -348,7 +347,6 @@ export default function DeclarationParticuliers({
             </CustomNavLink>
           </div>
         </div>
-
       </div>
     </div>
   );

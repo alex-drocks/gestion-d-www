@@ -15,11 +15,11 @@ import matt from "../../images/matt-bio.webp";
 import graphiqueClients from "../../images/graphique-clients-2019.webp";
 
 export default function About({
-  pageTitle,
-  pageDescription,
-  nombreClients,
-  establishedDate,
-}) {
+                                pageTitle,
+                                pageDescription,
+                                nombreClients,
+                                establishedDate
+                              }) {
   return (
     <div className="route-container container">
       <Banner pageTitle={pageTitle} pageDescription={pageDescription} />
@@ -95,20 +95,6 @@ export default function About({
           dans son travail et habile pour communiquer.
         </Bio>
         <Bio
-          image={alex}
-          name="Alexandre Desroches"
-          role="TENUE DE LIVRES, DÉVELOPPEMENT INFORMATIQUE"
-        >
-          Alexandre détient une attestation professionnelle en comptabilité et
-          s'occupe de la tenue de livres de plus de 60 entreprises. Il est
-          rapide, perfectionniste et capable de trouver des solutions pour
-          améliorer la situation de ses clients. Il est également passionné par
-          la programmation et la musique. Il développe actuellement un logiciel
-          de tenue de livres simplifiée pour les petites entreprises du Québec.
-          Vous pouvez visiter son site pour le logiciel Finance D, ou celui du
-          studio D Rocks Records.
-        </Bio>
-        <Bio
           image={matt}
           name="Matthieu Desroches"
           role="COMPTABLE, IMPÔTS DES PARTICULIERS"
@@ -118,7 +104,26 @@ export default function About({
           Comptables qu'il a décroché à l'École des Sciences de la Gestion et se
           spécialise aujourd'hui dans les déclarations d'impôts de particuliers.
           Matthieu est également formateur en organisation et gestion du temps
-          et publie des articles chaque semaine sur son blog.
+          et publie des articles/podcasts chaque semaine sur {" "}
+          <a href="https://matthieudesroches.com/" className="blue-text text-link no-wrap">
+            son site internet
+          </a>.
+        </Bio>
+        <Bio
+          image={alex}
+          name="Alexandre Desroches"
+          role="TENUE DE LIVRES, DÉVELOPPEMENT INFORMATIQUE & LOGICIEL FINANCE D"
+        >
+          Alexandre détient une attestation professionnelle en comptabilité et
+          s'occupe de la tenue de livres de plus de 60 entreprises. Il est
+          rapide, innovateur, perfectionniste et capable de trouver des solutions
+          pour améliorer la situation de ses clients. Il est également passionné
+          par la programmation. Son logiciel de facturation et tenue de livres
+          a été conçu d'après son expérience chez Gestion Desroches et est
+          accessible à partir de {" "}
+          <a href="https://finance-d.com/" className="blue-text text-link no-wrap">
+            Finance-D.com
+          </a>.
         </Bio>
       </div>
 
