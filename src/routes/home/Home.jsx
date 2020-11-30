@@ -79,7 +79,7 @@ export default function Home({
               plus de {nombreClients} personnes à chaque année.
             </p>
             <CustomNavLink
-              to="/impots-particuliers"
+              to="/services/impots-particuliers"
               className="text-link blue-text"
             >
               Impôts de particuliers
@@ -95,7 +95,7 @@ export default function Home({
               (provincial).
             </p>
             <CustomNavLink
-              to="/impots-societes"
+              to="/services/impots-societes"
               className="text-link blue-text"
             >
               Impôts de sociétés
@@ -111,13 +111,16 @@ export default function Home({
               comptabilité.
             </p>
             <CustomNavLink
-              to="/comptabilite-entreprise"
+              to="/services/comptabilite-entreprises"
               className="text-link blue-text"
             >
               Comptabilité d'entreprise
             </CustomNavLink>
           </div>
         </div>
+        <CustomNavLink to="/services">
+          <button>Voir tous nos services</button>
+        </CustomNavLink>
       </div>
 
       <Quote author="Jean Yanne">

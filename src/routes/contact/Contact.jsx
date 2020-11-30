@@ -12,23 +12,26 @@ export default function Contact({ pageTitle, pageDescription }) {
 
       <div className="content-block spacer-top">
         <div className="flex-col flex-col--50w flex--justify-left">
-          <h2>Contactez-nous.</h2>
+          <h2>Contactez-nous</h2>
           <p>
-            Si vous avez besoin de plus d'informations concernant nos différents
-            services, n'hésitez pas à nous contacter directement ou avec le
-            formulaire ci-dessous. Nous nous ferons un grand plaisir de vous
+            Pour nous contacter ou obtenir plus d'informations,
+            n'hésitez pas à utiliser le formulaire ci-dessous.
+            Il s'agit du moyen le plus efficace pour nous.
+            Autrement, vous pouvez aussi nous joindre avec nos
+            coordonnées directes.
+            Il nous fera plaisir de vous
             répondre dans les plus brefs délais.
           </p>
-          <ContactezNous
-            renderTitle={false}
-            renderDirects={false}
-            renderParagraph={false}
-            renderNotification={true}
-            renderLink={false}
-          />
+          {/*<ContactezNous*/}
+          {/*  renderTitle={false}*/}
+          {/*  renderDirects={false}*/}
+          {/*  renderParagraph={false}*/}
+          {/*  renderNotification={true}*/}
+          {/*  renderLink={false}*/}
+          {/*/>*/}
           <ContactForm
             fetchUrl="https://gestiond.finance-d.com/api/submit-contact-form.php"
-            classNames={"flex-col"}
+            classNames={"spacer-top flex-col"}
           />
         </div>
 
@@ -37,7 +40,7 @@ export default function Contact({ pageTitle, pageDescription }) {
             renderTitle={false}
             renderDirects={true}
             renderParagraph={false}
-            renderNotification={false}
+            renderNotification={true}
             renderLink={false}
           />
         </div>

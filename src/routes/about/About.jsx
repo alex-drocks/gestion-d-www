@@ -14,11 +14,11 @@ import Quote from "../../Components/Quote/Quote";
 import CustomNavLink from "../../Components/CustomNavLink/CustomNavLink";
 
 export default function About({
-                                pageTitle,
-                                pageDescription,
-                                nombreClients,
-                                establishedDate
-                              }) {
+  pageTitle,
+  pageDescription,
+  nombreClients,
+  establishedDate,
+}) {
   return (
     <div className="route-container container">
       <Banner pageTitle={pageTitle} pageDescription={pageDescription} />
@@ -128,7 +128,6 @@ export default function About({
           <button>Voir nos services</button>
         </CustomNavLink>
       </div>
-
     </div>
   );
 }

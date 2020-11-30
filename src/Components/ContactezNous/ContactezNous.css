@@ -2,14 +2,29 @@
   margin-top: calc(2.1rem * 0.83 + 18px);
 }
 
+.coordonnees {
+  font-size: 18px;
+}
+
 .info-item {
   display: flex;
   align-items: center;
   justify-content: flex-start;
   flex-wrap: nowrap;
+  margin-bottom: 12px;
 }
 
 .info-item svg {
   margin-top: 0.1em;
-  margin-right: 10px;
+  margin-right: 12px;
+}
+
+.info-item--margin-top {
+  margin-top: calc(2.1rem * 0.83 + 18px);
+}
+
+@media screen and (max-width: 320px) {
+  .coordonnees {
+    font-size: 16px;
+  }
 }

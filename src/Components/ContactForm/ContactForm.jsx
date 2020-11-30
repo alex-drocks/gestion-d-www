@@ -60,6 +60,7 @@ export default function ContactForm({ classNames, fetchUrl }) {
       action=""
       onSubmit={onSubmit}
     >
+      <h2>Formulaire de contact</h2>
       {/*Nom complet*/}
       <div className="form-field contact--nom flex-col flex-col--100w">
         <h3 className="form-field--title">Nom complet:</h3>

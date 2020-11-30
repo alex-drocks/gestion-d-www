@@ -137,7 +137,7 @@ export default function Liens({ pageTitle, pageDescription }) {
                 />
                 <br />
                 <br />
-                Finance D
+                Logiciel Finance D
               </a>
             </p>
           </div>

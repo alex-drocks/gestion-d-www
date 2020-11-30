@@ -11,7 +11,11 @@ export default function CustomNavLink(props) {
     const navLinks = document.querySelectorAll("nav a.custom-router-link");
     if (navLinks && navLinks.length) {
       navLinks.forEach((a) => {
-        if (a.dataset.pathname === location.pathname) {
+        console.log(a.dataset.pathname);
+        const link = a.dataset.pathname;
+        const isExactPath = link === location.pathname;
+        const isSubRoute = location.pathname.includes(link) && link !== "/";
+        if (isExactPath || isSubRoute) {
           // Set active link class
           !a.classList.contains("active") && a.classList.add("active");
         } else {

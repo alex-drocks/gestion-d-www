@@ -28,15 +28,6 @@ export default function Footer({ copyrightName, establishedDate }) {
           <CustomNavLink to="/">Accueil</CustomNavLink>
           <CustomNavLink to="/a-propos">À propos de nous</CustomNavLink>
           <CustomNavLink to="/services">Services</CustomNavLink>
-          {/*<CustomNavLink to="/impots-particuliers">*/}
-          {/*  Impôts de particuliers*/}
-          {/*</CustomNavLink>*/}
-          {/*<CustomNavLink to="/impots-societes">*/}
-          {/*  Impôts de sociétés*/}
-          {/*</CustomNavLink>*/}
-          {/*<CustomNavLink to="/comptabilite-entreprises">*/}
-          {/*  Comptabilité d'entreprise*/}
-          {/*</CustomNavLink>*/}
           <CustomNavLink to="/liens">Liens utiles</CustomNavLink>
           <CustomNavLink to="/contact">Contactez-nous</CustomNavLink>
           <a href="https://calendly.com/danieldesroches/30min">
