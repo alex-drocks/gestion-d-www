@@ -74,7 +74,7 @@ export default function Liens({ pageTitle, pageDescription }) {
           </ul>
         </div>
         <div className="flex-col flex-col--40w flex-margin-left--10w flex--justify-left">
-          <h2>Sites gouvernementaux</h2>
+          <h2>Sites du gouvernement</h2>
           <ul>
             <li>
               <a
@@ -127,7 +127,7 @@ export default function Liens({ pageTitle, pageDescription }) {
               les aspects plus complexes de votre comptabilité d'entreprise.
               <br />
               <br />
-              <a className="blue-text text-link" href="https://finance-d.com">
+              <a className="blue-text" href="https://finance-d.com">
                 <LazyImage
                   classNames={"finance-d-screenshot"}
                   height={1040}
@@ -137,7 +137,7 @@ export default function Liens({ pageTitle, pageDescription }) {
                 />
                 <br />
                 <br />
-                Logiciel Finance D
+                <button>Logiciel Finance D</button>
               </a>
             </p>
           </div>
