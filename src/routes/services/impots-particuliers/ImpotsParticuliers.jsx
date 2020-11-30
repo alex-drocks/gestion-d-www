@@ -1,9 +1,8 @@
 import React from "react";
-import "./ImpotsParticuliers.css";
 
 //Components
-import Banner from "../../Components/Banner/Banner";
-import CustomNavLink from "../../Components/CustomNavLink/CustomNavLink";
+import Banner from "../../../Components/Banner/Banner";
+import CustomNavLink from "../../../Components/CustomNavLink/CustomNavLink";
 
 
 export default function ImpotsParticuliers({
@@ -29,8 +28,11 @@ export default function ImpotsParticuliers({
               (célibataire, couple, nouvel arrivant,
               travailleur autonome, etc.).
             </p>
-            <div className="content-block spacer-top">
-              <h2>Tarifs impôts des particuliers</h2>
+
+            <div className="content-block spacer-top flex-card-border-top ">
+              <div className="flex-card-border-top--title">
+                <h2>Tarifs impôts des particuliers</h2>
+              </div>
               <div className="flex-col--100w">
                 <h3>Étudiant | 60$</h3>
                 <p>
@@ -82,11 +84,16 @@ export default function ImpotsParticuliers({
                   Personne ayant un ou plusieurs immeubles à revenu.
                 </p>
               </div>
+              <div className="content-block">
+                <CustomNavLink to="/contact">
+                  <button>Contactez-nous</button>
+                </CustomNavLink>
+              </div>
             </div>
           </div>
         </div>
-        <div className="flex-col flex-col--40w flex-margin-left--10w flex--justify-left">
-          <div className="content-block">
+        <div className="flex-col flex-col--40w flex-margin-left--10w flex--justify-left flex-card-border-top">
+          <div className="content-block flex-card-border-top--title">
             <h2>Faites vos impôts en 4 étapes</h2>
             <div className="flex-col--100w">
               <h3>Étape 1: Remplir le questionnaire d'impôts</h3>
@@ -132,17 +139,23 @@ export default function ImpotsParticuliers({
               </p>
             </div>
 
-
+            <div className="content-block spacer-top">
+              <h2>Prêt à faire vos impôts?</h2>
+              <p>
+                Appuyez sur le bouton ci-dessous afin de suivre les 4 étapes
+                qui vont vous aider à bien nous transmettre votre dossier pour
+                produire votre déclaration d'impôts.
+              </p>
+              <CustomNavLink to="/services/impots-particuliers/produire-declaration">
+                <button>Produire ma déclaration</button>
+              </CustomNavLink>
+            </div>
 
           </div>
         </div>
       </div>
 
-      <div className="content-block spacer-top force-flex-align-center">
-        <CustomNavLink to="/contact">
-          <button>Contactez-nous</button>
-        </CustomNavLink>
-      </div>
+
     </div>
   );
 }

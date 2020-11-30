@@ -1,0 +1,21 @@
+.etapes {
+  align-self: center;
+  justify-self: center;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+}
+
+.etapes .etape {
+  max-width: 820px;
+  border-top: 1px solid var(--light-gray);
+}
+
+.etapes .etape ul li {
+  margin-bottom: .5em;
+}
+
+.etapes .etape:not(:first-of-type) {
+  margin-top: var(--vertical-spacing);
+}
