@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import CustomNavLink from "../CustomNavLink/CustomNavLink";
 
 import "./Header.css";
-import logo from "../../images/Gestion-Desroches-Logo-hr.webp";
+import logo from "../../images/Gestion-Desroches-Logo-small.jpg";
 
 export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -20,8 +20,8 @@ export default function Header() {
           className={"branding-logo"}
           src={logo}
           alt="Logo"
-          width={1500}
-          height={304}
+          width={987}
+          height={200}
           onClick={() => isMobileMenuOpen && setIsMobileMenuOpen(false)}
         />
       </CustomNavLink>

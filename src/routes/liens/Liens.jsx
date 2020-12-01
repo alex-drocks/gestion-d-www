@@ -6,7 +6,7 @@ import Banner from "../../Components/Banner/Banner";
 import LazyImage from "../../Components/LazyImage/LazyImage";
 
 // Images
-import financeD from "../../images/Finance-D_PreviewRevenus.webp";
+import financeD from "../../images/25_previewRevenus.png";
 
 export default function Liens({ pageTitle, pageDescription }) {
   return (

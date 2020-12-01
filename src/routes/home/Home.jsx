@@ -6,7 +6,7 @@ import CustomNavLink from "../../Components/CustomNavLink/CustomNavLink";
 import Quote from "../../Components/Quote/Quote";
 
 // Images...
-import banner from "../../images/rapport_dimpots_quebec.webp";
+import banner from "../../images/rapport_dimpots_quebec.jpg";
 import ContactezNous from "../../Components/ContactezNous/ContactezNous";
 
 export default function Home({

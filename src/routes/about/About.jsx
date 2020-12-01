@@ -8,11 +8,11 @@ import CustomNavLink from "../../Components/CustomNavLink/CustomNavLink";
 import LazyImage from "../../Components/LazyImage/LazyImage";
 
 // Images
-import daniel from "../../images/daniel-bio.webp";
-import alex from "../../images/alex-bio.webp";
-import will from "../../images/will-bio.webp";
-import matt from "../../images/matt-bio.webp";
-import graphiqueClients from "../../images/graphique-clients-2019.webp";
+import daniel from "../../images/daniel-bio.png";
+import alex from "../../images/alex-bio.png";
+import will from "../../images/will-bio.png";
+import matt from "../../images/matt-bio.png";
+import graphiqueClients from "../../images/graphique-clients-2019.png";
 
 export default function About({
                                 pageTitle,

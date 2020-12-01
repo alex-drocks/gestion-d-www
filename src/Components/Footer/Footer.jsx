@@ -4,7 +4,7 @@ import "./Footer.css";
 import CustomNavLink from "../CustomNavLink/CustomNavLink";
 import LazyImage from "../LazyImage/LazyImage";
 
-import logo from "../../images/logo192.webp";
+import logo from "../../images/logo192.png";
 
 export default function Footer({ copyrightName, establishedDate }) {
   return (
