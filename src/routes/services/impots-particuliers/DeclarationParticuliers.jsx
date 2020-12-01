@@ -137,7 +137,7 @@ export default function DeclarationParticuliers({
                 liste:
               </h3>
               <p>
-                En vous servant la la liste de documents, rassemblez tous les
+                En vous servant de la liste de documents, rassemblez tous les
                 documents qui s'appliquent à votre situation et cochez les cases
                 pour vous aider à savoir où vous êtes rendus.
               </p>
