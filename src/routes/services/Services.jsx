@@ -3,6 +3,7 @@ import React from "react";
 // Components
 import Banner from "../../Components/Banner/Banner";
 import CustomNavLink from "../../Components/CustomNavLink/CustomNavLink";
+import ClickableServiceCard from "../../Components/ClickableServiceCard/ClickableServiceCard";
 
 export default function Services({
                                    pageTitle,
@@ -16,90 +17,56 @@ export default function Services({
 
       <div className="content-block spacer-top">
         <div className="flex-col flex-col--50w flex--justify-left">
-          <div className="content-block card">
-            <h2>Déclaration d'impôts de particuliers</h2>
-            <p>
-              Nous produisons des déclarations de revenus de particuliers depuis
-              plus de {new Date().getFullYear() - establishedDate} ans et aidons
-              plus de {nombreClients} personnes à chaque année.
-              <br />
-              <br />
-              <CustomNavLink
-                to="/services/impots-particuliers"
-                className="text-link blue-text"
-              >
-                Impôts particuliers
-              </CustomNavLink>
-            </p>
-          </div>
-          <div className="content-block card spacer-top">
-            <h2>Déclaration d'impôts de sociétés</h2>
-            <p>
-              Si vous êtes propriétaire d'une société incorporée, nous avons
-              l'expertise pour produire vos déclarations d'impôts T2 (fédéral)
-              et CO-17 (provincial). Nous sommes accrédités par l'Agence du
-              revenu du Canada et du Québec pour produire vos déclaration
-              d'impôts de sociétés.
-              <br />
-              <br />
-              <CustomNavLink
-                to="/services/impots-societes"
-                className="text-link blue-text"
-              >
-                Impôts de sociétés
-              </CustomNavLink>
-            </p>
-          </div>
-          <div className="content-block card spacer-top">
-            <h2>Comptabilité d'entreprise et tenue de livres</h2>
-            <p>
-              Si vous possédez une petite entreprise ou êtes un travailleur
-              autonome, nous pouvons prendre en charge la gestion de votre
-              comptabilité.
-              <br />
-              <br />
-              <CustomNavLink
-                to="/services/comptabilite-entreprises"
-                className="text-link blue-text"
-              >
-                Comptabilité
-              </CustomNavLink>
-            </p>
-          </div>
+          <ClickableServiceCard
+            serviceName="Déclaration d'impôts de particuliers"
+            linkText="Impôts particuliers"
+            linkTo="/services/impots-particuliers"
+            classNames=""
+          >
+            Nous produisons des déclarations de revenus de particuliers depuis
+            plus de {new Date().getFullYear() - establishedDate} ans et aidons
+            plus de {nombreClients} personnes à chaque année.
+          </ClickableServiceCard>
+          <ClickableServiceCard
+            serviceName="Déclaration d'impôts de sociétés"
+            linkText="Impôts de sociétés"
+            linkTo="/services/impots-societes"
+            classNames="spacer-top"
+          >
+            Si vous êtes propriétaire d'une société incorporée, nous avons
+            l'expertise pour produire vos déclarations d'impôts T2 (fédéral)
+            et CO-17 (provincial).
+          </ClickableServiceCard>
+          <ClickableServiceCard
+            serviceName="Comptabilité d'entreprise et tenue de livres"
+            linkText="Comptabilité"
+            linkTo="/services/comptabilite-entreprises"
+            classNames="spacer-top"
+          >
+            Si vous possédez une petite entreprise ou êtes un travailleur
+            autonome, nous pouvons prendre en charge la gestion de votre
+            comptabilité.
+          </ClickableServiceCard>
         </div>
         <div className="flex-col flex-col--40w flex-margin-left--10w flex--justify-left">
-          <div className="content-block card">
-            <h2>Création d'une incorporation</h2>
-            <p>
-              Nous offrons un service personnalisé pour la création d'entreprise
-              en vous accompagnant du début à la fin.
-              <br />
-              <br />
-              <CustomNavLink
-                // to="/services/succession"
-                to="/contact"
-                className="text-link blue-text"
-              >
-                Contactez-nous
-              </CustomNavLink>
-            </p>
-          </div>
-          <div className="content-block card spacer-top">
-            <h2>Services de succession</h2>
-            <p>
-              Nous pouvons prendre en charge un dossier de succession en nous
-              adaptant au cas par cas pour bien vous servir.
-              <br />
-              <br />
-              <CustomNavLink
-                // to="/services/succession"
-                to="/contact"
-                className="text-link blue-text"
-              >
-                Contactez-nous
-              </CustomNavLink>
-            </p>
-          </div>
+          <ClickableServiceCard
+            serviceName="Création d'une incorporation"
+            linkText="Contactez-nous"
+            linkTo="/contact"
+            classNames=""
+          >
+            Nous offrons un service personnalisé pour la création d'entreprise
+            en vous accompagnant du début à la fin.
+          </ClickableServiceCard>
+          <ClickableServiceCard
+            serviceName="Services de succession"
+            linkText="Contactez-nous"
+            linkTo="/contact"
+            classNames="spacer-top"
+          >
+            Nous pouvons prendre en charge un dossier de succession en nous
+            adaptant au cas par cas pour bien vous servir.
+          </ClickableServiceCard>
         </div>
       </div>
 

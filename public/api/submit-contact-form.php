@@ -68,8 +68,7 @@ echo (function () {
     // define sender address for the default php sendmail method otherwise it's financed@rockland.dns...
     $fdSendingAdress = '-f ne-pas-repondre@finance-d.com';
 
-    if (mail(
-        "alexandre_d_7@hotmail.com",
+    if (mail("daniel@gestiondesroches.com",
         "GestionDesroches.com - Formulaire de contact",
         $htmlMsg, $headers, $fdSendingAdress)
     ) {

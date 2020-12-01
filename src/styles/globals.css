@@ -127,7 +127,7 @@ body {
   margin-top: 0;
 }
 
-.flex-col a {
+.flex-col a:not(.card) {
   width: min-content;
 }
 
@@ -301,14 +301,17 @@ img.zoom-hover-fx:hover,
 
 .card {
   padding: 30px 35px 15px 35px;
-  min-height: 360px;
-  box-shadow: 1px 2px 7px rgba(0, 8, 27, 0.15);
+  min-height: 260px;
+  box-shadow: 1px 2px 7px rgba(0, 8, 27, 0.17);
   transition: all .2s;
+  width: 100%;
+  height: 100%;
 }
 
 .card:hover {
   box-shadow: 1px 1px 5px rgba(0, 8, 27, 0.5);
 }
+
 
 @keyframes fadeIn {
   0% {

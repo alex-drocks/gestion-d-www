@@ -10,7 +10,7 @@ function optimizeImages() {
         imagemin.mozjpeg({ quality: 82, progressive: true })
       ])
     )
-    .pipe(webp())
+    // .pipe(webp())
     .pipe(gulp.dest("src/images/"));
 }
 
