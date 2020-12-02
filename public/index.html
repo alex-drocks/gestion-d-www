@@ -1,13 +1,14 @@
 <!DOCTYPE html>
-<html lang="fr-CA">
+<html lang="%SNOWPACK_PUBLIC_LOCALE_LANG%">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>%SNOWPACK_PUBLIC_WEBSITE_NAME% | %SNOWPACK_PUBLIC_WEBSITE_DESCRIPTION%</title>
   <link rel="canonical" href="%SNOWPACK_PUBLIC_WEBSITE_URL%" />
-  <meta name="description" content="%SNOWPACK_PUBLIC_WEBSITE_DESCRIPTION%" />
+  <meta name="description" content="%SNOWPACK_PUBLIC_WEBSITE_LONG_DESCRIPTION%" />
 
   <meta property="og:site_name" content="%SNOWPACK_PUBLIC_WEBSITE_NAME% | %SNOWPACK_PUBLIC_WEBSITE_DESCRIPTION%" />
+  <meta property="og:locale" content="%SNOWPACK_PUBLIC_LOCALE_LANG%" />
   <meta property="og:title" content="%SNOWPACK_PUBLIC_WEBSITE_NAME% | %SNOWPACK_PUBLIC_WEBSITE_DESCRIPTION%">
   <meta property="og:url" content="%SNOWPACK_PUBLIC_WEBSITE_URL%">
   <meta property="og:type" content="website">
@@ -27,7 +28,6 @@
   <meta name="twitter:url" content="%SNOWPACK_PUBLIC_WEBSITE_URL%" />
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:description" content="%SNOWPACK_PUBLIC_WEBSITE_LONG_DESCRIPTION%" />
-  <meta name="description" content="%SNOWPACK_PUBLIC_WEBSITE_LONG_DESCRIPTION%" />
 
   <link rel="preload" as="font" type="font/woff2" href="%PUBLIC_URL%/fonts/Calluna-Regular.woff2" crossorigin="anonymous" />
   <link rel="preload" as="font" type="font/woff2" href="%PUBLIC_URL%/fonts/open-sans-v18-latin-700.woff2" crossorigin="anonymous" />
