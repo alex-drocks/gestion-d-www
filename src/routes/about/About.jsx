@@ -15,11 +15,11 @@ import matt from "../../images/matt-bio.png";
 import graphiqueClients from "../../images/graphique-clients-2019.png";
 
 export default function About({
-                                pageTitle,
-                                pageDescription,
-                                nombreClients,
-                                establishedDate
-                              }) {
+  pageTitle,
+  pageDescription,
+  nombreClients,
+  establishedDate,
+}) {
   return (
     <div className="route-container container">
       <Banner pageTitle={pageTitle} pageDescription={pageDescription} />
@@ -104,10 +104,14 @@ export default function About({
           Comptables qu'il a décroché à l'École des Sciences de la Gestion et se
           spécialise aujourd'hui dans les déclarations d'impôts de particuliers.
           Matthieu est également formateur en organisation et gestion du temps
-          et publie des articles/podcasts chaque semaine sur {" "}
-          <a href="https://matthieudesroches.com/" className="blue-text text-link no-wrap">
+          et publie des articles/podcasts chaque semaine sur{" "}
+          <a
+            href="https://matthieudesroches.com/"
+            className="blue-text text-link no-wrap"
+          >
             son site internet
-          </a>.
+          </a>
+          .
         </Bio>
         <Bio
           image={alex}
@@ -116,14 +120,18 @@ export default function About({
         >
           Alexandre détient une attestation professionnelle en comptabilité et
           s'occupe de la tenue de livres de plus de 60 entreprises. Il est
-          rapide, innovateur, perfectionniste et capable de trouver des solutions
-          pour améliorer la situation de ses clients. Il est également passionné
-          par la programmation. Son logiciel de facturation et tenue de livres
-          a été conçu d'après son expérience chez Gestion Desroches et est
-          accessible à partir de {" "}
-          <a href="https://finance-d.com/" className="blue-text text-link no-wrap">
+          rapide, innovateur, perfectionniste et capable de trouver des
+          solutions pour améliorer la situation de ses clients. Il est également
+          passionné par la programmation. Son logiciel de facturation et tenue
+          de livres a été conçu d'après son expérience chez Gestion Desroches et
+          est accessible à partir de{" "}
+          <a
+            href="https://finance-d.com/"
+            className="blue-text text-link no-wrap"
+          >
             Finance-D.com
-          </a>.
+          </a>
+          .
         </Bio>
       </div>
 

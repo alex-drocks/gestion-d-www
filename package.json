@@ -25,10 +25,10 @@
 		"react-router-dom": "^5.2.0"
 	},
 	"devDependencies": {
-		"@snowpack/plugin-dotenv": "^2.0.4",
-		"@snowpack/plugin-react-refresh": "^2.3.7",
-		"@snowpack/plugin-webpack": "^2.1.1",
-		"@snowpack/web-test-runner-plugin": "^0.1.4",
+		"@snowpack/plugin-dotenv": "^2.0.5",
+		"@snowpack/plugin-react-refresh": "^2.3.8",
+		"@snowpack/plugin-webpack": "^2.1.2",
+		"@snowpack/web-test-runner-plugin": "^0.1.5",
 		"@testing-library/react": "^11.2.2",
 		"@web/test-runner": "^0.10.0",
 		"chai": "^4.2.0",
@@ -38,6 +38,6 @@
 		"gulp-webp": "^4.0.1",
 		"prettier": "^2.2.1",
 		"react-snap": "^1.23.0",
-		"snowpack": "^2.17.1"
+		"snowpack": "^2.18.0"
 	}
 }

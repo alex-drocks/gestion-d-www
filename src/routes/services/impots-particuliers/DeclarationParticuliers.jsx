@@ -38,7 +38,7 @@ export default function DeclarationParticuliers({
               <a
                 href={
                   SNOWPACK_PUBLIC_WEBSITE_URL +
-                  "/documents/Questionnaire-impots.pdf"
+                  "/documents/Etape1_Questionnaire-impots.pdf"
                 }
               >
                 <button>Questionnaire d'impôts</button>
@@ -119,7 +119,7 @@ export default function DeclarationParticuliers({
               <a
                 href={
                   SNOWPACK_PUBLIC_WEBSITE_URL +
-                  "/documents/Liste-documents-a-fournir-pour-impots.pdf"
+                  "/documents/Etape2_Liste-Documents-a-Fournir.pdf"
                 }
               >
                 <button>Liste de documents</button>

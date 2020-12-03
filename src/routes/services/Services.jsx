@@ -6,11 +6,11 @@ import CustomNavLink from "../../Components/CustomNavLink/CustomNavLink";
 import ClickableServiceCard from "../../Components/ClickableServiceCard/ClickableServiceCard";
 
 export default function Services({
-                                   pageTitle,
-                                   pageDescription,
-                                   nombreClients,
-                                   establishedDate
-                                 }) {
+  pageTitle,
+  pageDescription,
+  nombreClients,
+  establishedDate,
+}) {
   return (
     <div className="route-container container page-services">
       <Banner pageTitle={pageTitle} pageDescription={pageDescription} />
@@ -34,8 +34,8 @@ export default function Services({
             classNames="spacer-top"
           >
             Si vous êtes propriétaire d'une société incorporée, nous avons
-            l'expertise pour produire vos déclarations d'impôts T2 (fédéral)
-            et CO-17 (provincial).
+            l'expertise pour produire vos déclarations d'impôts T2 (fédéral) et
+            CO-17 (provincial).
           </ClickableServiceCard>
           <ClickableServiceCard
             serviceName="Comptabilité d'entreprise et tenue de livres"

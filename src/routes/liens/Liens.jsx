@@ -15,9 +15,45 @@ export default function Liens({ pageTitle, pageDescription }) {
 
       <div className="content-block spacer-top">
         <div className="flex-col flex-col--50w flex--justify-left">
+          <h2>Sites du gouvernement</h2>
+          <ul className="spacer-bottom">
+            <li>
+              <a
+                className="blue-text text-link"
+                href="https://www.revenuquebec.ca/fr/"
+              >
+                Ministère du revenu du Québec
+              </a>
+            </li>
+            <li>
+              <a
+                className="blue-text text-link"
+                href="http://www.registreentreprises.gouv.qc.ca/fr/"
+              >
+                Registraire des entreprises du Québec
+              </a>
+            </li>
+            <li>
+              <a
+                className="blue-text text-link"
+                href="https://www.canada.ca/fr/agence-revenu.html"
+              >
+                Agence du revenu Canada
+              </a>
+            </li>
+            <li>
+              <a
+                className="blue-text text-link"
+                href="https://www.canada.ca/en/services/business.html"
+              >
+                Entreprises Canada
+              </a>
+            </li>
+          </ul>
+
           <h2>Numéros de téléphones</h2>
           GOUVERNEMENT DU QUÉBEC
-          <ul className="spacer-bottom">
+          <ul>
             <li>
               Revenu Québec (particuliers) |{" "}
               <span className="no-wrap">514-864-6299</span>
@@ -74,41 +110,18 @@ export default function Liens({ pageTitle, pageDescription }) {
           </ul>
         </div>
         <div className="flex-col flex-col--40w flex-margin-left--10w flex--justify-left">
-          <h2>Sites du gouvernement</h2>
+          <h2>Calculateur de taxes</h2>
           <ul>
             <li>
               <a
                 className="blue-text text-link"
-                href="https://www.revenuquebec.ca/fr/"
+                href="https://taxes.finance-d.com"
               >
-                Ministère du revenu du Québec
-              </a>
-            </li>
-            <li>
-              <a
-                className="blue-text text-link"
-                href="http://www.registreentreprises.gouv.qc.ca/fr/"
-              >
-                Registraire des entreprises du Québec
-              </a>
-            </li>
-            <li>
-              <a
-                className="blue-text text-link"
-                href="https://www.canada.ca/fr/agence-revenu.html"
-              >
-                Agence du revenu Canada
-              </a>
-            </li>
-            <li>
-              <a
-                className="blue-text text-link"
-                href="https://www.canada.ca/en/services/business.html"
-              >
-                Entreprises Canada
+                Calcul des taxes TPS/TVH et TVQ en ligne
               </a>
             </li>
           </ul>
+
           <div className="content-block spacer-top">
             <h2 className="flex-row">Logiciel de facturation</h2>
             <p>
@@ -141,10 +154,9 @@ export default function Liens({ pageTitle, pageDescription }) {
               </a>
             </p>
           </div>
+
         </div>
       </div>
-
-      <div className="content-block"></div>
     </div>
   );
 }
