@@ -1,52 +1,47 @@
 import React from "react";
-import LazyImage from "../LazyImage/LazyImage";
 
 import "./Banner.css";
+import ModernImage from "../ModernImage/ModernImage";
 
 export default function Banner({
-  image,
-  alt,
-  width,
-  height,
-  pageTitle,
-  pageDescription,
-}) {
-  return (
-    <div
-      className={
-        image
-          ? "has-image full-width banner-container zoom-hover-fx no-select"
-          : "full-width banner-container zoom-hover-fx no-select"
-      }
-    >
-      {image ? (
-        <LazyImage
-          src={image}
-          alt={alt}
-          classNames={"banner-image"}
-          width={width}
-          height={height}
-        />
-      ) : (
-        ""
-      )}
+                                 bgImage,
+                                 pageTitle,
+                                 pageDescription
+                               }) {
 
-      {pageTitle || pageDescription ? (
-        <div className="banner-text--container">
-          {pageTitle ? (
-            <h3 className="banner-text--page-title no-wrap">{pageTitle}</h3>
-          ) : (
-            ""
-          )}
-          {pageDescription ? (
-            <h1 className="banner-text--page-description">{pageDescription}</h1>
-          ) : (
-            ""
-          )}
+  const renderBgImage = bgImage && typeof bgImage === "object";
+  const containerClassNames = renderBgImage
+    ? "full-width banner-container zoom-hover-fx no-select has-image"
+    : "full-width banner-container zoom-hover-fx no-select";
+
+  return (
+    <div className={containerClassNames}>
+      {renderBgImage
+        ? <ModernImage
+          lazyload={false}
+          cancelInitialGrowFx={true}
+          srcWebp={bgImage.srcWebp}
+          srcFallback={bgImage.srcFallback}
+          altText={bgImage.alt}
+          width={bgImage.width}
+          height={bgImage.height}
+          classNames="banner-image" />
+        : null
+      }
+
+      {pageTitle || pageDescription
+        ? <div className="banner-text--container">
+          {pageTitle
+            ? <h3 className="banner-text--page-title no-wrap">{pageTitle}</h3>
+            : null
+          }
+          {pageDescription
+            ? <h1 className="banner-text--page-description">{pageDescription}</h1>
+            : null
+          }
         </div>
-      ) : (
-        ""
-      )}
+        : null
+      }
     </div>
   );
 }

@@ -4,26 +4,30 @@ import React from "react";
 import Banner from "../../Components/Banner/Banner";
 import CustomNavLink from "../../Components/CustomNavLink/CustomNavLink";
 import Quote from "../../Components/Quote/Quote";
-
-// Images...
-import banner from "../../images/rapport_dimpots_quebec.jpg";
 import ContactezNous from "../../Components/ContactezNous/ContactezNous";
 
+// Images...
+import bannerBackgroundWebp from "../../images/rapport_dimpots_quebec.webp";
+import bannerBackgroundFallback from "../../images/rapport_dimpots_quebec.jpg";
+
 export default function Home({
-  pageTitle,
-  pageDescription,
-  nombreClients,
-  establishedDate,
-}) {
+                               pageTitle,
+                               pageDescription,
+                               nombreClients,
+                               establishedDate
+                             }) {
   return (
     <div className="route-container container">
       <Banner
-        image={banner}
-        alt="Un comptable au travail"
-        width={2000}
-        height={800}
         pageTitle={pageTitle}
         pageDescription={pageDescription}
+        bgImage={{
+          srcWebp: bannerBackgroundWebp,
+          srcFallback: bannerBackgroundFallback,
+          alt: "Un comptable au travail",
+          width: 2000,
+          height: 800
+        }}
       />
       <div className="content-block spacer-top">
         <div className="flex-col flex-col--50w flex--justify-left">
