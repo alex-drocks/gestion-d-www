@@ -1,0 +1,14 @@
+.lazy-image.loaded:not(.has-error) {
+  transition: opacity .5s ease-in, transform .7s;
+  opacity: 1;
+}
+
+.lazy-image.zoom-hover-fx:not(is-full-width):hover {
+  transform: scale(1.015);
+  transform-origin: 50% 50%;
+}
+
+.lazy-image.zoom-hover-fx.is-full-width:hover {
+  transform: scale(1);
+  transform-origin: 50% 50%;
+}

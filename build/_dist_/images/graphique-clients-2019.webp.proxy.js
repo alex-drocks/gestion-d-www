@@ -1,0 +1,1 @@
+export default "/_dist_/images/graphique-clients-2019.webp";

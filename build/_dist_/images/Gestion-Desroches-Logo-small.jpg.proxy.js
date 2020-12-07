@@ -1,0 +1,1 @@
+export default "/_dist_/images/Gestion-Desroches-Logo-small.jpg";

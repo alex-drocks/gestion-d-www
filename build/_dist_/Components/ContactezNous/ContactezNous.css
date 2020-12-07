@@ -1,0 +1,31 @@
+.contactez-nous p {
+  margin-top: calc(2.1rem * 0.83 + 18px);
+}
+
+.contactez-nous .coordonnees, .link-rendez-vous {
+  font-size: 18px;
+}
+
+.contactez-nous .info-item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  margin-bottom: 12px;
+}
+
+.contactez-nous .info-item svg,
+.contactez-nous .link-rendez-vous svg {
+  margin-top: 0.11em;
+  margin-right: 12px;
+}
+
+.contactez-nous .info-item--margin-top {
+  margin-top: calc(2.1rem * 0.83 + 18px);
+}
+
+@media screen and (max-width: 320px) {
+  .contactez-nous .coordonnees, .link-rendez-vous {
+    font-size: 16px;
+  }
+}
