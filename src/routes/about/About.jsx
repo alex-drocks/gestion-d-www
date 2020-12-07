@@ -5,21 +5,26 @@ import Banner from "../../Components/Banner/Banner";
 import Bio from "../../Components/Bio/Bio";
 import Quote from "../../Components/Quote/Quote";
 import CustomNavLink from "../../Components/CustomNavLink/CustomNavLink";
-import LazyImage from "../../Components/LazyImage/LazyImage";
+import ModernImage from "../../Components/ModernImage/ModernImage";
 
 // Images
 import daniel from "../../images/daniel-bio.png";
+import danielWebp from "../../images/daniel-bio.webp";
 import alex from "../../images/alex-bio.png";
+import alexWebp from "../../images/alex-bio.webp";
 import will from "../../images/will-bio.png";
+import willWebp from "../../images/will-bio.webp";
 import matt from "../../images/matt-bio.png";
+import mattWebp from "../../images/matt-bio.webp";
 import graphiqueClients from "../../images/graphique-clients-2019.png";
+import graphiqueClientsWebp from "../../images/graphique-clients-2019.webp";
 
 export default function About({
-  pageTitle,
-  pageDescription,
-  nombreClients,
-  establishedDate,
-}) {
+                                pageTitle,
+                                pageDescription,
+                                nombreClients,
+                                establishedDate
+                              }) {
   return (
     <div className="route-container container">
       <Banner pageTitle={pageTitle} pageDescription={pageDescription} />
@@ -52,12 +57,15 @@ export default function About({
         <div className="flex-col flex-col--40w flex-margin-left--10w flex--justify-left">
           <h2>Croissance de notre clientèle</h2>
           <p>
-            <LazyImage
-              src={graphiqueClients}
-              alt={"Graphique de nos clients"}
+            <ModernImage
+              lazyload={false}
+              altText={"Graphique de nos clients"}
+              classNames={"graphique-clients"}
+              srcWebp={graphiqueClientsWebp}
+              srcFallback={graphiqueClients}
+              cancelInitialGrowFx={true}
               width={781}
               height={390}
-              classNames="graphique-clients"
             />
           </p>
         </div>
@@ -69,7 +77,7 @@ export default function About({
         </div>
 
         <Bio
-          image={daniel}
+          image={{ webp: danielWebp, fallback: daniel }}
           name="Daniel Desroches"
           role="PRÉSIDENT & FONDATEUR"
         >
@@ -81,7 +89,7 @@ export default function About({
           aujourd'hui plus de {nombreClients} clients satisfaits.
         </Bio>
         <Bio
-          image={will}
+          image={{ webp: willWebp, fallback: will }}
           name="William Desroches"
           role="SERVICE DE PAIE, TENUE DE LIVRES, IMPÔTS DES PARTICULIERS"
         >
@@ -95,7 +103,7 @@ export default function About({
           dans son travail et habile pour communiquer.
         </Bio>
         <Bio
-          image={matt}
+          image={{ webp: mattWebp, fallback: matt }}
           name="Matthieu Desroches"
           role="COMPTABLE, IMPÔTS DES PARTICULIERS"
         >
@@ -114,7 +122,7 @@ export default function About({
           .
         </Bio>
         <Bio
-          image={alex}
+          image={{ webp: alexWebp, fallback: alex }}
           name="Alexandre Desroches"
           role="TENUE DE LIVRES, DÉVELOPPEMENT INFORMATIQUE & LOGICIEL FINANCE D"
         >
