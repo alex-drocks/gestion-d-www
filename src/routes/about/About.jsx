@@ -20,11 +20,11 @@ import graphiqueClients from "../../images/graphique-clients-2019.png";
 import graphiqueClientsWebp from "../../images/graphique-clients-2019.webp";
 
 export default function About({
-                                pageTitle,
-                                pageDescription,
-                                nombreClients,
-                                establishedDate
-                              }) {
+  pageTitle,
+  pageDescription,
+  nombreClients,
+  establishedDate,
+}) {
   return (
     <div className="route-container container">
       <Banner pageTitle={pageTitle} pageDescription={pageDescription} />

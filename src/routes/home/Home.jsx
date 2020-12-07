@@ -11,11 +11,11 @@ import bannerBackgroundWebp from "../../images/rapport_dimpots_quebec.webp";
 import bannerBackgroundFallback from "../../images/rapport_dimpots_quebec.jpg";
 
 export default function Home({
-                               pageTitle,
-                               pageDescription,
-                               nombreClients,
-                               establishedDate
-                             }) {
+  pageTitle,
+  pageDescription,
+  nombreClients,
+  establishedDate,
+}) {
   return (
     <div className="route-container container">
       <Banner
@@ -26,7 +26,7 @@ export default function Home({
           srcFallback: bannerBackgroundFallback,
           alt: "Un comptable au travail",
           width: 2000,
-          height: 800
+          height: 800,
         }}
       />
       <div className="content-block spacer-top">

@@ -46,12 +46,14 @@
   text-shadow: none;
 }
 
-.banner-container.has-image .banner-image,
+.banner-container.has-image picture,
+.banner-container.has-image picture img.banner-image,
 .banner-text--container {
   position: absolute;
 }
 
-.banner-container.has-image .banner-image {
+.banner-container.has-image picture,
+.banner-container.has-image picture img.banner-image {
   width: inherit;
   height: inherit;
   min-width: inherit;
@@ -106,6 +108,7 @@ h3.banner-text--page-title {
   h2.banner-text--page-title {
     font-size: 14px;
   }
+
   .banner-container:not(.has-image) .banner-text--container {
     justify-content: center;
   }
@@ -115,6 +118,7 @@ h3.banner-text--page-title {
   h2.banner-text--page-title {
     font-size: 13px;
   }
+
   .banner-container:not(.has-image) .banner-text--container {
     justify-content: flex-end;
   }

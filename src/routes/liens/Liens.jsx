@@ -3,10 +3,11 @@ import "./Liens.css";
 
 // Components
 import Banner from "../../Components/Banner/Banner";
-import LazyImage from "../../Components/LazyImage/LazyImage";
 
 // Images
-import financeD from "../../images/25_previewRevenus.png";
+import financeDWebp from "../../images/25_previewRevenus.webp";
+import financeDFallback from "../../images/25_previewRevenus.png";
+import ModernImage from "../../Components/ModernImage/ModernImage";
 
 export default function Liens({ pageTitle, pageDescription }) {
   return (
@@ -50,7 +51,6 @@ export default function Liens({ pageTitle, pageDescription }) {
               </a>
             </li>
           </ul>
-
           <h2>Numéros de téléphones</h2>
           GOUVERNEMENT DU QUÉBEC
           <ul>
@@ -141,12 +141,15 @@ export default function Liens({ pageTitle, pageDescription }) {
               <br />
               <br />
               <a className="blue-text" href="https://finance-d.com">
-                <LazyImage
+                <ModernImage
+                  lazyload={true}
+                  srcWebp={financeDWebp}
+                  srcFallback={financeDFallback}
                   classNames={"finance-d-screenshot"}
                   height={1040}
                   width={1920}
-                  src={financeD}
-                  alt={"Logiciel Finance D"}
+                  cancelInitialGrowFx={true}
+                  altText={"Logiciel Finance D"}
                 />
                 <br />
                 <br />
@@ -154,7 +157,6 @@ export default function Liens({ pageTitle, pageDescription }) {
               </a>
             </p>
           </div>
-
         </div>
       </div>
     </div>

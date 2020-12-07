@@ -3,7 +3,6 @@ import "./Bio.css";
 
 import ModernImage from "../ModernImage/ModernImage";
 
-
 export default function Bio(props) {
   return (
     <div className="bio-container flex-row flex-card-border-top">
