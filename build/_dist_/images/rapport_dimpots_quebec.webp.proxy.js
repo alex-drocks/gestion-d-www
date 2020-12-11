@@ -1,1 +1,0 @@
-export default "/_dist_/images/rapport_dimpots_quebec.webp";

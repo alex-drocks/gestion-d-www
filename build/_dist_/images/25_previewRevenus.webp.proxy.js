@@ -1,1 +1,0 @@
-export default "/_dist_/images/25_previewRevenus.webp";
