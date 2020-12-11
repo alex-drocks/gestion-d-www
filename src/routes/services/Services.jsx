@@ -1,16 +1,27 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 // Components
 import Banner from "../../Components/Banner/Banner";
 import CustomNavLink from "../../Components/CustomNavLink/CustomNavLink";
 import ClickableServiceCard from "../../Components/ClickableServiceCard/ClickableServiceCard";
+import headInjector from "../../functions/headInjector";
 
 export default function Services({
-  pageTitle,
-  pageDescription,
-  nombreClients,
-  establishedDate,
-}) {
+                                   pageTitle,
+                                   pageDescription,
+                                   nombreClients,
+                                   establishedDate
+                                 }) {
+  useEffect(() => {
+    headInjector({
+      pageTitle: "Services",
+      metaDescription: "Gestion Desroches offre des services spécialisés de: " +
+        "déclaration d'impôts de particuliers et de sociétés,comptabilité d'entreprise " +
+        "et tenue de livres, création d'incorporation, prise en charge de " +
+        "succession.",
+      canonicalLink: import.meta.env.SNOWPACK_PUBLIC_WEBSITE_URL + "/services"
+    });
+  }, []);
   return (
     <div className="route-container container page-services">
       <Banner pageTitle={pageTitle} pageDescription={pageDescription} />
