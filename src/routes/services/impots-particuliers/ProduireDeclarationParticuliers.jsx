@@ -10,7 +10,7 @@ import headInjector from "../../../functions/headInjector";
 // Meta data from .env file
 const { SNOWPACK_PUBLIC_WEBSITE_URL } = import.meta.env;
 
-export default function DeclarationParticuliers({
+export default function ProduireDeclarationParticuliers({
                                                   pageTitle,
                                                   pageDescription,
                                                   nombreClients,
@@ -24,7 +24,7 @@ export default function DeclarationParticuliers({
         "Étape #2: Préparez votre dossier. " +
         "Étape #3: Transmettre votre dossier. " +
         "Étape #4: Recevoir vos résultats et effectuer le paiement.",
-      canonicalLink:SNOWPACK_PUBLIC_WEBSITE_URL + "/services/impots-particuliers/produire-declaration"
+      canonicalLink: SNOWPACK_PUBLIC_WEBSITE_URL + "/services/impots-particuliers/produire-declaration"
     });
   }, []);
   return (

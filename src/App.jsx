@@ -17,8 +17,8 @@ const Services = lazy(() => import("./routes/services/Services"));
 const ImpotsParticuliers = lazy(() =>
   import("./routes/services/impots-particuliers/ImpotsParticuliers"),
 );
-const DeclarationParticuliers = lazy(() =>
-  import("./routes/services/impots-particuliers/DeclarationParticuliers"),
+const ProduireDeclarationParticuliers = lazy(() =>
+  import("./routes/services/impots-particuliers/ProduireDeclarationParticuliers"),
 );
 const ImpotsSocietes = lazy(() =>
   import("./routes/services/impots-societes/ImpotsSocietes"),
@@ -50,10 +50,10 @@ export default function App() {
                 establishedDate={SNOWPACK_PUBLIC_ESTABLISHED_DATE}
               />
             </Route>
-            <Route exact path="/services">
-              <Services
-                pageTitle="Services"
-                pageDescription="Nos principaux services"
+            <Route exact path="/services/impots-particuliers/produire-declaration">
+              <ProduireDeclarationParticuliers
+                pageTitle="Produire ma déclaration"
+                pageDescription="Les 4 étapes pour produire vos impôts"
                 nombreClients={SNOWPACK_PUBLIC_NOMBRE_CLIENTS}
                 establishedDate={SNOWPACK_PUBLIC_ESTABLISHED_DATE}
               />
@@ -62,17 +62,6 @@ export default function App() {
               <ImpotsParticuliers
                 pageTitle="Impôts des particuliers"
                 pageDescription="Déclaration d'impôts des particuliers"
-                nombreClients={SNOWPACK_PUBLIC_NOMBRE_CLIENTS}
-                establishedDate={SNOWPACK_PUBLIC_ESTABLISHED_DATE}
-              />
-            </Route>
-            <Route
-              exact
-              path="/services/impots-particuliers/produire-declaration"
-            >
-              <DeclarationParticuliers
-                pageTitle="Produire ma déclaration"
-                pageDescription="Les 4 étapes pour produire vos impôts"
                 nombreClients={SNOWPACK_PUBLIC_NOMBRE_CLIENTS}
                 establishedDate={SNOWPACK_PUBLIC_ESTABLISHED_DATE}
               />
@@ -89,6 +78,14 @@ export default function App() {
               <ComptabiliteEntreprises
                 pageTitle="COMPTABILITÉ D'ENTREPRISE"
                 pageDescription="Services comptables pour entreprises"
+                nombreClients={SNOWPACK_PUBLIC_NOMBRE_CLIENTS}
+                establishedDate={SNOWPACK_PUBLIC_ESTABLISHED_DATE}
+              />
+            </Route>
+            <Route exact path="/services">
+              <Services
+                pageTitle="Services"
+                pageDescription="Nos principaux services"
                 nombreClients={SNOWPACK_PUBLIC_NOMBRE_CLIENTS}
                 establishedDate={SNOWPACK_PUBLIC_ESTABLISHED_DATE}
               />
