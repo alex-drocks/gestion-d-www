@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 
 // Components
 import Banner from "../../Components/Banner/Banner";
@@ -18,6 +18,7 @@ import matt from "../../images/matt-bio.png";
 import mattWebp from "../../images/matt-bio.webp";
 import graphiqueClients from "../../images/graphique-clients-2019.png";
 import graphiqueClientsWebp from "../../images/graphique-clients-2019.webp";
+import headInjector from "../../functions/headInjector";
 
 export default function About({
   pageTitle,
@@ -25,6 +26,17 @@ export default function About({
   nombreClients,
   establishedDate,
 }) {
+  useEffect(() => {
+    headInjector({
+      pageTitle: "À propos",
+      metaDescription: "Gestion Desroches Inc., est une société familiale de " +
+        "services comptables établie et dirigée par Daniel Desroches, expert " +
+        "dans le domaine de la comptabilité depuis plus de 16 ans. Fondée en " +
+        "2004, l'entreprise familiale sert aujourd'hui plus de1300 particuliers " +
+        "et entreprises par année.",
+      canonicalLink: import.meta.env.SNOWPACK_PUBLIC_WEBSITE_URL + "/a-propos"
+    })
+  }, [])
   return (
     <div className="route-container container">
       <Banner pageTitle={pageTitle} pageDescription={pageDescription} />

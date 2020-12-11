@@ -1,8 +1,9 @@
-import React from "react";
+import React, {useEffect} from "react";
 
 //Components
 import Banner from "../../../Components/Banner/Banner";
 import CustomNavLink from "../../../Components/CustomNavLink/CustomNavLink";
+import headInjector from "../../../functions/headInjector";
 
 export default function ImpotsSocietes({
   pageTitle,
@@ -10,6 +11,16 @@ export default function ImpotsSocietes({
   nombreClients,
   establishedDate,
 }) {
+  useEffect(() => {
+    headInjector({
+      pageTitle: "Impôts sociétés",
+      metaDescription: "Depuis plusieurs années, la gestion des incorporations " +
+        "nous passionne. Afin de maximiser les bénéfices pour votre société, " +
+        "nous pouvons prendre en charge votre dossier d'impôts et vous aider " +
+        "à prendre de bonnes décisions pour l'avenir.",
+      canonicalLink: import.meta.env.SNOWPACK_PUBLIC_WEBSITE_URL + "/services/impots-societes"
+    });
+  }, []);
   return (
     <div className="route-container container">
       <Banner pageTitle={pageTitle} pageDescription={pageDescription} />

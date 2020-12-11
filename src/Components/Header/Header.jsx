@@ -1,8 +1,12 @@
 import React, { useState } from "react";
-import CustomNavLink from "../CustomNavLink/CustomNavLink";
-
 import "./Header.css";
+
+import CustomNavLink from "../CustomNavLink/CustomNavLink";
+import ModernImage from "../ModernImage/ModernImage";
+
+// logo images
 import logo from "../../images/Gestion-Desroches-Logo-small.jpg";
+import logoWebp from "../../images/Gestion-Desroches-Logo-small.webp";
 
 export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -16,13 +20,16 @@ export default function Header() {
       }
     >
       <CustomNavLink to="/" className="branding">
-        <img
-          className={"branding-logo"}
-          src={logo}
-          alt="Logo"
+        <ModernImage
+          classNames={"branding-logo"}
+          srcWebp={logoWebp}
+          srcFallback={logo}
+          lazyload={false}
+          altText={"Logo"}
+          cancelInitialGrowFx={true}
           width={987}
           height={200}
-          onClick={() => isMobileMenuOpen && setIsMobileMenuOpen(false)}
+          onClickFunc={() => isMobileMenuOpen && setIsMobileMenuOpen(false)}
         />
       </CustomNavLink>
 

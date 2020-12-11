@@ -95,7 +95,7 @@ export default function App() {
             </Route>
             <Route exact path="/liens">
               <Liens
-                pageTitle="Services utiles"
+                pageTitle="Liens utiles"
                 pageDescription="Outils & ressources pratiques"
               />
             </Route>

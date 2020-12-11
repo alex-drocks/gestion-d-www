@@ -1,15 +1,26 @@
-import React from "react";
+import React, {useEffect} from "react";
 import "./Liens.css";
 
 // Components
 import Banner from "../../Components/Banner/Banner";
+import ModernImage from "../../Components/ModernImage/ModernImage";
 
 // Images
 import financeDWebp from "../../images/25_previewRevenus.webp";
 import financeDFallback from "../../images/25_previewRevenus.png";
-import ModernImage from "../../Components/ModernImage/ModernImage";
+import headInjector from "../../functions/headInjector";
 
 export default function Liens({ pageTitle, pageDescription }) {
+  useEffect(() => {
+    headInjector({
+      pageTitle: "Liens utiles",
+      metaDescription: "Sites internet du gouvernement et numéros de téléphones, " +
+        "calculatrice de taxes TPS/TVH et TVQ en ligne, " +
+        "logiciel de facturation et tenue de livres pour petites entreprises " +
+        "et travailleurs autonomes ou finances personnelles.",
+      canonicalLink: import.meta.env.SNOWPACK_PUBLIC_WEBSITE_URL + "/liens"
+    });
+  }, []);
   return (
     <div className="route-container container page-liens">
       <Banner pageTitle={pageTitle} pageDescription={pageDescription} />

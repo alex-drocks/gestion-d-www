@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 
 // Components
 import Banner from "../../Components/Banner/Banner";
@@ -6,9 +6,13 @@ import CustomNavLink from "../../Components/CustomNavLink/CustomNavLink";
 import Quote from "../../Components/Quote/Quote";
 import ContactezNous from "../../Components/ContactezNous/ContactezNous";
 
+//functions
+import headInjector from "../../functions/headInjector";
+
 // Images...
 import bannerBackgroundWebp from "../../images/rapport_dimpots_quebec.webp";
 import bannerBackgroundFallback from "../../images/rapport_dimpots_quebec.jpg";
+
 
 export default function Home({
   pageTitle,
@@ -16,6 +20,14 @@ export default function Home({
   nombreClients,
   establishedDate,
 }) {
+  useEffect(() => {
+    headInjector({
+      pageTitle: "",
+      metaDescription: import.meta.env.SNOWPACK_PUBLIC_WEBSITE_LONG_DESCRIPTION,
+      canonicalLink: import.meta.env.SNOWPACK_PUBLIC_WEBSITE_URL
+    })
+  }, [])
+
   return (
     <div className="route-container container">
       <Banner
