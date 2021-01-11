@@ -72,7 +72,7 @@ export default function Header() {
           <li>
             <a
               id="link-rendez-vous"
-              href="https://calendly.com/danieldesroches/30min"
+              href="https://calendly.com/comptable-daniel-desroches/30min"
             >
               <svg
                 style={{ maxWidth: "25px" }}

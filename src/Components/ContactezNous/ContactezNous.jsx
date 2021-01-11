@@ -86,7 +86,7 @@ export default function ContactezNous({
         <div className="info-item--margin-top">
           <a
             className="link-rendez-vous text-link"
-            href="https://calendly.com/danieldesroches/30min"
+            href="https://calendly.com/comptable-daniel-desroches/30min"
           >
             <svg
               width={"1em"}
