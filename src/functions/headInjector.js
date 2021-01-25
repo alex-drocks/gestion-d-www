@@ -1,4 +1,8 @@
-export default function headInjector({ pageTitle, metaDescription, canonicalLink }) {
+export default function headInjector({
+  pageTitle,
+  metaDescription,
+  canonicalLink,
+}) {
   if (typeof window === "undefined") {
     return;
   }
@@ -6,8 +10,14 @@ export default function headInjector({ pageTitle, metaDescription, canonicalLink
   // <title>
   const title = document.querySelector("title");
   if (title && title.textContent.split("|")[0] !== pageTitle) {
-    const {SNOWPACK_PUBLIC_WEBSITE_NAME, SNOWPACK_PUBLIC_WEBSITE_DESCRIPTION} = import.meta.env;
-    const common = SNOWPACK_PUBLIC_WEBSITE_NAME + " - " + SNOWPACK_PUBLIC_WEBSITE_DESCRIPTION;
+    const {
+      SNOWPACK_PUBLIC_WEBSITE_NAME,
+      SNOWPACK_PUBLIC_WEBSITE_DESCRIPTION,
+    } = import.meta.env;
+    const common =
+      SNOWPACK_PUBLIC_WEBSITE_NAME +
+      " - " +
+      SNOWPACK_PUBLIC_WEBSITE_DESCRIPTION;
     title.textContent = (pageTitle ? pageTitle + " | " : "") + common;
   }
 

@@ -11,20 +11,23 @@ import headInjector from "../../../functions/headInjector";
 const { SNOWPACK_PUBLIC_WEBSITE_URL } = import.meta.env;
 
 export default function ProduireDeclarationParticuliers({
-                                                  pageTitle,
-                                                  pageDescription,
-                                                  nombreClients,
-                                                  establishedDate
-                                                }) {
+  pageTitle,
+  pageDescription,
+  nombreClients,
+  establishedDate,
+}) {
   useEffect(() => {
     headInjector({
       pageTitle: "Produire déclaration",
-      metaDescription: "Les 4 étapes faciles pour produire vos impôts. " +
+      metaDescription:
+        "Les 4 étapes faciles pour produire vos impôts. " +
         "Étape #1: Remplir notre questionnaire d'impôts. " +
         "Étape #2: Préparez votre dossier. " +
         "Étape #3: Transmettre votre dossier. " +
         "Étape #4: Recevoir vos résultats et effectuer le paiement.",
-      canonicalLink: SNOWPACK_PUBLIC_WEBSITE_URL + "/services/impots-particuliers/produire-declaration"
+      canonicalLink:
+        SNOWPACK_PUBLIC_WEBSITE_URL +
+        "/services/impots-particuliers/produire-declaration/",
     });
   }, []);
   return (

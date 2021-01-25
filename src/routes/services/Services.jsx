@@ -7,19 +7,20 @@ import ClickableServiceCard from "../../Components/ClickableServiceCard/Clickabl
 import headInjector from "../../functions/headInjector";
 
 export default function Services({
-                                   pageTitle,
-                                   pageDescription,
-                                   nombreClients,
-                                   establishedDate
-                                 }) {
+  pageTitle,
+  pageDescription,
+  nombreClients,
+  establishedDate,
+}) {
   useEffect(() => {
     headInjector({
       pageTitle: "Services",
-      metaDescription: "Gestion Desroches offre des services spécialisés de: " +
+      metaDescription:
+        "Gestion Desroches offre des services spécialisés de: " +
         "déclaration d'impôts de particuliers et de sociétés,comptabilité d'entreprise " +
         "et tenue de livres, création d'incorporation, prise en charge de " +
         "succession.",
-      canonicalLink: import.meta.env.SNOWPACK_PUBLIC_WEBSITE_URL + "/services"
+      canonicalLink: import.meta.env.SNOWPACK_PUBLIC_WEBSITE_URL + "/services/",
     });
   }, []);
   return (

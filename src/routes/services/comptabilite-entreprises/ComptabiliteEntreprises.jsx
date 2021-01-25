@@ -6,20 +6,23 @@ import CustomNavLink from "../../../Components/CustomNavLink/CustomNavLink";
 import headInjector from "../../../functions/headInjector";
 
 export default function ComptabiliteEntreprises({
-                                                  pageTitle,
-                                                  pageDescription,
-                                                  nombreClients,
-                                                  establishedDate
-                                                }) {
+  pageTitle,
+  pageDescription,
+  nombreClients,
+  establishedDate,
+}) {
   useEffect(() => {
     headInjector({
       pageTitle: "Comptabilité entreprises",
-      metaDescription: "Services comptables pour entreprises. " +
+      metaDescription:
+        "Services comptables pour entreprises. " +
         "Nous vous offrons une gamme complète de services comptables allant " +
         "du démarrage de votre entreprise jusqu'à la gestion complète de " +
         "votre comptabilité. Tenue de livres, déclaration de taxes TPS/TVQ, " +
         "gestion de paie, production d'états financiers, etc.",
-      canonicalLink: import.meta.env.SNOWPACK_PUBLIC_WEBSITE_URL + "/services/comptabilite-entreprises"
+      canonicalLink:
+        import.meta.env.SNOWPACK_PUBLIC_WEBSITE_URL +
+        "/services/comptabilite-entreprises/",
     });
   }, []);
   return (

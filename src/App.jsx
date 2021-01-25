@@ -18,7 +18,9 @@ const ImpotsParticuliers = lazy(() =>
   import("./routes/services/impots-particuliers/ImpotsParticuliers"),
 );
 const ProduireDeclarationParticuliers = lazy(() =>
-  import("./routes/services/impots-particuliers/ProduireDeclarationParticuliers"),
+  import(
+    "./routes/services/impots-particuliers/ProduireDeclarationParticuliers"
+  ),
 );
 const ImpotsSocietes = lazy(() =>
   import("./routes/services/impots-societes/ImpotsSocietes"),
@@ -50,7 +52,10 @@ export default function App() {
                 establishedDate={SNOWPACK_PUBLIC_ESTABLISHED_DATE}
               />
             </Route>
-            <Route exact path="/services/impots-particuliers/produire-declaration">
+            <Route
+              exact
+              path="/services/impots-particuliers/produire-declaration"
+            >
               <ProduireDeclarationParticuliers
                 pageTitle="Produire ma déclaration"
                 pageDescription="Les 4 étapes pour produire vos impôts"

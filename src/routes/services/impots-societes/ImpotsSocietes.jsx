@@ -1,4 +1,4 @@
-import React, {useEffect} from "react";
+import React, { useEffect } from "react";
 
 //Components
 import Banner from "../../../Components/Banner/Banner";
@@ -14,11 +14,14 @@ export default function ImpotsSocietes({
   useEffect(() => {
     headInjector({
       pageTitle: "Impôts sociétés",
-      metaDescription: "Depuis plusieurs années, la gestion des incorporations " +
+      metaDescription:
+        "Depuis plusieurs années, la gestion des incorporations " +
         "nous passionne. Afin de maximiser les bénéfices pour votre société, " +
         "nous pouvons prendre en charge votre dossier d'impôts et vous aider " +
         "à prendre de bonnes décisions pour l'avenir.",
-      canonicalLink: import.meta.env.SNOWPACK_PUBLIC_WEBSITE_URL + "/services/impots-societes"
+      canonicalLink:
+        import.meta.env.SNOWPACK_PUBLIC_WEBSITE_URL +
+        "/services/impots-societes/",
     });
   }, []);
   return (

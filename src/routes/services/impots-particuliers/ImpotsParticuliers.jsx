@@ -1,4 +1,4 @@
-import React, {useEffect} from "react";
+import React, { useEffect } from "react";
 
 //Components
 import Banner from "../../../Components/Banner/Banner";
@@ -14,12 +14,15 @@ export default function ImpotsParticuliers({
   useEffect(() => {
     headInjector({
       pageTitle: "Impôts particuliers",
-      metaDescription: "Déclarations d'impôts des particuliers. Nous nous " +
+      metaDescription:
+        "Déclarations d'impôts des particuliers. Nous nous " +
         "spécialisons dans la production de déclaration de revenus de " +
         "particuliers depuis 2004 et nous saurons vous conseiller de façon " +
         "professionnelle pour que vous puissiez récupérer le maximum d'impôts " +
         "auquel vous avez droit.",
-      canonicalLink: import.meta.env.SNOWPACK_PUBLIC_WEBSITE_URL + "/services/impots-particuliers"
+      canonicalLink:
+        import.meta.env.SNOWPACK_PUBLIC_WEBSITE_URL +
+        "/services/impots-particuliers/",
     });
   }, []);
   return (

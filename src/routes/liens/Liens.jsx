@@ -1,4 +1,4 @@
-import React, {useEffect} from "react";
+import React, { useEffect } from "react";
 import "./Liens.css";
 
 // Components
@@ -14,11 +14,12 @@ export default function Liens({ pageTitle, pageDescription }) {
   useEffect(() => {
     headInjector({
       pageTitle: "Liens utiles",
-      metaDescription: "Sites internet du gouvernement et numéros de téléphones, " +
+      metaDescription:
+        "Sites internet du gouvernement et numéros de téléphones, " +
         "calculatrice de taxes TPS/TVH et TVQ en ligne, " +
         "logiciel de facturation et tenue de livres pour petites entreprises " +
         "et travailleurs autonomes ou finances personnelles.",
-      canonicalLink: import.meta.env.SNOWPACK_PUBLIC_WEBSITE_URL + "/liens"
+      canonicalLink: import.meta.env.SNOWPACK_PUBLIC_WEBSITE_URL + "/liens/",
     });
   }, []);
   return (

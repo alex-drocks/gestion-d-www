@@ -15,19 +15,10 @@ module.exports = {
     "@snowpack/plugin-react-refresh",
     "@snowpack/plugin-dotenv"
   ],
-  install: [
-    /* ... */
-  ],
-  installOptions: {
-    /* ... */
-  },
   devOptions: {
     /* ... */
   },
   buildOptions: {},
-  proxy: {
-    /* ... */
-  },
   alias: {
     /* ... */
   }

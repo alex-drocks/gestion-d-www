@@ -1,4 +1,4 @@
-import React, {useEffect} from "react";
+import React, { useEffect } from "react";
 
 // Components
 import Banner from "../../Components/Banner/Banner";
@@ -10,12 +10,13 @@ export default function Contact({ pageTitle, pageDescription }) {
   useEffect(() => {
     headInjector({
       pageTitle: "Contact",
-      metaDescription: "Il est simple de nous joindre. Pour nous contacter ou " +
+      metaDescription:
+        "Il est simple de nous joindre. Pour nous contacter ou " +
         "obtenir plus d'informations sur Gestion Desroches, n'hésitez pas à " +
         "utiliser notre formulaire en ligne. " +
         "Autrement, vous pouvez aussi nous joindre avec nos coordonnées directes. " +
         "Il nous fera plaisir de vous répondre dans les plus brefs délais.",
-      canonicalLink: import.meta.env.SNOWPACK_PUBLIC_WEBSITE_URL + "/contact"
+      canonicalLink: import.meta.env.SNOWPACK_PUBLIC_WEBSITE_URL + "/contact/",
     });
   }, []);
   return (
