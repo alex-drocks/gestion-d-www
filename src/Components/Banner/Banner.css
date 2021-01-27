@@ -6,8 +6,7 @@
   max-width: 2000px;
 
   height: auto;
-  max-height: 470px;
-  /*min-height is dynamic for with and without image*/
+  /*max-height: 470px;*/
 
   overflow: hidden;
   cursor: default;
