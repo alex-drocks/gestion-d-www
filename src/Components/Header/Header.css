@@ -103,7 +103,7 @@
   }
 }
 
-@media (max-width: 940px) {
+@media (max-width: 1071px) {
   .header {
     padding: 6vw;
     margin: 0;
@@ -167,6 +167,7 @@
   .header.isMobileMenuOpen nav {
     display: initial;
     position: fixed;
+    padding-top: 12%;
     top: 0;
     right: 0;
     width: 100%;
