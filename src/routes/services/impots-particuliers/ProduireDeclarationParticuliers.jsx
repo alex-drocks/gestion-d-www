@@ -11,11 +11,11 @@ import headInjector from "../../../functions/headInjector";
 const { SNOWPACK_PUBLIC_WEBSITE_URL } = import.meta.env;
 
 export default function ProduireDeclarationParticuliers({
-  pageTitle,
-  pageDescription,
-  nombreClients,
-  establishedDate,
-}) {
+                                                          pageTitle,
+                                                          pageDescription,
+                                                          nombreClients,
+                                                          establishedDate
+                                                        }) {
   useEffect(() => {
     headInjector({
       pageTitle: "Produire déclaration",
@@ -27,7 +27,7 @@ export default function ProduireDeclarationParticuliers({
         "Étape #4: Recevoir vos résultats et effectuer le paiement.",
       canonicalLink:
         SNOWPACK_PUBLIC_WEBSITE_URL +
-        "/services/impots-particuliers/produire-declaration/",
+        "/services/impots-particuliers/produire-declaration/"
     });
   }, []);
   return (
@@ -51,6 +51,7 @@ export default function ProduireDeclarationParticuliers({
             <div>
               <h3>A) Téléchargez le questionnaire:</h3>
               <a
+                target="_blank"
                 href={
                   SNOWPACK_PUBLIC_WEBSITE_URL +
                   "/documents/Etape1_Questionnaire-impots.pdf"
@@ -132,6 +133,7 @@ export default function ProduireDeclarationParticuliers({
             <div>
               <h3>A) Téléchargez la liste de documents:</h3>
               <a
+                target="_blank"
                 href={
                   SNOWPACK_PUBLIC_WEBSITE_URL +
                   "/documents/Etape2_Liste-Documents-a-Fournir.pdf"

@@ -15,6 +15,9 @@ module.exports = {
     "@snowpack/plugin-react-refresh",
     "@snowpack/plugin-dotenv"
   ],
+  "routes": [
+    {"match": "routes", "src": ".*", "dest": "/index.html"}
+  ],
   devOptions: {
     /* ... */
   },
