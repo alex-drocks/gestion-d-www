@@ -6,8 +6,8 @@ import Banner from "../../Components/Banner/Banner";
 import ModernImage from "../../Components/ModernImage/ModernImage";
 
 // Images
-import financeDWebp from "../../images/25_previewRevenus.webp";
-import financeDFallback from "../../images/25_previewRevenus.png";
+import financeDWebp from "../../images/1_boxmockup-windows-mac-1920w.webp";
+import financeDFallback from "../../images/1_boxmockup-windows-mac-1920w.png";
 import headInjector from "../../functions/headInjector";
 
 export default function Liens({ pageTitle, pageDescription }) {
@@ -19,7 +19,7 @@ export default function Liens({ pageTitle, pageDescription }) {
         "calculatrice de taxes TPS/TVH et TVQ en ligne, " +
         "logiciel de facturation et tenue de livres pour petites entreprises " +
         "et travailleurs autonomes ou finances personnelles.",
-      canonicalLink: import.meta.env.SNOWPACK_PUBLIC_WEBSITE_URL + "/liens/",
+      canonicalLink: import.meta.env.SNOWPACK_PUBLIC_WEBSITE_URL + "/liens/"
     });
   }, []);
   return (
@@ -122,20 +122,23 @@ export default function Liens({ pageTitle, pageDescription }) {
           </ul>
         </div>
         <div className="flex-col flex-col--40w flex-margin-left--10w flex--justify-left">
-          <h2>Calculateur de taxes</h2>
-          <ul>
-            <li>
-              <a
-                className="blue-text text-link"
-                href="https://taxes.finance-d.com"
-              >
-                Calcul des taxes TPS/TVH et TVQ en ligne
-              </a>
-            </li>
-          </ul>
+          <h2>Calculatrice de taxes</h2>
+          <p>
+            Une calculatrice de taxes en-ligne pour l'ensemble
+            des provinces et territoires du Canada,
+            incluant le calcul inversé (taxes incluses).
+          </p>
+          <p>
+            <a
+              className="blue-text text-link"
+              href="https://taxes.finance-d.com"
+            >
+              Calcul de taxes {new Date().getFullYear()} pour la TPS/TVH et TVQ
+            </a>
+          </p>
 
           <div className="content-block spacer-top">
-            <h2 className="flex-row">Logiciel de facturation</h2>
+            <h2 className="flex-row">Logiciel de facturation gratuit</h2>
             <p>
               Nous avons conçu le logiciel Finance D pour répondre
               spécifiquement aux besoin de nos clients du Québec.
@@ -165,7 +168,9 @@ export default function Liens({ pageTitle, pageDescription }) {
                 />
                 <br />
                 <br />
-                <button>Logiciel Finance D</button>
+                <button>
+                  Obtenir le logiciel Finance D
+                </button>
               </a>
             </p>
           </div>

@@ -46,8 +46,7 @@ export default function ProduireDeclarationParticuliers({
                 votre situation en {new Date().getFullYear()}.
               </p>
             </div>
-          </div>
-          <div className="flex-row">
+          </div><div className="flex-row">
             <div>
               <h3>A) Téléchargez le questionnaire:</h3>
               <a
