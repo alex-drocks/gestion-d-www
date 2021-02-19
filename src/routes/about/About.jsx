@@ -102,6 +102,26 @@ export default function About({
           aujourd'hui plus de {nombreClients} clients satisfaits.
         </Bio>
         <Bio
+          image={{ webp: alexWebp, fallback: alex }}
+          name="Alexandre Desroches"
+          role="TENUE DE LIVRES, DÉVELOPPEMENT INFORMATIQUE & LOGICIEL FINANCE D"
+        >
+          Alexandre détient une attestation professionnelle en comptabilité et
+          s'occupe de la tenue de livres de plus de 60 entreprises. Il est
+          rapide, innovateur, perfectionniste et capable de trouver des
+          solutions pour améliorer la situation de ses clients. Il est également
+          passionné par la programmation. Son logiciel de facturation et tenue
+          de livres gratuit a été conçu d'après son expérience chez Gestion Desroches et
+          est accessible à partir de{" "}
+          <a
+            href="https://finance-d.com/"
+            className="blue-text text-link no-wrap"
+          >
+            Finance-D.com
+          </a>
+          .
+        </Bio>
+        <Bio
           image={{ webp: willWebp, fallback: will }}
           name="William Desroches"
           role="SERVICE DE PAIE, TENUE DE LIVRES, IMPÔTS DES PARTICULIERS"
@@ -131,26 +151,6 @@ export default function About({
             className="blue-text text-link no-wrap"
           >
             son site internet
-          </a>
-          .
-        </Bio>
-        <Bio
-          image={{ webp: alexWebp, fallback: alex }}
-          name="Alexandre Desroches"
-          role="TENUE DE LIVRES, DÉVELOPPEMENT INFORMATIQUE & LOGICIEL FINANCE D"
-        >
-          Alexandre détient une attestation professionnelle en comptabilité et
-          s'occupe de la tenue de livres de plus de 60 entreprises. Il est
-          rapide, innovateur, perfectionniste et capable de trouver des
-          solutions pour améliorer la situation de ses clients. Il est également
-          passionné par la programmation. Son logiciel de facturation et tenue
-          de livres a été conçu d'après son expérience chez Gestion Desroches et
-          est accessible à partir de{" "}
-          <a
-            href="https://finance-d.com/"
-            className="blue-text text-link no-wrap"
-          >
-            Finance-D.com
           </a>
           .
         </Bio>
