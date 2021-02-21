@@ -20,7 +20,7 @@ export default function ProduireDeclarationParticuliers({
     headInjector({
       pageTitle: "Produire déclaration",
       metaDescription:
-        "Les 4 étapes faciles pour produire vos impôts. " +
+        "4 étapes faciles pour produire vos impôts. " +
         "Étape #1: Remplir notre questionnaire d'impôts. " +
         "Étape #2: Préparez votre dossier. " +
         "Étape #3: Transmettre votre dossier. " +
