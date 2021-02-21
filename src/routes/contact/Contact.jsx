@@ -34,7 +34,7 @@ export default function Contact({ pageTitle, pageDescription }) {
             les plus brefs délais.
           </p>
           <ContactForm
-            fetchUrl="https://gestiond.finance-d.com/api/submit-contact-form.php"
+            fetchUrl="https://gestiondesroches.com/api/submit-contact-form.php"
             classNames={"spacer-top flex-col"}
           />
         </div>

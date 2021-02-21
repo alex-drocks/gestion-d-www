@@ -66,7 +66,7 @@ echo (function () {
     $headers .= "Content-Type: text/html; charset=utf-8\r\n";
 
     // define sender address for the default php sendmail method otherwise it's financed@rockland.dns...
-    $fdSendingAdress = '-f contact@gestiondesroches.com';
+    $fdSendingAdress = '-f formulaire-contact-site-internet@gestiondesroches.com';
 
     if (mail("daniel@gestiondesroches.com",
         "GestionDesroches.com - Formulaire de contact",

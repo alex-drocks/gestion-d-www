@@ -28,7 +28,7 @@ export default function Liens({ pageTitle, pageDescription }) {
 
       <div className="content-block spacer-top">
         <div className="flex-col flex-col--50w flex--justify-left">
-          <h2>Sites du gouvernement</h2>
+          <h2 id="sites-gouvernement">Sites du gouvernement</h2>
           <ul className="spacer-bottom">
             <li>
               <a
@@ -63,7 +63,7 @@ export default function Liens({ pageTitle, pageDescription }) {
               </a>
             </li>
           </ul>
-          <h2>Numéros de téléphones</h2>
+          <h2 id="numeros-telephones">Numéros de téléphones</h2>
           GOUVERNEMENT DU QUÉBEC
           <ul>
             <li>
@@ -122,7 +122,7 @@ export default function Liens({ pageTitle, pageDescription }) {
           </ul>
         </div>
         <div className="flex-col flex-col--40w flex-margin-left--10w flex--justify-left">
-          <h2>Calculatrice de taxes</h2>
+          <h2 id="calculatrice-taxes">Calculatrice de taxes</h2>
           <p>
             Une calculatrice de taxes en-ligne pour l'ensemble
             des provinces et territoires du Canada,
@@ -138,7 +138,7 @@ export default function Liens({ pageTitle, pageDescription }) {
           </p>
 
           <div className="content-block spacer-top">
-            <h2 className="flex-row">Logiciel de facturation gratuit</h2>
+            <h2 id="logiciel-facturation-gratuit" className="flex-row">Logiciel de facturation gratuit</h2>
             <p>
               Nous avons conçu le logiciel Finance D pour répondre
               spécifiquement aux besoin de nos clients du Québec.
