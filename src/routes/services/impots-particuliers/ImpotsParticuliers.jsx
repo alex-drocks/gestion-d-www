@@ -6,11 +6,11 @@ import CustomNavLink from "../../../Components/CustomNavLink/CustomNavLink";
 import headInjector from "../../../functions/headInjector";
 
 export default function ImpotsParticuliers({
-  pageTitle,
-  pageDescription,
-  nombreClients,
-  establishedDate,
-}) {
+                                             pageTitle,
+                                             pageDescription,
+                                             nombreClients,
+                                             establishedDate
+                                           }) {
   useEffect(() => {
     headInjector({
       pageTitle: "Impôts particuliers",
@@ -22,7 +22,7 @@ export default function ImpotsParticuliers({
         "auquel vous avez droit.",
       canonicalLink:
         import.meta.env.SNOWPACK_PUBLIC_WEBSITE_URL +
-        "/services/impots-particuliers/",
+        "/services/impots-particuliers/"
     });
   }, []);
   return (
@@ -32,7 +32,6 @@ export default function ImpotsParticuliers({
       <div className="content-block spacer-top">
         <div className="flex-col flex-col--50w flex--justify-left">
           <div className="content-block">
-            {/*<h2>Confiez vos impôts à un professionnel</h2>*/}
             <p>
               Nous nous spécialisons dans la production de déclaration de
               revenus de particuliers depuis {establishedDate} et nous saurons
@@ -135,20 +134,20 @@ export default function ImpotsParticuliers({
                 au gouvernement par le biais du service de déclaration en ligne
                 TED.
               </p>
-              <br />
+              <br/>
             </div>
 
-            <div className="content-block card flex-card-border-top">
+            <a href="/services/impots-particuliers/produire-declaration"
+               className="content-block card flex-card-border-top">
               <h2>Prêt à faire vos impôts?</h2>
               <p>
                 Appuyez sur le bouton ci-dessous pour suivre les 4 étapes qui
                 vont vous aider à bien nous transmettre votre dossier de
                 déclaration d'impôts.
               </p>
-              <CustomNavLink to="/services/impots-particuliers/produire-declaration">
-                <button>Commencer</button>
-              </CustomNavLink>
-            </div>
+              <button>Commencer</button>
+            </a>
+
           </div>
         </div>
       </div>

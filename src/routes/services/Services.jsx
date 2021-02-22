@@ -79,6 +79,13 @@ export default function Services({
             Nous pouvons prendre en charge un dossier de succession en nous
             adaptant au cas par cas pour bien vous servir.
           </ClickableServiceCard>
+
+          <div className="content-block spacer-top">
+          <p>
+            Nous offrons des services de qualité avec une approche personnalisée.
+
+          </p>
+        </div>
         </div>
       </div>
 
