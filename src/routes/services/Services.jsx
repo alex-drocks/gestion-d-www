@@ -81,10 +81,10 @@ export default function Services({
           </ClickableServiceCard>
 
           <div className="content-block spacer-top">
-          <p>
-            Nous offrons des services de qualité avec une approche personnalisée.
+          {/*<p>*/}
+          {/*  Nous offrons des services de qualité avec une approche personnalisée.*/}
 
-          </p>
+          {/*</p>*/}
         </div>
         </div>
       </div>
