@@ -82,7 +82,7 @@ export default function ImpotsParticuliers({
               <div className="content-block">
                 <p>
                   <CustomNavLink to="/contact">
-                    <button>Contactez-nous</button>
+                    <button aria-label="Contactez-nous">Contactez-nous</button>
                   </CustomNavLink>
                 </p>
               </div>
@@ -145,7 +145,7 @@ export default function ImpotsParticuliers({
                 vont vous aider à bien nous transmettre votre dossier de
                 déclaration d'impôts.
               </p>
-              <button>Commencer</button>
+              <button aria-label="Commencer">Commencer</button>
             </a>
 
           </div>

@@ -38,8 +38,8 @@ body {
 
 .route-container {
   overflow-x: hidden;
-  animation: fadeIn ease 1.5s;
-  -webkit-animation: fadeIn ease 1.5s;
+  animation: fadeIn ease 1.45s;
+  -webkit-animation: fadeIn ease 1.45s;
 }
 
 .container {

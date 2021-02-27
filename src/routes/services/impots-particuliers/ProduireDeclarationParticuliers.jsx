@@ -56,7 +56,7 @@ export default function ProduireDeclarationParticuliers({
                   "/documents/Etape1_Questionnaire-impots.pdf"
                 }
               >
-                <button>Questionnaire d'impôts</button>
+                <button aria-label="Questionnaire d'impôts">Questionnaire d'impôts</button>
               </a>
               <p>
                 Il s'agit d'un fichier électronique au format PDF que vous
@@ -138,7 +138,7 @@ export default function ProduireDeclarationParticuliers({
                   "/documents/Etape2_Liste-Documents-a-Fournir.pdf"
                 }
               >
-                <button>Liste de documents</button>
+                <button aria-label="Liste de documents">Liste de documents</button>
               </a>
               <p>
                 Il s'agit d'un fichier électronique au format PDF que vous
@@ -359,7 +359,7 @@ export default function ProduireDeclarationParticuliers({
             </div>
 
             <CustomNavLink to="/contact">
-              <button>Contactez-nous au besoin</button>
+              <button aria-label="Contactez-nous au besoin">Contactez-nous au besoin</button>
             </CustomNavLink>
           </div>
         </div>

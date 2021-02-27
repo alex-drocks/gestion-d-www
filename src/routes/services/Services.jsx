@@ -91,7 +91,7 @@ export default function Services({
 
       <div className="content-block spacer-top force-flex-align-center">
         <CustomNavLink to="/contact">
-          <button>Contactez-nous</button>
+          <button aria-label="Contactez-nous">Contactez-nous</button>
         </CustomNavLink>
       </div>
     </div>

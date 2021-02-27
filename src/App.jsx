@@ -63,7 +63,7 @@ export default function App() {
             <Route exact path="/a-propos">
               <About
                 pageTitle="À propos"
-                pageDescription="Expertise. Experience. Excellence."
+                pageDescription="Services comptables Gestion Desroches Inc."
                 nombreClients={SNOWPACK_PUBLIC_NOMBRE_CLIENTS}
                 establishedDate={SNOWPACK_PUBLIC_ESTABLISHED_DATE}
               />
@@ -120,7 +120,7 @@ export default function App() {
             <Route exact path="/contact">
               <Contact
                 pageTitle="Contact"
-                pageDescription="Il est simple de nous joindre"
+                pageDescription="Pour nous joindre"
               />
             </Route>
             <Route path="/">

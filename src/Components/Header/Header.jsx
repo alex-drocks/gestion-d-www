@@ -33,9 +33,8 @@ export default function Header() {
         />
       </CustomNavLink>
 
-      <button
+      <button aria-label="Afficher ou cacher le menu de navigation"
         className="toggle-mobile-menu-btn"
-        aria-label="Afficher ou cacher le menu de navigation"
         onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
       >
         <svg

@@ -134,7 +134,7 @@ export default function Home({
           </div>
         </div>
         <CustomNavLink to="/services">
-          <button>Voir tous nos services</button>
+          <button aria-label="Voir tous nos services">Voir tous nos services</button>
         </CustomNavLink>
       </div>
 

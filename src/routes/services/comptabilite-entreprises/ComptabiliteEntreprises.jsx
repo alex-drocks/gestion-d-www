@@ -65,7 +65,7 @@ export default function ComptabiliteEntreprises({
           <div className="">
             <h2>Contactez-nous pour plus d'infos</h2>
             <CustomNavLink to="/contact">
-              <button>En savoir plus</button>
+              <button aria-label="Contactez-nous">Contactez-nous</button>
             </CustomNavLink>
           </div>
         </div>

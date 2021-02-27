@@ -61,7 +61,7 @@ export default function ImpotsSocietes({
           <div className="">
             <h2>Contactez-nous pour plus d'infos</h2>
             <CustomNavLink to="/contact">
-              <button>En savoir plus</button>
+              <button aria-label="En savoir plus">En savoir plus</button>
             </CustomNavLink>
           </div>
         </div>

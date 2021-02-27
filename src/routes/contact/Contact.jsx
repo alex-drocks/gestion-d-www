@@ -25,17 +25,17 @@ export default function Contact({ pageTitle, pageDescription }) {
 
       <div className="content-block spacer-top">
         <div className="flex-col flex-col--50w flex--justify-left">
-          <h2>Contactez-nous</h2>
-          <p>
-            Pour nous contacter ou obtenir plus d'informations, n'hésitez pas à
-            utiliser le formulaire ci-dessous. Il s'agit du moyen le plus
-            efficace pour nous. Autrement, vous pouvez aussi nous joindre avec
-            nos coordonnées directes. Il nous fera plaisir de vous répondre dans
-            les plus brefs délais.
-          </p>
+          {/*<h2>Contactez-nous</h2>*/}
+          {/*<p>*/}
+          {/*  Pour nous contacter ou obtenir plus d'informations, n'hésitez pas à*/}
+          {/*  utiliser le formulaire ci-dessous. Il s'agit du moyen le plus*/}
+          {/*  efficace pour nous. Autrement, vous pouvez aussi nous joindre avec*/}
+          {/*  nos coordonnées directes. Il nous fera plaisir de vous répondre dans*/}
+          {/*  les plus brefs délais.*/}
+          {/*</p>*/}
           <ContactForm
+            classNames={"flex-col"}
             fetchUrl="https://gestiondesroches.com/api/submit-contact-form.php"
-            classNames={"spacer-top flex-col"}
           />
         </div>
 

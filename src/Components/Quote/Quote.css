@@ -12,7 +12,7 @@
 
 .quote--author {
   color: var(--blue);
-  font-size: 0.55rem;
+  font-size: 0.6rem;
   font-weight: 700;
   letter-spacing: 0.25em;
   filter: brightness(140%);
@@ -28,7 +28,7 @@
     width: 70%;
   }
   .quote--author {
-    font-size: 0.55em;
+    font-size: 0.68rem;
   }
 }
 
@@ -37,6 +37,6 @@
     width: 82%;
   }
   .quote--author {
-    font-size: 0.66em;
+    font-size: 0.7rem;
   }
 }

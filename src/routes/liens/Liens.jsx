@@ -168,7 +168,7 @@ export default function Liens({ pageTitle, pageDescription }) {
                 />
                 <br />
                 <br />
-                <button>
+                <button aria-label="Obtenir le logiciel Finance D">
                   Obtenir le logiciel Finance D
                 </button>
               </a>

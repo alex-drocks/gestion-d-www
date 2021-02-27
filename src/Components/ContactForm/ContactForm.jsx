@@ -29,10 +29,10 @@ export default function ContactForm({ classNames, fetchUrl }) {
     fetch(fetchUrl, {
       method: "POST",
       headers: {
-        "Content-Type": "application/x-www-form-urlencoded",
+        "Content-Type": "application/x-www-form-urlencoded"
       },
       redirect: "follow",
-      body: urlEncodedQuery,
+      body: urlEncodedQuery
     })
       .then((response) => response.text())
       .then((result) => {
@@ -60,7 +60,14 @@ export default function ContactForm({ classNames, fetchUrl }) {
       action=""
       onSubmit={onSubmit}
     >
-      <h2>Formulaire de contact</h2>
+      <h2>Formulaire de contact rapide</h2>
+      <p>
+        Pour nous contacter, veuillez SVP vous servir du formulaire de contact
+        ci-dessous. Il s'agit du moyen le plus efficace.
+        Autrement, vous pouvez aussi nous joindre avec
+        nos coordonnées directes. Il nous fera plaisir de vous répondre dans
+        les plus brefs délais.
+      </p>
       {/*Nom complet*/}
       <div className="form-field contact--nom flex-col flex-col--100w">
         <h3 className="form-field--title">Nom complet:</h3>
@@ -189,9 +196,8 @@ export default function ContactForm({ classNames, fetchUrl }) {
         <div className="form-field contact--send-btn">
           {!isSending && (
             <a href="#">
-              <button className="form-field--control" type="submit">
-                Envoyer
-              </button>
+              <button aria-label="Envoyer"
+                      className="form-field--control" type="submit">Envoyer</button>
             </a>
           )}
           {isSending && <NotificationCard>Envoi en cours...</NotificationCard>}

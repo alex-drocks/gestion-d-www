@@ -30,7 +30,7 @@ export default function About({
     headInjector({
       pageTitle: "À propos",
       metaDescription:
-        "Gestion Desroches Inc., est une société familiale de " +
+        "Gestion Desroches Inc. est une société familiale de " +
         "services comptables établie et dirigée par Daniel Desroches, expert " +
         "dans le domaine de la comptabilité depuis plus de 16 ans. Fondée en " +
         "2004, l'entreprise familiale sert aujourd'hui plus de1300 particuliers " +
@@ -46,7 +46,7 @@ export default function About({
         <div className="flex-col flex-col--50w flex--justify-left">
           <h2>Notre histoire</h2>
           <p>
-            Gestion Desroches Inc., est une société familiale de services
+            Gestion Desroches Inc, est une société familiale de services
             comptables établie et dirigée par Daniel Desroches, expert dans le
             domaine de la comptabilité depuis plus de{" "}
             {new Date().getFullYear() - establishedDate} ans. Fondée en{" "}
@@ -61,10 +61,10 @@ export default function About({
           </p>
           <p>
             Notre mission est de vous offrir un service personnalisé et de
-            qualité. Conscient de vos questions, nous prenons le temps de bien
+            haute qualité. Nous prenons le temps de bien
             vous diriger dans vos décisions et nous nous assurons que vous
             compreniez bien les impacts fiscaux de vos projets. Nous vous
-            accompagnons dans toutes les étapes afin de maximiser vos résultats.
+            accompagnons afin de maximiser vos résultats.
           </p>
         </div>
         <div className="flex-col flex-col--40w flex-margin-left--10w flex--justify-left">
@@ -76,7 +76,7 @@ export default function About({
               classNames={"graphique-clients"}
               srcWebp={graphiqueClientsWebp}
               srcFallback={graphiqueClients}
-              cancelInitialGrowFx={true}
+              cancelInitialGrowFx={false}
               width={781}
               height={390}
             />
@@ -92,7 +92,7 @@ export default function About({
         <Bio
           image={{ webp: danielWebp, fallback: daniel }}
           name="Daniel Desroches"
-          role="PRÉSIDENT & FONDATEUR"
+          role="PRÉSIDENT & FONDATEUR, COMPTABLE"
         >
           Daniel est le président et fondateur de Gestion Desroches Inc.
           Passionné par la comptabilité depuis l'âge de 16 ans, il s'est
@@ -145,12 +145,12 @@ export default function About({
           Comptables qu'il a décroché à l'École des Sciences de la Gestion et se
           spécialise aujourd'hui dans les déclarations d'impôts de particuliers.
           Matthieu est également formateur en organisation et gestion du temps
-          et publie des articles/podcasts chaque semaine sur{" "}
+          et publie des articles/podcasts chaque semaine sur son site&nbsp;:{" "}
           <a
-            href="https://matthieudesroches.com/"
+            href="https://matthieudesroches.com"
             className="blue-text text-link no-wrap"
           >
-            son site internet
+            matthieudesroches.com
           </a>
           .
         </Bio>
@@ -163,7 +163,7 @@ export default function About({
 
       <div className="content-block spacer-top force-flex-align-center">
         <CustomNavLink to="/services">
-          <button>Voir nos services</button>
+          <button aria-label="Voir tous nos services">Voir nos services</button>
         </CustomNavLink>
       </div>
     </div>
