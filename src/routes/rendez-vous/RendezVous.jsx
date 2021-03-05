@@ -19,7 +19,7 @@ export default function RendezVous() {
         <div className="flex-col flex-col--40w force-flex-align-center">
           <p>
             Afin de prendre un rendez-vous avec Daniel Desroches,
-            veuillez sur le bouton ci-dessous.
+            cliquez sur le bouton ci-dessous.
             Ensuite, vous pourrez choisir la période qui vous convient le mieux
             parmi les dates disponibles de notre calendrier.
           </p>
