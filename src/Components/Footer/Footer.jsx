@@ -30,9 +30,7 @@ export default function Footer({ copyrightName, establishedDate }) {
           <CustomNavLink to="/services">Services</CustomNavLink>
           <CustomNavLink to="/liens">Liens utiles</CustomNavLink>
           <CustomNavLink to="/contact">Contactez-nous</CustomNavLink>
-          <a href="https://calendly.com/comptable-daniel-desroches/30min">
-            Prendre un rendez-vous
-          </a>
+          <CustomNavLink to="/rendez-vous"> Prendre un rendez-vous</CustomNavLink>
         </nav>
 
         <div className="footer-bottom--right">

@@ -246,6 +246,10 @@ a input[type="submit"]:hover {
   cursor: pointer;
 }
 
+a button:hover svg {
+  fill: #000;
+}
+
 .no-wrap {
   white-space: nowrap;
 }

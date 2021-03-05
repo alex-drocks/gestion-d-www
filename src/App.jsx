@@ -11,23 +11,14 @@ import Footer from "./Components/Footer/Footer";
 // Pages (Routes)
 const Home = lazy(() => import("./routes/home/Home"));
 const About = lazy(() => import("./routes/about/About"));
-const Contact = lazy(() => import("./routes/contact/Contact"));
 const Liens = lazy(() => import("./routes/liens/Liens"));
+const Contact = lazy(() => import("./routes/contact/Contact"));
+const RendezVous = lazy(() => import("./routes/rendez-vous/RendezVous"));
 const Services = lazy(() => import("./routes/services/Services"));
-const ImpotsParticuliers = lazy(() =>
-  import("./routes/services/impots-particuliers/ImpotsParticuliers")
-);
-const ProduireDeclarationParticuliers = lazy(() =>
-  import(
-    "./routes/services/impots-particuliers/ProduireDeclarationParticuliers"
-    )
-);
-const ImpotsSocietes = lazy(() =>
-  import("./routes/services/impots-societes/ImpotsSocietes")
-);
-const ComptabiliteEntreprises = lazy(() =>
-  import("./routes/services/comptabilite-entreprises/ComptabiliteEntreprises")
-);
+const ImpotsParticuliers = lazy(() => import("./routes/services/impots-particuliers/ImpotsParticuliers"));
+const ProduireDeclarationParticuliers = lazy(() => import("./routes/services/impots-particuliers/ProduireDeclarationParticuliers"));
+const ImpotsSocietes = lazy(() => import("./routes/services/impots-societes/ImpotsSocietes"));
+const ComptabiliteEntreprises = lazy(() => import("./routes/services/comptabilite-entreprises/ComptabiliteEntreprises"));
 
 // Meta data from .env file
 const {
@@ -123,6 +114,7 @@ export default function App() {
                 pageDescription="Pour nous joindre"
               />
             </Route>
+            <Route exact path="/rendez-vous"><RendezVous/></Route>
             <Route path="/">
               <Home
                 pageTitle={SNOWPACK_PUBLIC_WEBSITE_NAME}
