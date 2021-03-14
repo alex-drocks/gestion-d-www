@@ -53,12 +53,11 @@ export default function App() {
           <Switch>
             <Route exact path="/a-propos">
               <About
-                pageTitle="À propos"
-                pageDescription="En savoir plus à propos de Gestion Desroches"
                 nombreClients={SNOWPACK_PUBLIC_NOMBRE_CLIENTS}
                 establishedDate={SNOWPACK_PUBLIC_ESTABLISHED_DATE}
               />
             </Route>
+
             <Route
               exact
               path="/services/impots-particuliers/produire-declaration"
@@ -70,14 +69,13 @@ export default function App() {
                 establishedDate={SNOWPACK_PUBLIC_ESTABLISHED_DATE}
               />
             </Route>
+
             <Route exact path="/services/impots-particuliers">
               <ImpotsParticuliers
-                pageTitle="Impôts des particuliers"
-                pageDescription="Déclaration d'impôts des particuliers"
-                nombreClients={SNOWPACK_PUBLIC_NOMBRE_CLIENTS}
                 establishedDate={SNOWPACK_PUBLIC_ESTABLISHED_DATE}
               />
             </Route>
+
             <Route exact path="/services/impots-societes">
               <ImpotsSocietes
                 pageTitle="IMPÔTS DES SOCIÉTÉS"
@@ -86,6 +84,7 @@ export default function App() {
                 establishedDate={SNOWPACK_PUBLIC_ESTABLISHED_DATE}
               />
             </Route>
+
             <Route exact path="/services/comptabilite-entreprises">
               <ComptabiliteEntreprises
                 pageTitle="COMPTABILITÉ D'ENTREPRISE"
@@ -94,32 +93,33 @@ export default function App() {
                 establishedDate={SNOWPACK_PUBLIC_ESTABLISHED_DATE}
               />
             </Route>
+
             <Route exact path="/services">
               <Services
-                pageTitle="Services"
-                pageDescription="Nos services principaux"
                 nombreClients={SNOWPACK_PUBLIC_NOMBRE_CLIENTS}
                 establishedDate={SNOWPACK_PUBLIC_ESTABLISHED_DATE}
               />
             </Route>
+
             <Route exact path="/liens">
-              <Liens
-                pageTitle="Liens utiles"
-                pageDescription="Outils et ressources pratiques"
-              />
+              <Liens />
             </Route>
+
             <Route exact path="/contact">
               <Contact />
             </Route>
+
             <Route exact path="/rendez-vous">
               <RendezVous />
             </Route>
+
             <Route path="/">
               <Home
                 nombreClients={SNOWPACK_PUBLIC_NOMBRE_CLIENTS}
                 establishedDate={SNOWPACK_PUBLIC_ESTABLISHED_DATE}
               />
             </Route>
+
           </Switch>
 
           <Footer

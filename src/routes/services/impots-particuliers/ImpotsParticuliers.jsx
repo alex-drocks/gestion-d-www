@@ -1,36 +1,23 @@
-import React, { useEffect } from "react";
+import React from "react";
 
 //Components
-import Banner from "../../../Components/Banner/Banner";
 import CustomNavLink from "../../../Components/CustomNavLink/CustomNavLink";
-import headInjector from "../../../functions/headInjector";
+import Page from "../../../Components/Page/Page";
 
-export default function ImpotsParticuliers(
-  {
-    pageTitle,
-    pageDescription,
-    nombreClients,
-    establishedDate
-  }
-) {
-  useEffect(() => {
-    headInjector({
-      pageTitle: "Impôts particuliers",
-      metaDescription:
-        "Déclarations d'impôts des particuliers. Nous nous " +
-        "spécialisons dans la production de déclaration de revenus de " +
-        "particuliers depuis 2004 et nous saurons vous conseiller de façon " +
-        "professionnelle pour que vous puissiez récupérer le maximum d'impôts " +
-        "auquel vous avez droit.",
-      canonicalLink:
-        import.meta.env.SNOWPACK_PUBLIC_WEBSITE_URL +
-        "/services/impots-particuliers/"
-    });
-  }, []);
+
+export default function ImpotsParticuliers({ establishedDate }) {
   return (
-    <div className="route-container container">
-      <Banner pageTitle={pageTitle} pageDescription={pageDescription} />
-
+    <Page
+      pageTitle="Impôts particuliers"
+      pageDescription="Déclaration d'impôts des particuliers"
+      metaDescription={"Déclarations d'impôts des particuliers. Nous nous " +
+      "spécialisons dans la production de déclaration de revenus de " +
+      "particuliers depuis 2004 et nous saurons vous conseiller de façon " +
+      "professionnelle pour que vous puissiez récupérer le maximum d'impôts " +
+      "auquel vous avez droit."}
+      bgImage={null}
+      canonicalLink="/services/impots-particuliers/"
+    >
       <div className="content-block spacer-top">
         <div className="flex-col flex-col--50w flex--justify-left">
           <div className="content-block">
@@ -153,6 +140,6 @@ export default function ImpotsParticuliers(
           </div>
         </div>
       </div>
-    </div>
+    </Page>
   );
 }
