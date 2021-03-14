@@ -11,6 +11,7 @@ export default function RendezVous() {
       pageDescription="Réserver une date de rencontre"
       metaDescription="Prendre un rendez-vous avec Daniel Desroches.
       Services comptables Gestion Desroches Inc."
+      bgImage={null}
       canonicalLink="/rendez-vous/"
     >
       <div className="content-block flex--justify-center">

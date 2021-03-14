@@ -13,6 +13,7 @@ export default function Contact() {
       metaDescription={"Pour nous contacter, n'hésitez pas à utiliser " +
       "notre formulaire de contact. " +
       "Vous pouvez aussi nous contacter avec nos coordonnées directes."}
+      bgImage={null}
       canonicalLink="/contact/"
     >
       <div className="content-block spacer-top">

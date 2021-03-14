@@ -1,7 +1,7 @@
-import React, { useEffect } from "react";
+import React from "react";
 
 // Components
-import Banner from "../../Components/Banner/Banner";
+import Page from "../../Components/Page/Page";
 import Bio from "../../Components/Bio/Bio";
 import Quote from "../../Components/Quote/Quote";
 import CustomNavLink from "../../Components/CustomNavLink/CustomNavLink";
@@ -18,30 +18,20 @@ import matt from "../../images/matt-bio.png";
 import mattWebp from "../../images/matt-bio.webp";
 import graphiqueClients from "../../images/graphique-clients-2019.png";
 import graphiqueClientsWebp from "../../images/graphique-clients-2019.webp";
-import headInjector from "../../functions/headInjector";
 
-export default function About({
-  pageTitle,
-  pageDescription,
-  nombreClients,
-  establishedDate,
-}) {
-  useEffect(() => {
-    headInjector({
-      pageTitle: "À propos",
-      metaDescription:
-        "Gestion Desroches Inc. est une société familiale de " +
-        "services comptables établie et dirigée par Daniel Desroches, expert " +
-        "dans le domaine de la comptabilité depuis plus de 16 ans. Fondée en " +
-        "2004, l'entreprise familiale sert aujourd'hui plus de1300 particuliers " +
-        "et entreprises par année.",
-      canonicalLink: import.meta.env.SNOWPACK_PUBLIC_WEBSITE_URL + "/a-propos/",
-    });
-  }, []);
+export default function About({ nombreClients, establishedDate }) {
   return (
-    <div className="route-container container">
-      <Banner pageTitle={pageTitle} pageDescription={pageDescription} />
-
+    <Page
+      pageTitle="À propos"
+      pageDescription="En savoir plus à propos de l'entreprise"
+      metaDescription={"Gestion Desroches Inc. est une société familiale de " +
+      "services comptables établie et dirigée par Daniel Desroches, expert " +
+      "dans le domaine de la comptabilité depuis plus de 16 ans. Fondée en " +
+      "2004, l'entreprise familiale sert aujourd'hui plus de1300 particuliers " +
+      "et entreprises par année."}
+      bgImage={null}
+      canonicalLink="/a-propos/"
+    >
       <div className="content-block spacer-top">
         <div className="flex-col flex-col--50w flex--justify-left">
           <h2>Notre histoire</h2>
@@ -166,6 +156,6 @@ export default function About({
           <button aria-label="Voir tous nos services">Voir nos services</button>
         </CustomNavLink>
       </div>
-    </div>
+    </Page>
   );
 }
