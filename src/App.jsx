@@ -62,12 +62,7 @@ export default function App() {
               exact
               path="/services/impots-particuliers/produire-declaration"
             >
-              <ProduireDeclarationParticuliers
-                pageTitle="Produire ma déclaration"
-                pageDescription="Les 4 étapes pour produire vos impôts"
-                nombreClients={SNOWPACK_PUBLIC_NOMBRE_CLIENTS}
-                establishedDate={SNOWPACK_PUBLIC_ESTABLISHED_DATE}
-              />
+              <ProduireDeclarationParticuliers />
             </Route>
 
             <Route exact path="/services/impots-particuliers">
