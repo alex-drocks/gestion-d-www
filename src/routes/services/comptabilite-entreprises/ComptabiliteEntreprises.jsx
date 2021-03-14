@@ -1,34 +1,23 @@
-import React, { useEffect } from "react";
+import React from "react";
 
 //Components
-import Banner from "../../../Components/Banner/Banner";
 import CustomNavLink from "../../../Components/CustomNavLink/CustomNavLink";
-import headInjector from "../../../functions/headInjector";
+import Page from "../../../Components/Page/Page";
 
-export default function ComptabiliteEntreprises({
-  pageTitle,
-  pageDescription,
-  nombreClients,
-  establishedDate,
-}) {
-  useEffect(() => {
-    headInjector({
-      pageTitle: "Comptabilité entreprises",
-      metaDescription:
-        "Services comptables pour entreprises. " +
-        "Nous vous offrons une gamme complète de services comptables allant " +
-        "du démarrage de votre entreprise jusqu'à la gestion complète de " +
-        "votre comptabilité. Tenue de livres, déclaration de taxes TPS/TVQ, " +
-        "gestion de paie, production d'états financiers, etc.",
-      canonicalLink:
-        import.meta.env.SNOWPACK_PUBLIC_WEBSITE_URL +
-        "/services/comptabilite-entreprises/",
-    });
-  }, []);
+
+export default function ComptabiliteEntreprises() {
   return (
-    <div className="route-container container">
-      <Banner pageTitle={pageTitle} pageDescription={pageDescription} />
-
+    <Page
+      pageTitle="Comptabilité d'entreprise"
+      pageDescription="Services comptables pour entreprises"
+      metaDescription={"Services comptables pour entreprises. " +
+      "Nous offrons une gamme de services comptables allant " +
+      "du démarrage de votre entreprise jusqu'à la gestion complète de " +
+      "votre comptabilité. Tenue de livres, déclaration de taxes TPS/TVQ, " +
+      "gestion de paie, production d'états financiers, etc."}
+      bgImage={null}
+      canonicalLink="/services/comptabilite-entreprises/"
+    >
       <div className="content-block spacer-top flex--justify-center text-align--left">
         <div className="flex-col flex-col--40w no-spacer-top">
           <div>
@@ -70,6 +59,6 @@ export default function ComptabiliteEntreprises({
           </div>
         </div>
       </div>
-    </div>
+    </Page>
   );
 }
