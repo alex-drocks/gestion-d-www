@@ -1,31 +1,28 @@
-import React, { useEffect } from "react";
+import React from "react";
+
+//unique styles for this page
 import "./Liens.css";
 
 // Components
-import Banner from "../../Components/Banner/Banner";
+import Page from "../../Components/Page/Page";
 import ModernImage from "../../Components/ModernImage/ModernImage";
 
 // Images
 import financeDWebp from "../../images/1_boxmockup-windows-mac-1920w.webp";
 import financeDFallback from "../../images/1_boxmockup-windows-mac-1920w.png";
-import headInjector from "../../functions/headInjector";
 
-export default function Liens({ pageTitle, pageDescription }) {
-  useEffect(() => {
-    headInjector({
-      pageTitle: "Liens utiles",
-      metaDescription:
-        "Sites internet du gouvernement et numéros de téléphones, " +
-        "calculatrice de taxes TPS/TVH et TVQ en ligne, " +
-        "logiciel de facturation et tenue de livres pour petites entreprises " +
-        "et travailleurs autonomes ou finances personnelles.",
-      canonicalLink: import.meta.env.SNOWPACK_PUBLIC_WEBSITE_URL + "/liens/"
-    });
-  }, []);
+export default function Liens() {
   return (
-    <div className="route-container container page-liens">
-      <Banner pageTitle={pageTitle} pageDescription={pageDescription} />
-
+    <Page
+      pageTitle="Liens utiles"
+      pageDescription="Outils et ressources pratiques"
+      metaDescription={"Liens et numéros de téléphones gouvernementaux, " +
+      "Finance D : calculatrice de taxes en ligne, " +
+      "et logiciel de facturation gratuit."}
+      bgImage={null}
+      additionnalClassNames="page-liens-utiles"
+      canonicalLink="/liens/"
+    >
       <div className="content-block spacer-top">
         <div className="flex-col flex-col--50w flex--justify-left">
           <h2 id="sites-gouvernement">Sites du gouvernement</h2>
@@ -176,6 +173,6 @@ export default function Liens({ pageTitle, pageDescription }) {
           </div>
         </div>
       </div>
-    </div>
+    </Page>
   );
 }

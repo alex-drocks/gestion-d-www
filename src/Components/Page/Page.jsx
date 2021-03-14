@@ -10,6 +10,7 @@ export default function Page(
     pageDescription,
     metaDescription,
     bgImage,
+    additionnalClassNames,
     canonicalLink,
     children
   }
@@ -24,16 +25,13 @@ export default function Page(
   }, []);
 
   return (
-    <div className="route-container container">
-
+    <div className={"route-container container" + (additionnalClassNames ? " " + additionnalClassNames : "")}>
       <Banner
         pageTitle={pageTitle || import.meta.env.SNOWPACK_PUBLIC_WEBSITE_NAME}
         pageDescription={pageDescription}
         bgImage={bgImage}
       />
-
       {children}
-
     </div>
   );
 }

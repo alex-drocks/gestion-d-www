@@ -1,32 +1,23 @@
-import React, { useEffect } from "react";
+import React from "react";
 
 // Components
-import Banner from "../../Components/Banner/Banner";
 import CustomNavLink from "../../Components/CustomNavLink/CustomNavLink";
 import ClickableServiceCard from "../../Components/ClickableServiceCard/ClickableServiceCard";
-import headInjector from "../../functions/headInjector";
+import Page from "../../Components/Page/Page";
 
-export default function Services({
-  pageTitle,
-  pageDescription,
-  nombreClients,
-  establishedDate,
-}) {
-  useEffect(() => {
-    headInjector({
-      pageTitle: "Services",
-      metaDescription:
-        "Gestion Desroches offre des services spécialisés de: " +
-        "déclaration d'impôts de particuliers et de sociétés,comptabilité d'entreprise " +
-        "et tenue de livres, création d'incorporation, prise en charge de " +
-        "succession.",
-      canonicalLink: import.meta.env.SNOWPACK_PUBLIC_WEBSITE_URL + "/services/",
-    });
-  }, []);
+export default function Services({ nombreClients, establishedDate }) {
   return (
-    <div className="route-container container page-services">
-      <Banner pageTitle={pageTitle} pageDescription={pageDescription} />
-
+    <Page
+      pageTitle="Services"
+      pageDescription="Nos services principaux"
+      metaDescription={"Gestion Desroches se spécialise dans les " +
+      "déclaration d'impôts de particuliers et de sociétés, " +
+      "la comptabilité d'entreprise et la tenue de livres, " +
+      "la création d'incorporation, ainsi que la prise en charge de " +
+      "succession."}
+      bgImage={null}
+      canonicalLink="/services/"
+    >
       <div className="content-block spacer-top">
         <div className="flex-col flex-col--50w flex--justify-left">
           <ClickableServiceCard
@@ -81,11 +72,11 @@ export default function Services({
           </ClickableServiceCard>
 
           <div className="content-block spacer-top">
-          {/*<p>*/}
-          {/*  Nous offrons des services de qualité avec une approche personnalisée.*/}
+            {/*<p>*/}
+            {/*  Nous offrons des services de qualité avec une approche personnalisée.*/}
 
-          {/*</p>*/}
-        </div>
+            {/*</p>*/}
+          </div>
         </div>
       </div>
 
@@ -94,6 +85,6 @@ export default function Services({
           <button aria-label="Contactez-nous">Contactez-nous</button>
         </CustomNavLink>
       </div>
-    </div>
+    </Page>
   );
 }

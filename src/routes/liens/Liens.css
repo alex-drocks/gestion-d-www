@@ -1,13 +1,13 @@
-.page-liens ul li {
+.page-liens-utiles ul li {
   margin-top: 1vh;
   margin-bottom: 4vh;
 }
 
-.page-liens ul li span {
+.page-liens-utiles ul li span {
   font-weight: 700;
 }
 
-.page-liens ul li a {
+.page-liens-utiles ul li a {
   text-transform: none;
 }
 
