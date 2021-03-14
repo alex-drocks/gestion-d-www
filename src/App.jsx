@@ -111,11 +111,11 @@ export default function App() {
             <Route exact path="/contact">
               <Contact />
             </Route>
-            <Route exact path="/rendez-vous"><RendezVous /></Route>
+            <Route exact path="/rendez-vous">
+              <RendezVous />
+            </Route>
             <Route path="/">
               <Home
-                pageTitle={SNOWPACK_PUBLIC_WEBSITE_NAME}
-                pageDescription={SNOWPACK_PUBLIC_WEBSITE_DESCRIPTION}
                 nombreClients={SNOWPACK_PUBLIC_NOMBRE_CLIENTS}
                 establishedDate={SNOWPACK_PUBLIC_ESTABLISHED_DATE}
               />

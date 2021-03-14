@@ -1,45 +1,30 @@
-import React, { useEffect } from "react";
+import React from "react";
 
 // Components
-import Banner from "../../Components/Banner/Banner";
+import Page from "../../Components/Page/Page";
 import CustomNavLink from "../../Components/CustomNavLink/CustomNavLink";
 import Quote from "../../Components/Quote/Quote";
 import ContactezNous from "../../Components/ContactezNous/ContactezNous";
-
-//functions
-import headInjector from "../../functions/headInjector";
 
 // Images...
 import bannerBackgroundWebp from "../../images/rapport_dimpots_quebec.webp";
 import bannerBackgroundFallback from "../../images/rapport_dimpots_quebec.jpg";
 
-export default function Home({
-  pageTitle,
-  pageDescription,
-  nombreClients,
-  establishedDate,
-}) {
-  useEffect(() => {
-    headInjector({
-      pageTitle: "",
-      metaDescription: import.meta.env.SNOWPACK_PUBLIC_WEBSITE_LONG_DESCRIPTION,
-      canonicalLink: import.meta.env.SNOWPACK_PUBLIC_WEBSITE_URL,
-    });
-  }, []);
-
+export default function Home({ establishedDate, nombreClients }) {
   return (
-    <div className="route-container container">
-      <Banner
-        pageTitle={pageTitle}
-        pageDescription={pageDescription}
-        bgImage={{
-          srcWebp: bannerBackgroundWebp,
-          srcFallback: bannerBackgroundFallback,
-          alt: "Un comptable au travail",
-          width: 2000,
-          height: 800,
-        }}
-      />
+    <Page
+      pageTitle=""
+      pageDescription={import.meta.env.SNOWPACK_PUBLIC_WEBSITE_DESCRIPTION}
+      metaDescription={import.meta.env.SNOWPACK_PUBLIC_WEBSITE_LONG_DESCRIPTION}
+      bgImage={{
+        srcWebp: bannerBackgroundWebp,
+        srcFallback: bannerBackgroundFallback,
+        alt: "Un comptable au travail",
+        width: 2000,
+        height: 800
+      }}
+      canonicalLink=""
+    >
       <div className="content-block spacer-top">
         <div className="flex-col flex-col--50w flex--justify-left">
           <h2>
@@ -142,6 +127,6 @@ export default function Home({
         J’ai déjà essayé de payer mes impôts avec le sourire, ils préfèrent un
         chèque.
       </Quote>
-    </div>
+    </Page>
   );
 }
