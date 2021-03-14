@@ -1,41 +1,27 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./ProduireDeclarations.css";
 
 //Components
-import Banner from "../../../Components/Banner/Banner";
 import CustomNavLink from "../../../Components/CustomNavLink/CustomNavLink";
 import NotificationCard from "../../../Components/NotificationCard/NotificationCard";
-import headInjector from "../../../functions/headInjector";
+import Page from "../../../Components/Page/Page";
 
 // Meta data from .env file
 const { SNOWPACK_PUBLIC_WEBSITE_URL } = import.meta.env;
 
-export default function ProduireDeclarationParticuliers(
-  {
-    pageTitle,
-    pageDescription,
-    nombreClients,
-    establishedDate
-  }
-) {
-  useEffect(() => {
-    headInjector({
-      pageTitle: "Produire déclaration",
-      metaDescription:
-        "4 étapes faciles pour produire vos impôts. " +
-        "Étape #1: Remplir notre questionnaire d'impôts. " +
-        "Étape #2: Préparez votre dossier. " +
-        "Étape #3: Transmettre votre dossier. " +
-        "Étape #4: Recevoir vos résultats et effectuer le paiement.",
-      canonicalLink:
-        SNOWPACK_PUBLIC_WEBSITE_URL +
-        "/services/impots-particuliers/produire-declaration/"
-    });
-  }, []);
+export default function ProduireDeclarationParticuliers() {
   return (
-    <div className="route-container container">
-      <Banner pageTitle={pageTitle} pageDescription={pageDescription} />
-
+    <Page
+      pageTitle="Produire ma déclaration"
+      pageDescription="Les 4 étapes pour produire vos impôts"
+      metaDescription={"4 étapes faciles pour produire vos impôts. " +
+      "Étape #1: Remplir notre questionnaire d'impôts. " +
+      "Étape #2: Préparez votre dossier. " +
+      "Étape #3: Transmettre votre dossier. " +
+      "Étape #4: Recevoir vos résultats et effectuer le paiement."}
+      bgImage={null}
+      canonicalLink="/services/impots-particuliers/produire-declaration/"
+    >
       <div className="etapes content-block spacer-top">
         <div id="etape1" className="etape">
           <div className="dividing-line full-width" />
@@ -367,7 +353,7 @@ export default function ProduireDeclarationParticuliers(
           </div>
         </div>
       </div>
-    </div>
+    </Page>
   );
 }
 

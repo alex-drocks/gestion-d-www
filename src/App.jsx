@@ -77,21 +77,11 @@ export default function App() {
             </Route>
 
             <Route exact path="/services/impots-societes">
-              <ImpotsSocietes
-                pageTitle="IMPÔTS DES SOCIÉTÉS"
-                pageDescription="Déclaration d'impôts pour incorporations"
-                nombreClients={SNOWPACK_PUBLIC_NOMBRE_CLIENTS}
-                establishedDate={SNOWPACK_PUBLIC_ESTABLISHED_DATE}
-              />
+              <ImpotsSocietes />
             </Route>
 
             <Route exact path="/services/comptabilite-entreprises">
-              <ComptabiliteEntreprises
-                pageTitle="COMPTABILITÉ D'ENTREPRISE"
-                pageDescription="Services comptables pour entreprises"
-                nombreClients={SNOWPACK_PUBLIC_NOMBRE_CLIENTS}
-                establishedDate={SNOWPACK_PUBLIC_ESTABLISHED_DATE}
-              />
+              <ComptabiliteEntreprises />
             </Route>
 
             <Route exact path="/services">
