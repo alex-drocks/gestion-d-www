@@ -5,12 +5,14 @@ import Banner from "../../../Components/Banner/Banner";
 import CustomNavLink from "../../../Components/CustomNavLink/CustomNavLink";
 import headInjector from "../../../functions/headInjector";
 
-export default function ImpotsParticuliers({
-                                             pageTitle,
-                                             pageDescription,
-                                             nombreClients,
-                                             establishedDate
-                                           }) {
+export default function ImpotsParticuliers(
+  {
+    pageTitle,
+    pageDescription,
+    nombreClients,
+    establishedDate
+  }
+) {
   useEffect(() => {
     headInjector({
       pageTitle: "Impôts particuliers",
@@ -89,15 +91,15 @@ export default function ImpotsParticuliers({
             </div>
           </div>
         </div>
-        <div className="flex-col flex-col--40w flex-margin-left--10w flex--justify-left flex-card-border-top">
-          <div className="content-block flex-card-border-top--title">
+        <div className="flex-col flex-col--40w flex-margin-left--10w flex--justify-left">
+          <div className="content-block">
             <h2>Faites vos impôts en 4 étapes</h2>
             <div className="flex-col--100w">
               <h3>Étape 1: Remplir le questionnaire d'impôts</h3>
               <p>
                 Vous devrez premièrement remplir notre questionnaire d'impôts en
                 ligne et nous fournir les renseignements nécessaires concernant
-                votre situation en {new Date().getFullYear()}.
+                votre situation en {(new Date().getFullYear()) - 1}.
               </p>
             </div>
 
@@ -134,7 +136,7 @@ export default function ImpotsParticuliers({
                 au gouvernement par le biais du service de déclaration en ligne
                 TED.
               </p>
-              <br/>
+              <br />
             </div>
 
             <a href="/services/impots-particuliers/produire-declaration"

@@ -1,38 +1,22 @@
-import React, { useEffect } from "react";
+import React from "react";
 
 // Components
-import Banner from "../../Components/Banner/Banner";
-import ContactezNous from "../../Components/ContactezNous/ContactezNous";
+import Page from "../../Components/Page/Page";
 import ContactForm from "../../Components/ContactForm/ContactForm";
-import headInjector from "../../functions/headInjector";
+import ContactezNous from "../../Components/ContactezNous/ContactezNous";
 
-export default function Contact({ pageTitle, pageDescription }) {
-  useEffect(() => {
-    headInjector({
-      pageTitle: "Contact",
-      metaDescription:
-        "Il est simple de nous joindre. Pour nous contacter ou " +
-        "obtenir plus d'informations sur Gestion Desroches, n'hésitez pas à " +
-        "utiliser notre formulaire en ligne. " +
-        "Autrement, vous pouvez aussi nous joindre avec nos coordonnées directes. " +
-        "Il nous fera plaisir de vous répondre dans les plus brefs délais.",
-      canonicalLink: import.meta.env.SNOWPACK_PUBLIC_WEBSITE_URL + "/contact/",
-    });
-  }, []);
+export default function Contact() {
   return (
-    <div className="route-container container">
-      <Banner pageTitle={pageTitle} pageDescription={pageDescription} />
-
+    <Page
+      pageTitle="Contact"
+      pageDescription="Pour nous contacter"
+      metaDescription={"Pour nous contacter, n'hésitez pas à utiliser " +
+      "notre formulaire de contact. " +
+      "Vous pouvez aussi nous contacter avec nos coordonnées directes."}
+      canonicalLink="/contact/"
+    >
       <div className="content-block spacer-top">
         <div className="flex-col flex-col--50w flex--justify-left">
-          {/*<h2>Contactez-nous</h2>*/}
-          {/*<p>*/}
-          {/*  Pour nous contacter ou obtenir plus d'informations, n'hésitez pas à*/}
-          {/*  utiliser le formulaire ci-dessous. Il s'agit du moyen le plus*/}
-          {/*  efficace pour nous. Autrement, vous pouvez aussi nous joindre avec*/}
-          {/*  nos coordonnées directes. Il nous fera plaisir de vous répondre dans*/}
-          {/*  les plus brefs délais.*/}
-          {/*</p>*/}
           <ContactForm
             classNames={"flex-col"}
             fetchUrl="https://gestiondesroches.com/api/submit-contact-form.php"
@@ -40,6 +24,7 @@ export default function Contact({ pageTitle, pageDescription }) {
         </div>
 
         <div className="flex-col flex-col--40w flex-margin-left--10w flex--justify-left">
+          {/*Coordonnées directes*/}
           <ContactezNous
             renderTitle={false}
             renderDirects={true}
@@ -50,6 +35,6 @@ export default function Contact({ pageTitle, pageDescription }) {
           />
         </div>
       </div>
-    </div>
-  );
+    </Page>
+  )
 }

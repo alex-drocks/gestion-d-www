@@ -54,7 +54,7 @@ export default function App() {
             <Route exact path="/a-propos">
               <About
                 pageTitle="À propos"
-                pageDescription="Services comptables Gestion Desroches Inc."
+                pageDescription="En savoir plus à propos de Gestion Desroches"
                 nombreClients={SNOWPACK_PUBLIC_NOMBRE_CLIENTS}
                 establishedDate={SNOWPACK_PUBLIC_ESTABLISHED_DATE}
               />
@@ -97,7 +97,7 @@ export default function App() {
             <Route exact path="/services">
               <Services
                 pageTitle="Services"
-                pageDescription="Nos principaux services"
+                pageDescription="Nos services principaux"
                 nombreClients={SNOWPACK_PUBLIC_NOMBRE_CLIENTS}
                 establishedDate={SNOWPACK_PUBLIC_ESTABLISHED_DATE}
               />
@@ -105,16 +105,13 @@ export default function App() {
             <Route exact path="/liens">
               <Liens
                 pageTitle="Liens utiles"
-                pageDescription="Outils & ressources pratiques"
+                pageDescription="Outils et ressources pratiques"
               />
             </Route>
             <Route exact path="/contact">
-              <Contact
-                pageTitle="Contact"
-                pageDescription="Pour nous joindre"
-              />
+              <Contact />
             </Route>
-            <Route exact path="/rendez-vous"><RendezVous/></Route>
+            <Route exact path="/rendez-vous"><RendezVous /></Route>
             <Route path="/">
               <Home
                 pageTitle={SNOWPACK_PUBLIC_WEBSITE_NAME}

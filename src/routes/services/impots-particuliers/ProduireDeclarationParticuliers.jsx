@@ -10,12 +10,14 @@ import headInjector from "../../../functions/headInjector";
 // Meta data from .env file
 const { SNOWPACK_PUBLIC_WEBSITE_URL } = import.meta.env;
 
-export default function ProduireDeclarationParticuliers({
-                                                          pageTitle,
-                                                          pageDescription,
-                                                          nombreClients,
-                                                          establishedDate
-                                                        }) {
+export default function ProduireDeclarationParticuliers(
+  {
+    pageTitle,
+    pageDescription,
+    nombreClients,
+    establishedDate
+  }
+) {
   useEffect(() => {
     headInjector({
       pageTitle: "Produire déclaration",
@@ -43,10 +45,11 @@ export default function ProduireDeclarationParticuliers({
               <p>
                 Vous devrez premièrement remplir notre questionnaire d'impôts en
                 ligne et nous fournir les renseignements nécessaires concernant
-                votre situation en {new Date().getFullYear()}.
+                votre situation en {(new Date().getFullYear()) - 1}.
               </p>
             </div>
-          </div><div className="flex-row">
+          </div>
+          <div className="flex-row">
             <div>
               <h3>A) Téléchargez le questionnaire:</h3>
               <a

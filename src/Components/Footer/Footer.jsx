@@ -30,7 +30,7 @@ export default function Footer({ copyrightName, establishedDate }) {
           <CustomNavLink to="/services">Services</CustomNavLink>
           <CustomNavLink to="/liens">Liens utiles</CustomNavLink>
           <CustomNavLink to="/contact">Contactez-nous</CustomNavLink>
-          <CustomNavLink to="/rendez-vous"> Prendre un rendez-vous</CustomNavLink>
+          <CustomNavLink to="/rendez-vous">Prendre un rendez-vous</CustomNavLink>
         </nav>
 
         <div className="footer-bottom--right">
