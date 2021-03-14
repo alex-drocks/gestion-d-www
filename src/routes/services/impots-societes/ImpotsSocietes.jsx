@@ -1,33 +1,21 @@
-import React, { useEffect } from "react";
+import React from "react";
 
 //Components
-import Banner from "../../../Components/Banner/Banner";
 import CustomNavLink from "../../../Components/CustomNavLink/CustomNavLink";
-import headInjector from "../../../functions/headInjector";
+import Page from "../../../Components/Page/Page";
 
-export default function ImpotsSocietes({
-  pageTitle,
-  pageDescription,
-  nombreClients,
-  establishedDate,
-}) {
-  useEffect(() => {
-    headInjector({
-      pageTitle: "Impôts sociétés",
-      metaDescription:
-        "Depuis plusieurs années, la gestion des incorporations " +
-        "nous passionne. Afin de maximiser les bénéfices pour votre société, " +
-        "nous pouvons prendre en charge votre dossier d'impôts et vous aider " +
-        "à prendre de bonnes décisions pour l'avenir.",
-      canonicalLink:
-        import.meta.env.SNOWPACK_PUBLIC_WEBSITE_URL +
-        "/services/impots-societes/",
-    });
-  }, []);
+export default function ImpotsSocietes() {
   return (
-    <div className="route-container container">
-      <Banner pageTitle={pageTitle} pageDescription={pageDescription} />
-
+    <Page
+      pageTitle="Impôts des sociétés"
+      pageDescription="Déclaration d'impôts pour incorporations"
+      metaDescription={"Depuis plusieurs années, la gestion des incorporations " +
+      "nous passionne. Afin de maximiser les bénéfices pour votre société, " +
+      "nous pouvons prendre en charge votre dossier d'impôts et vous aider " +
+      "à prendre de bonnes décisions pour l'avenir."}
+      bgImage={null}
+      canonicalLink="/services/impots-societes/"
+    >
       <div className="content-block flex--justify-center text-align--left">
         <div className="flex-col flex-col--40w no-spacer-top">
           <div>
@@ -66,6 +54,6 @@ export default function ImpotsSocietes({
           </div>
         </div>
       </div>
-    </div>
+    </Page>
   );
 }
