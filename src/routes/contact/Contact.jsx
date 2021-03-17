@@ -9,7 +9,7 @@ export default function Contact() {
   return (
     <Page
       pageTitle="Contact"
-      pageDescription="Pour nous contacter"
+      pageDescription="Il est simple de nous joindre"
       metaDescription={"Pour nous contacter, n'hésitez pas à utiliser " +
       "notre formulaire de contact. " +
       "Vous pouvez aussi nous contacter avec nos coordonnées directes."}
