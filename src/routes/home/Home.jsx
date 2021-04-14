@@ -40,8 +40,8 @@ export default function Home({ establishedDate, nombreClients }) {
           <p>
             Avec les années, la croissance de l'entreprise a été constante et
             maintenant, chaque personne de la famille Desroches possède un rôle
-            au sein de l'entreprise. Aujourd'hui, nous desservons plus de{" "}
-            {nombreClients} clients individuels et commerciaux pour des dossiers
+            au sein de l'entreprise. Aujourd'hui, nous desservons plus de
+            {" "}{nombreClients} clients individuels et commerciaux pour des dossiers
             de tenue de livres, services de paie, fiscalités et conseils
             personnalisés.
           </p>

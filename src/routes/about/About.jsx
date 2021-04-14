@@ -39,9 +39,9 @@ export default function About({ nombreClients, establishedDate }) {
             Gestion Desroches Inc, est une société familiale de services
             comptables établie et dirigée par Daniel Desroches, expert dans le
             domaine de la comptabilité depuis plus de{" "}
-            {new Date().getFullYear() - establishedDate} ans. Fondée en{" "}
-            {establishedDate}, l'entreprise familiale sert aujourd'hui plus de
-            {nombreClients} particuliers et entreprises par année.
+            {new Date().getFullYear() - establishedDate} ans. Fondée en
+            {" "}{establishedDate}, l'entreprise familiale sert aujourd'hui
+            plus de{" "}{nombreClients} particuliers et entreprises par année.
           </p>
           <p>
             Notre équipe offre un service personnalisé de déclaration d'impôts
