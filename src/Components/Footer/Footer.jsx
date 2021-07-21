@@ -38,7 +38,7 @@ export default function Footer({ copyrightName, establishedDate }) {
             Depuis {establishedDate}, Gestion Desroches se spécialise dans les
             déclarations d'impôts de particuliers et de sociétés ainsi que dans
             la comptabilité de petites et moyennes entreprises. Grâce à nos
-            conseils et à notre expertise, nous avons avons permis à des
+            conseils et à notre expertise, nous avons permis à des
             milliers de personnes et d'entreprises d'économiser de l'argent.
           </i>
           <div className="footer-bottom--copyright">
