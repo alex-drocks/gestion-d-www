@@ -160,6 +160,15 @@ export default function ContactForm({ classNames, fetchUrl }) {
           />
           Création d'une incorporation
         </label>
+        <label className="radio" htmlFor="finance-d">
+          <input
+            type="radio"
+            id="finance-d"
+            name="subject"
+            value="Logiciel Finance D"
+          />
+          Logiciel Finance D
+        </label>
         <label className="radio" htmlFor="autres">
           <input type="radio" id="autres" name="subject" value="Autres" />
           Autres

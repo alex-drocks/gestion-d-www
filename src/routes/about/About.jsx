@@ -117,13 +117,11 @@ export default function About({ nombreClients, establishedDate }) {
           role="SERVICE DE PAIE, TENUE DE LIVRES, IMPÔTS DES PARTICULIERS"
         >
           William possède une technique en comptabilité et gestion. Il a
-          commencé à travailler en 2019 dans la société familiale et il est
-          formé auprès de Daniel et Alexandre afin de connaitre tous les aspects
-          du métier. En date du dernier trimestre de 2020, il se spécialise dans
-          nos services de paies et la tenue de livres avec Sage50, ainsi que
-          pour les impôts des particuliers en collaboration avec Daniel. Parmi
-          ses nombreuses compétences remarquables, il est entre autres précis
-          dans son travail et habile pour communiquer.
+          commencé à travailler en 2019 dans la société familiale.
+          En date du dernier trimestre de 2020, il se spécialise dans
+          nos services de paies pour entreprises, dans la tenue de livres avec Sage 50,
+          ainsi que pour les impôts des particuliers en collaboration avec Daniel.
+          Le travail de William est toujours effectué avec excellence.
         </Bio>
         <Bio
           image={{ webp: mattWebp, fallback: matt }}

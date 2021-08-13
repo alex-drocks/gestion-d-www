@@ -28,12 +28,12 @@ export default function RendezVous() {
             <strong>NOTE IMPORTANTE:</strong>
             &nbsp;Vous devez avoir obtenu l'autorisation écrite ou verbale de
             Daniel Desroches pour réserver une plage horaire.
-            Si ce n'est pas le cas,{" "}
+            Si ce n'est pas le cas, veuillez SVP{" "}
             <CustomNavLink to="/contact">
               <span
                 className="text-link"
                 style={{ color: "var(--blue)"}}>
-                contactez-nous avant
+                nous contacter avant
               </span>
             </CustomNavLink>.
           </p>
