@@ -14,11 +14,13 @@ export default function ProduireDeclarationParticuliers() {
     <Page
       pageTitle="Produire ma déclaration"
       pageDescription="Les 4 étapes pour produire vos impôts"
-      metaDescription={"4 étapes faciles pour produire vos impôts. " +
-      "Étape #1: Remplir notre questionnaire d'impôts. " +
-      "Étape #2: Préparez votre dossier. " +
-      "Étape #3: Transmettre votre dossier. " +
-      "Étape #4: Recevoir vos résultats et effectuer le paiement."}
+      metaDescription={
+        "4 étapes faciles pour produire vos impôts. " +
+        "Étape #1: Remplir notre questionnaire d'impôts. " +
+        "Étape #2: Préparez votre dossier. " +
+        "Étape #3: Transmettre votre dossier. " +
+        "Étape #4: Recevoir vos résultats et effectuer le paiement."
+      }
       bgImage={null}
       canonicalLink="/services/impots-particuliers/produire-declaration/"
     >
@@ -31,7 +33,7 @@ export default function ProduireDeclarationParticuliers() {
               <p>
                 Vous devrez premièrement remplir notre questionnaire d'impôts en
                 ligne et nous fournir les renseignements nécessaires concernant
-                votre situation en {(new Date().getFullYear()) - 1}.
+                votre situation en {new Date().getFullYear() - 1}.
               </p>
             </div>
           </div>
@@ -45,7 +47,9 @@ export default function ProduireDeclarationParticuliers() {
                   "/documents/Etape1_Questionnaire-impots.pdf"
                 }
               >
-                <button aria-label="Questionnaire d'impôts">Questionnaire d'impôts</button>
+                <button aria-label="Questionnaire d'impôts">
+                  Questionnaire d'impôts
+                </button>
               </a>
               <p>
                 Il s'agit d'un fichier électronique au format PDF que vous
@@ -127,7 +131,9 @@ export default function ProduireDeclarationParticuliers() {
                   "/documents/Etape2_Liste-Documents-a-Fournir.pdf"
                 }
               >
-                <button aria-label="Liste de documents">Liste de documents</button>
+                <button aria-label="Liste de documents">
+                  Liste de documents
+                </button>
               </a>
               <p>
                 Il s'agit d'un fichier électronique au format PDF que vous
@@ -348,7 +354,9 @@ export default function ProduireDeclarationParticuliers() {
             </div>
 
             <CustomNavLink to="/contact">
-              <button aria-label="Contactez-nous au besoin">Contactez-nous au besoin</button>
+              <button aria-label="Contactez-nous au besoin">
+                Contactez-nous au besoin
+              </button>
             </CustomNavLink>
           </div>
         </div>

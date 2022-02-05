@@ -4,17 +4,18 @@ import React from "react";
 import CustomNavLink from "../../../Components/CustomNavLink/CustomNavLink";
 import Page from "../../../Components/Page/Page";
 
-
 export default function ImpotsParticuliers({ establishedDate }) {
   return (
     <Page
       pageTitle="Impôts particuliers"
       pageDescription="Déclaration d'impôts des particuliers"
-      metaDescription={"Déclarations d'impôts des particuliers. Nous nous " +
-      "spécialisons dans la production de déclaration de revenus de " +
-      "particuliers depuis 2004 et nous saurons vous conseiller de façon " +
-      "professionnelle pour que vous puissiez récupérer le maximum d'impôts " +
-      "auquel vous avez droit."}
+      metaDescription={
+        "Déclarations d'impôts des particuliers. Nous nous " +
+        "spécialisons dans la production de déclaration de revenus de " +
+        "particuliers depuis 2004 et nous saurons vous conseiller de façon " +
+        "professionnelle pour que vous puissiez récupérer le maximum d'impôts " +
+        "auquel vous avez droit."
+      }
       bgImage={null}
       canonicalLink="/services/impots-particuliers/"
     >
@@ -33,21 +34,21 @@ export default function ImpotsParticuliers({ establishedDate }) {
             <div className="content-block spacer-top">
               <h2>Tarifs impôts des particuliers</h2>
               <div className="flex-col--100w">
-                <h3>Étudiant | 80$</h3>
+                <h3>Étudiant | 80&nbsp;$</h3>
                 <p>
                   Étudiant à temps plein avec revenu annuel inférieur à 15 000$.
                 </p>
               </div>
               <div className="flex-col--100w">
-                <h3>Retraité | 75$</h3>
+                <h3>Retraité | 80&nbsp;$</h3>
                 <p>Par personne à la retraite.</p>
               </div>
               <div className="flex-col--100w">
-                <h3>Individuel | 90$</h3>
+                <h3>Individuel | 90&nbsp;$</h3>
                 <p>Personne vivant seule, célibataire, veuf(ve).</p>
               </div>
               <div className="flex-col--100w">
-                <h3>Couple | 145$</h3>
+                <h3>Couple | 180&nbsp;$</h3>
                 <p>
                   Conjoints de fait, couple marié ou couple retraité avec ou
                   sans enfant à charge.
@@ -86,7 +87,7 @@ export default function ImpotsParticuliers({ establishedDate }) {
               <p>
                 Vous devrez premièrement remplir notre questionnaire d'impôts en
                 ligne et nous fournir les renseignements nécessaires concernant
-                votre situation en {(new Date().getFullYear()) - 1}.
+                votre situation en {new Date().getFullYear() - 1}.
               </p>
             </div>
 
@@ -126,8 +127,10 @@ export default function ImpotsParticuliers({ establishedDate }) {
               <br />
             </div>
 
-            <a href="/services/impots-particuliers/produire-declaration"
-               className="content-block card flex-card-border-top">
+            <a
+              href="/services/impots-particuliers/produire-declaration"
+              className="content-block card flex-card-border-top"
+            >
               <h2>Prêt à faire vos impôts?</h2>
               <p>
                 Appuyez sur le bouton ci-dessous pour suivre les 4 étapes qui
@@ -136,7 +139,6 @@ export default function ImpotsParticuliers({ establishedDate }) {
               </p>
               <button aria-label="Commencer">Commencer</button>
             </a>
-
           </div>
         </div>
       </div>

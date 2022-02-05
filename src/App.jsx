@@ -15,21 +15,30 @@ const Liens = lazy(() => import("./routes/liens/Liens"));
 const Contact = lazy(() => import("./routes/contact/Contact"));
 const RendezVous = lazy(() => import("./routes/rendez-vous/RendezVous"));
 const Services = lazy(() => import("./routes/services/Services"));
-const ImpotsParticuliers = lazy(() => import("./routes/services/impots-particuliers/ImpotsParticuliers"));
-const ProduireDeclarationParticuliers = lazy(() => import("./routes/services/impots-particuliers/ProduireDeclarationParticuliers"));
-const ImpotsSocietes = lazy(() => import("./routes/services/impots-societes/ImpotsSocietes"));
-const ComptabiliteEntreprises = lazy(() => import("./routes/services/comptabilite-entreprises/ComptabiliteEntreprises"));
+const ImpotsParticuliers = lazy(() =>
+  import("./routes/services/impots-particuliers/ImpotsParticuliers"),
+);
+const ProduireDeclarationParticuliers = lazy(() =>
+  import(
+    "./routes/services/impots-particuliers/ProduireDeclarationParticuliers"
+  ),
+);
+const ImpotsSocietes = lazy(() =>
+  import("./routes/services/impots-societes/ImpotsSocietes"),
+);
+const ComptabiliteEntreprises = lazy(() =>
+  import("./routes/services/comptabilite-entreprises/ComptabiliteEntreprises"),
+);
 
 // Meta data from .env file
 const {
   SNOWPACK_PUBLIC_WEBSITE_NAME,
   SNOWPACK_PUBLIC_WEBSITE_DESCRIPTION,
   SNOWPACK_PUBLIC_NOMBRE_CLIENTS,
-  SNOWPACK_PUBLIC_ESTABLISHED_DATE
+  SNOWPACK_PUBLIC_ESTABLISHED_DATE,
 } = import.meta.env;
 
 export default function App() {
-
   //Handle url/#hash to focus elements
   React.useEffect(() => {
     window.onload = () => {
@@ -104,7 +113,6 @@ export default function App() {
                 establishedDate={SNOWPACK_PUBLIC_ESTABLISHED_DATE}
               />
             </Route>
-
           </Switch>
 
           <Footer

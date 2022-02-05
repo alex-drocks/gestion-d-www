@@ -10,9 +10,11 @@ export default function Contact() {
     <Page
       pageTitle="Contact"
       pageDescription="Il est simple de nous joindre"
-      metaDescription={"Pour nous contacter, n'hésitez pas à utiliser " +
-      "notre formulaire de contact. " +
-      "Vous pouvez aussi nous contacter avec nos coordonnées directes."}
+      metaDescription={
+        "Pour nous contacter, n'hésitez pas à utiliser " +
+        "notre formulaire de contact. " +
+        "Vous pouvez aussi nous contacter avec nos coordonnées directes."
+      }
       bgImage={null}
       canonicalLink="/contact/"
     >
@@ -37,5 +39,5 @@ export default function Contact() {
         </div>
       </div>
     </Page>
-  )
+  );
 }

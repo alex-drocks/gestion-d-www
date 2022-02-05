@@ -9,10 +9,12 @@ export default function ImpotsSocietes() {
     <Page
       pageTitle="Impôts des sociétés"
       pageDescription="Déclaration d'impôts pour incorporations"
-      metaDescription={"Depuis plusieurs années, la gestion des incorporations " +
-      "nous passionne. Afin de maximiser les bénéfices pour votre société, " +
-      "nous pouvons prendre en charge votre dossier d'impôts et vous aider " +
-      "à prendre de bonnes décisions pour l'avenir."}
+      metaDescription={
+        "Depuis plusieurs années, la gestion des incorporations " +
+        "nous passionne. Afin de maximiser les bénéfices pour votre société, " +
+        "nous pouvons prendre en charge votre dossier d'impôts et vous aider " +
+        "à prendre de bonnes décisions pour l'avenir."
+      }
       bgImage={null}
       canonicalLink="/services/impots-societes/"
     >

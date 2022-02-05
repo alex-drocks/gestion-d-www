@@ -24,11 +24,13 @@ export default function About({ nombreClients, establishedDate }) {
     <Page
       pageTitle="À propos"
       pageDescription="En savoir plus à propos de l'entreprise"
-      metaDescription={"Gestion Desroches Inc. est une société familiale de " +
-      "services comptables établie et dirigée par Daniel Desroches, expert " +
-      "dans le domaine de la comptabilité depuis plus de 16 ans. Fondée en " +
-      "2004, l'entreprise familiale sert aujourd'hui plus de1300 particuliers " +
-      "et entreprises par année."}
+      metaDescription={
+        "Gestion Desroches Inc. est une société familiale de " +
+        "services comptables établie et dirigée par Daniel Desroches, expert " +
+        "dans le domaine de la comptabilité depuis plus de 16 ans. Fondée en " +
+        "2004, l'entreprise familiale sert aujourd'hui plus de1300 particuliers " +
+        "et entreprises par année."
+      }
       bgImage={null}
       canonicalLink="/a-propos/"
     >
@@ -39,9 +41,9 @@ export default function About({ nombreClients, establishedDate }) {
             Gestion Desroches Inc, est une société familiale de services
             comptables établie et dirigée par Daniel Desroches, expert dans le
             domaine de la comptabilité depuis plus de{" "}
-            {new Date().getFullYear() - establishedDate} ans. Fondée en
-            {" "}{establishedDate}, l'entreprise familiale sert aujourd'hui
-            plus de{" "}{nombreClients} particuliers et entreprises par année.
+            {new Date().getFullYear() - establishedDate} ans. Fondée en{" "}
+            {establishedDate}, l'entreprise familiale sert aujourd'hui plus de{" "}
+            {nombreClients} particuliers et entreprises par année.
           </p>
           <p>
             Notre équipe offre un service personnalisé de déclaration d'impôts
@@ -50,11 +52,11 @@ export default function About({ nombreClients, establishedDate }) {
             autonomes.
           </p>
           <p>
-            Notre mission est de vous offrir un service personnalisé et de
-            haute qualité. Nous prenons le temps de bien
-            vous diriger dans vos décisions et nous nous assurons que vous
-            compreniez bien les impacts fiscaux de vos projets. Nous vous
-            accompagnons afin de maximiser vos résultats.
+            Notre mission est de vous offrir un service personnalisé et de haute
+            qualité. Nous prenons le temps de bien vous diriger dans vos
+            décisions et nous nous assurons que vous compreniez bien les impacts
+            fiscaux de vos projets. Nous vous accompagnons afin de maximiser vos
+            résultats.
           </p>
         </div>
         <div className="flex-col flex-col--40w flex-margin-left--10w flex--justify-left">
@@ -101,8 +103,8 @@ export default function About({ nombreClients, establishedDate }) {
           rapide, innovateur, perfectionniste et capable de trouver des
           solutions pour améliorer la situation de ses clients. Il est également
           passionné par la programmation. Son logiciel de facturation et tenue
-          de livres gratuit a été conçu d'après son expérience chez Gestion Desroches et
-          est accessible à partir de{" "}
+          de livres gratuit a été conçu d'après son expérience chez Gestion
+          Desroches et est accessible à partir de{" "}
           <a
             href="https://finance-d.com/"
             className="blue-text text-link no-wrap"
@@ -117,11 +119,11 @@ export default function About({ nombreClients, establishedDate }) {
           role="SERVICE DE PAIE, TENUE DE LIVRES, IMPÔTS DES PARTICULIERS"
         >
           William possède une technique en comptabilité et gestion. Il a
-          commencé à travailler en 2019 dans la société familiale.
-          En date du dernier trimestre de 2020, il se spécialise dans
-          nos services de paies pour entreprises, dans la tenue de livres avec Sage 50,
-          ainsi que pour les impôts des particuliers en collaboration avec Daniel.
-          Le travail de William est toujours effectué avec excellence.
+          commencé à travailler en 2019 dans la société familiale. En date du
+          dernier trimestre de 2020, il se spécialise dans nos services de paies
+          pour entreprises, dans la tenue de livres avec Sage 50, ainsi que pour
+          les impôts des particuliers en collaboration avec Daniel. Le travail
+          de William est toujours effectué avec excellence.
         </Bio>
         <Bio
           image={{ webp: mattWebp, fallback: matt }}

@@ -30,7 +30,9 @@ export default function Footer({ copyrightName, establishedDate }) {
           <CustomNavLink to="/services">Services</CustomNavLink>
           <CustomNavLink to="/liens">Liens utiles</CustomNavLink>
           <CustomNavLink to="/contact">Contactez-nous</CustomNavLink>
-          <CustomNavLink to="/rendez-vous">Prendre un rendez-vous</CustomNavLink>
+          <CustomNavLink to="/rendez-vous">
+            Prendre un rendez-vous
+          </CustomNavLink>
         </nav>
 
         <div className="footer-bottom--right">
@@ -38,8 +40,8 @@ export default function Footer({ copyrightName, establishedDate }) {
             Depuis {establishedDate}, Gestion Desroches se spécialise dans les
             déclarations d'impôts de particuliers et de sociétés ainsi que dans
             la comptabilité de petites et moyennes entreprises. Grâce à nos
-            conseils et à notre expertise, nous avons permis à des
-            milliers de personnes et d'entreprises d'économiser de l'argent.
+            conseils et à notre expertise, nous avons permis à des milliers de
+            personnes et d'entreprises d'économiser de l'argent.
           </i>
           <div className="footer-bottom--copyright">
             &copy; {new Date().getFullYear()} {copyrightName}

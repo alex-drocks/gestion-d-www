@@ -4,17 +4,18 @@ import React from "react";
 import CustomNavLink from "../../../Components/CustomNavLink/CustomNavLink";
 import Page from "../../../Components/Page/Page";
 
-
 export default function ComptabiliteEntreprises() {
   return (
     <Page
       pageTitle="Comptabilité d'entreprise"
       pageDescription="Services comptables pour entreprises"
-      metaDescription={"Services comptables pour entreprises. " +
-      "Nous offrons une gamme de services comptables allant " +
-      "du démarrage de votre entreprise jusqu'à la gestion complète de " +
-      "votre comptabilité. Tenue de livres, déclaration de taxes TPS/TVQ, " +
-      "gestion de paie, production d'états financiers, etc."}
+      metaDescription={
+        "Services comptables pour entreprises. " +
+        "Nous offrons une gamme de services comptables allant " +
+        "du démarrage de votre entreprise jusqu'à la gestion complète de " +
+        "votre comptabilité. Tenue de livres, déclaration de taxes TPS/TVQ, " +
+        "gestion de paie, production d'états financiers, etc."
+      }
       bgImage={null}
       canonicalLink="/services/comptabilite-entreprises/"
     >

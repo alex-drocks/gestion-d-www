@@ -52,7 +52,7 @@ export default function ContactezNous({
               </svg>
               <span>
                 Daniel Desroches |{" "}
-                <span className="no-wrap">(514) 293-0200</span>
+                <span className="no-wrap">(450) 795-3994</span>
               </span>
             </div>
             <div className="info-item email no-wrap">

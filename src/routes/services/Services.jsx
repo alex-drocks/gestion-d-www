@@ -10,11 +10,13 @@ export default function Services({ nombreClients, establishedDate }) {
     <Page
       pageTitle="Services"
       pageDescription="Nos services principaux"
-      metaDescription={"Gestion Desroches se spécialise dans les " +
-      "déclaration d'impôts de particuliers et de sociétés, " +
-      "la comptabilité d'entreprise et la tenue de livres, " +
-      "la création d'incorporation, ainsi que la prise en charge de " +
-      "succession."}
+      metaDescription={
+        "Gestion Desroches se spécialise dans les " +
+        "déclaration d'impôts de particuliers et de sociétés, " +
+        "la comptabilité d'entreprise et la tenue de livres, " +
+        "la création d'incorporation, ainsi que la prise en charge de " +
+        "succession."
+      }
       bgImage={null}
       canonicalLink="/services/"
     >
