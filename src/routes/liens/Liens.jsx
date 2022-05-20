@@ -89,6 +89,10 @@ export default function Liens() {
               Programme allocation-logement |{" "}
               <span className="no-wrap">514-864-6299</span>
             </li>
+            <li>
+              Info-remboursement |{" "}
+              <span className="no-wrap">1-888-811-7362</span>
+            </li>
           </ul>
           GOUVERNEMENT DU CANADA
           <ul>
@@ -118,20 +122,26 @@ export default function Liens() {
             <li>
               Assurance emploi | <span className="no-wrap">1-800-808-6352</span>
             </li>
+            <li>
+              Téléremboursement (Revenu Canada) |{" "}
+              <span className="no-wrap">1-800-959-1958</span>
+            </li>
           </ul>
         </div>
         <div className="flex-col flex-col--40w flex-margin-left--10w flex--justify-left">
           <h2 id="calculatrice-taxes">Calculatrice de taxes</h2>
           <p>
-            Une calculatrice de taxes en-ligne pour l'ensemble des provinces et
-            territoires du Canada, incluant le calcul inversé (taxes incluses).
+            Une calculatrice de taxes accessible sur n'importe quel appareil connecté à internet.
+            Taux pour l'ensemble des provinces et
+            territoires du Canada, avec le mode de calcul taxes incluses et
+            l'exportation des résultats vers Excel.
           </p>
           <p>
             <a
               className="blue-text text-link"
               href="https://taxes.finance-d.com"
             >
-              Calcul de taxes {new Date().getFullYear()} pour la TPS/TVH et TVQ
+              Calculatrice de taxes pour la TPS/TVQ
             </a>
           </p>
 
@@ -153,6 +163,9 @@ export default function Liens() {
               Le logiciel Finance D est un outil pour facturer vos clients et
               faire votre propre tenue de livres en collaborant avec nous pour
               les aspects plus complexes de votre comptabilité d'entreprise.
+              <br />
+              <br />
+              <strong>Idéal pour travailleurs autonomes.</strong>
               <br />
               <br />
               <a className="blue-text" href="https://finance-d.com">

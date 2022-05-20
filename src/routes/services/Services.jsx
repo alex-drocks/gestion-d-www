@@ -72,15 +72,12 @@ export default function Services({ nombreClients, establishedDate }) {
             Nous pouvons prendre en charge un dossier de succession en nous
             adaptant au cas par cas pour bien vous servir.
           </ClickableServiceCard>
-
-          <div className="content-block spacer-top">
-            {/*<p>*/}
-            {/*  Nous offrons des services de qualité avec une approche personnalisée.*/}
-
-            {/*</p>*/}
-          </div>
         </div>
       </div>
+
+      {/*<div className="content-block spacer-top force-flex-align-center">*/}
+      {/*   */}
+      {/*</div>*/}
 
       <div className="content-block spacer-top force-flex-align-center">
         <CustomNavLink to="/contact">
