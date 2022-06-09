@@ -93,6 +93,10 @@ export default function Liens() {
               Info-remboursement |{" "}
               <span className="no-wrap">1-888-811-7362</span>
             </li>
+            <li>
+              CNESST |{" "}
+              <span className="no-wrap">1-844-838-0808</span>
+            </li>
           </ul>
           GOUVERNEMENT DU CANADA
           <ul>
