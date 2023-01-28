@@ -34,21 +34,21 @@ export default function ImpotsParticuliers({ establishedDate }) {
             <div className="content-block spacer-top">
               <h2>Tarifs impôts des particuliers</h2>
               <div className="flex-col--100w">
-                <h3>Étudiant | 80&nbsp;$</h3>
+                <h3>Étudiant | 90&nbsp;$</h3>
                 <p>
                   Étudiant à temps plein avec revenu annuel inférieur à 15 000$.
                 </p>
               </div>
               <div className="flex-col--100w">
-                <h3>Retraité | 80&nbsp;$</h3>
+                <h3>Retraité | 90&nbsp;$</h3>
                 <p>Par personne à la retraite.</p>
               </div>
               <div className="flex-col--100w">
-                <h3>Individuel | 90&nbsp;$</h3>
+                <h3>Individuel | 100&nbsp;$</h3>
                 <p>Personne vivant seule, célibataire, veuf(ve).</p>
               </div>
               <div className="flex-col--100w">
-                <h3>Couple | 180&nbsp;$</h3>
+                <h3>Couple | 200&nbsp;$</h3>
                 <p>
                   Conjoints de fait, couple marié ou couple retraité avec ou
                   sans enfant à charge.
