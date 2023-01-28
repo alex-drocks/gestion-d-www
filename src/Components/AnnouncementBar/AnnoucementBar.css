@@ -7,7 +7,7 @@
   padding-top: 2px;
   padding-bottom: 6px;
   cursor: pointer;
-  background-color: var(--blue);
+  background-color: #f10606;
 }
 
 .top-bar--text {
@@ -17,7 +17,7 @@
 }
 
 .top-bar--close {
-  visibility: hidden;
+  display: none;
   padding-top: 1px;
   fill: var(--background);
   width: .5rem;
@@ -26,5 +26,5 @@
 
 
 .top-bar--container:hover .top-bar--close {
-  visibility: visible;
+  display: unset;
 }
