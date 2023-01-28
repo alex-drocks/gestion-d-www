@@ -7,11 +7,12 @@
   padding-top: 2px;
   padding-bottom: 6px;
   cursor: pointer;
-  background-color: #f10606;
+  background-color: #ed0808;
 }
 
 .top-bar--text {
-  font-size: 14px;
+  font-size: 16px;
+  letter-spacing: -1px;
   font-weight: 600;
   color: white;
 }
