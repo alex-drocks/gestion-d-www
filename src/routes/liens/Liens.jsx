@@ -97,6 +97,10 @@ export default function Liens() {
               CNESST |{" "}
               <span className="no-wrap">1-844-838-0808</span>
             </li>
+            <li>
+              Allocation famille QUÉBEC |{" "}
+              <span className="no-wrap">514-864-3873</span>
+            </li>
           </ul>
           GOUVERNEMENT DU CANADA
           <ul>
