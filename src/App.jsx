@@ -7,6 +7,7 @@ import "./styles/globals.css";
 // Components
 import Header from "./Components/Header/Header";
 import Footer from "./Components/Footer/Footer";
+import AnnouncementBar from "./Components/AnnouncementBar/AnnouncementBar";
 
 // Pages (Routes)
 const Home = lazy(() => import("./routes/home/Home"));
@@ -16,18 +17,18 @@ const Contact = lazy(() => import("./routes/contact/Contact"));
 const RendezVous = lazy(() => import("./routes/rendez-vous/RendezVous"));
 const Services = lazy(() => import("./routes/services/Services"));
 const ImpotsParticuliers = lazy(() =>
-  import("./routes/services/impots-particuliers/ImpotsParticuliers"),
+  import("./routes/services/impots-particuliers/ImpotsParticuliers")
 );
 const ProduireDeclarationParticuliers = lazy(() =>
   import(
     "./routes/services/impots-particuliers/ProduireDeclarationParticuliers"
-  ),
+    )
 );
 const ImpotsSocietes = lazy(() =>
-  import("./routes/services/impots-societes/ImpotsSocietes"),
+  import("./routes/services/impots-societes/ImpotsSocietes")
 );
 const ComptabiliteEntreprises = lazy(() =>
-  import("./routes/services/comptabilite-entreprises/ComptabiliteEntreprises"),
+  import("./routes/services/comptabilite-entreprises/ComptabiliteEntreprises")
 );
 
 // Meta data from .env file
@@ -35,7 +36,7 @@ const {
   SNOWPACK_PUBLIC_WEBSITE_NAME,
   SNOWPACK_PUBLIC_WEBSITE_DESCRIPTION,
   SNOWPACK_PUBLIC_NOMBRE_CLIENTS,
-  SNOWPACK_PUBLIC_ESTABLISHED_DATE,
+  SNOWPACK_PUBLIC_ESTABLISHED_DATE
 } = import.meta.env;
 
 export default function App() {
@@ -57,7 +58,10 @@ export default function App() {
   return (
     <>
       <BrowserRouter>
+
+        <AnnouncementBar />
         <Header />
+
         <Suspense fallback={<></>}>
           <Switch>
             <Route exact path="/a-propos">

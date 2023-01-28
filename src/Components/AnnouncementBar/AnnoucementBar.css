@@ -1,0 +1,24 @@
+.top-bar--container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  height: max-content;
+  padding-top: 2px;
+  padding-bottom: 6px;
+  background-color: var(--blue);
+}
+
+.top-bar--text {
+  font-size: 14px;
+  font-weight: 600;
+  color: white;
+}
+
+.top-bar--close {
+  padding-top: 1px;
+  right: 14px;
+  fill: var(--background);
+  width: 14px;
+  height: auto;
+}
