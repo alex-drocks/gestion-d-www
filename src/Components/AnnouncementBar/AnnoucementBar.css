@@ -2,10 +2,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 1rem;
+  gap: .5rem;
   height: max-content;
   padding-top: 2px;
   padding-bottom: 6px;
+  cursor: pointer;
   background-color: var(--blue);
 }
 
@@ -16,9 +17,14 @@
 }
 
 .top-bar--close {
+  visibility: hidden;
   padding-top: 1px;
-  right: 14px;
   fill: var(--background);
-  width: 14px;
+  width: .5rem;
   height: auto;
+}
+
+
+.top-bar--container:hover .top-bar--close {
+  visibility: visible;
 }
