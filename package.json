@@ -11,6 +11,9 @@
 		"optimizeImages": "gulp optimizeImages",
 		"optimizeIcons": "gulp optimizeIcons"
 	},
+	"engines": {
+	  "node": "16.17.0"
+	},
 	"reactSnap": {
 		"sourceMaps": false,
 		"asyncScriptTags": true,

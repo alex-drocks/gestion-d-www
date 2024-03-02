@@ -14,6 +14,8 @@ You will also see any lint errors in the console.
 
 ### npm run build
 
+#### Build with node v16!
+
 Builds a static copy of your site to the `build/` folder.
 Your app is ready to be deployed!
 
