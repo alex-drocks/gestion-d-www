@@ -10,6 +10,8 @@ import Page from "../../../Components/Page/Page";
 const { SNOWPACK_PUBLIC_WEBSITE_URL } = import.meta.env;
 
 export default function ProduireDeclarationParticuliers() {
+  const cacheBuster = `?timestamp=${new Date().getTime()}`;
+
   return (
     <Page
       pageTitle="Produire ma déclaration"
@@ -42,10 +44,7 @@ export default function ProduireDeclarationParticuliers() {
               <h3>A) Téléchargez le questionnaire:</h3>
               <a
                 target="_blank"
-                href={
-                  SNOWPACK_PUBLIC_WEBSITE_URL +
-                  "/documents/Etape1_Questionnaire-impots.pdf"
-                }
+                href={`${SNOWPACK_PUBLIC_WEBSITE_URL}/documents/Etape1_Questionnaire-impots.pdf${cacheBuster}`}
               >
                 <button aria-label="Questionnaire d'impôts">
                   Questionnaire d'impôts
@@ -126,10 +125,7 @@ export default function ProduireDeclarationParticuliers() {
               <h3>A) Téléchargez la liste de documents:</h3>
               <a
                 target="_blank"
-                href={
-                  SNOWPACK_PUBLIC_WEBSITE_URL +
-                  "/documents/Etape2_Liste-Documents-a-Fournir.pdf"
-                }
+                href={`${SNOWPACK_PUBLIC_WEBSITE_URL}/documents/Etape2_Liste-Documents-a-Fournir.pdf${cacheBuster}`}
               >
                 <button aria-label="Liste de documents">
                   Liste de documents
