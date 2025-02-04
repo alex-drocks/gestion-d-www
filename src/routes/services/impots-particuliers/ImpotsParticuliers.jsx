@@ -61,7 +61,7 @@ export default function ImpotsParticuliers({ establishedDate }) {
                 <p>Par personne à la retraite.</p>
               </div>
               <div className="flex-col--100w">
-                <h3>Individuel | {prices?.individuel || 123}&nbsp;$</h3>
+                <h3>Individuel | {prices?.individuel || 130}&nbsp;$</h3>
                 <p>Personne vivant seule, célibataire, veuf(ve).</p>
               </div>
               <div className="flex-col--100w">
