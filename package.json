@@ -18,7 +18,8 @@
 		"sourceMaps": false,
 		"asyncScriptTags": true,
 		"preconnectThirdParty": false,
-		"preloadImages": false
+		"preloadImages": false,
+		"puppeteerArgs": ["--no-sandbox", "--disable-setuid-sandbox"]
 	},
 	"dependencies": {
 		"lazysizes": "^5.3.2",
