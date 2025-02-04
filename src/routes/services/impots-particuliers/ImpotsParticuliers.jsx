@@ -8,7 +8,8 @@ export default function ImpotsParticuliers({ establishedDate }) {
 
   const [prices, setPrices] = React.useState(null);
   React.useEffect(() => {
-    fetch('https://raw.githubusercontent.com/alex-drocks/gestion-d-www/refs/heads/master/prix.json')
+    const cacheBuster = `?timestamp=${new Date().getTime()}`;
+    fetch(`https://raw.githubusercontent.com/alex-drocks/gestion-d-www/refs/heads/master/prix.json?${cacheBuster}`)
       .then(response => {
         if (response.ok) {
           return response.json();

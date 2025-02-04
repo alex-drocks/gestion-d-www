@@ -2,7 +2,7 @@
     "etudiant": 110,
     "retraite": 110,
     "individuel": 130,
-    "couple": 999,
+    "couple": 230,
     "autonome": "Prix selon le dossier",
     "depenses": "Prix selon le dossier",
     "immeuble": "Prix selon le dossier"
