@@ -5,24 +5,6 @@ import CustomNavLink from "../../../Components/CustomNavLink/CustomNavLink";
 import Page from "../../../Components/Page/Page";
 
 export default function ImpotsParticuliers({ establishedDate }) {
-
-  const [prices, setPrices] = React.useState(null);
-  React.useEffect(() => {
-    const cacheBuster = `?timestamp=${new Date().getTime()}`;
-    fetch(`https://raw.githubusercontent.com/alex-drocks/gestion-d-www/refs/heads/master/prix.json?${cacheBuster}`)
-      .then(response => {
-        if (response.ok) {
-          return response.json();
-        }
-        throw new Error('Network response was not ok.');
-      })
-      .then(data => {
-        setPrices(data)
-        console.log(data)
-      })
-      .catch(error => console.error('There was a problem with the fetch operation:', error));
-  }, []);
-
   return (
     <Page
       pageTitle="Impôts particuliers"
@@ -52,39 +34,39 @@ export default function ImpotsParticuliers({ establishedDate }) {
             <div className="content-block spacer-top">
               <h2>Tarifs impôts des particuliers</h2>
               <div className="flex-col--100w">
-                <h3>Étudiant | {prices?.etudiant || 110}&nbsp;$</h3>
+                <h3>Étudiant | 110&nbsp;$</h3>
                 <p>
                   Étudiant à temps plein avec revenu annuel inférieur à 15 000$.
                 </p>
               </div>
               <div className="flex-col--100w">
-                <h3>Retraité | {prices?.retraite || 110}&nbsp;$</h3>
+                <h3>Retraité | 110&nbsp;$</h3>
                 <p>Par personne à la retraite.</p>
               </div>
               <div className="flex-col--100w">
-                <h3>Individuel | {prices?.individuel || 130}&nbsp;$</h3>
+                <h3>Individuel | 130&nbsp;$</h3>
                 <p>Personne vivant seule, célibataire, veuf(ve).</p>
               </div>
               <div className="flex-col--100w">
-                <h3>Couple | {prices?.couple || 230}&nbsp;$</h3>
+                <h3>Couple | 230&nbsp;$</h3>
                 <p>
                   Conjoints de fait, couple marié ou couple retraité avec ou
                   sans enfant à charge.
                 </p>
               </div>
               <div className="flex-col--100w">
-                <h3>Travailleur autonome | {prices?.autonome || "Prix selon le dossier"}</h3>
+                <h3>Travailleur autonome | Prix selon le dossier</h3>
                 <p>
                   Travailleur autonome ou petite entreprise avec revenus et
                   dépenses d'entreprises.
                 </p>
               </div>
               <div className="flex-col--100w">
-                <h3>Dépenses d'emploi | {prices?.depenses || "Prix selon le dossier"}</h3>
+                <h3>Dépenses d'emploi | Prix selon le dossier</h3>
                 <p>Salarié avec dépenses d'emploi à déclarer.</p>
               </div>
               <div className="flex-col--100w">
-                <h3>Immeuble à revenu | {prices?.immeuble || "Prix selon le dossier"}</h3>
+                <h3>Immeuble à revenu | Prix selon le dossier</h3>
                 <p>Personne ayant un ou plusieurs immeubles à revenu.</p>
               </div>
               <div className="content-block">
