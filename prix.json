@@ -1,0 +1,9 @@
+{
+    "etudiant": 110,
+    "retraite": 110,
+    "individuel": 130,
+    "couple": 230,
+    "travailler_autonome": "Prix selon le dossier",
+    "depenses_emploi": "Prix selon le dossier",
+    "immeuble": "Prix selon le dossier"
+}
