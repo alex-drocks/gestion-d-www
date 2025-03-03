@@ -58,7 +58,7 @@ export default function Home({ establishedDate, nombreClients }) {
             renderTitle={true}
             renderDirects={false}
             renderParagraph={true}
-            renderNotification={true}
+            renderNotification={false}
             renderLink={true}
           />
         </div>

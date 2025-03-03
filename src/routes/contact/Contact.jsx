@@ -33,7 +33,7 @@ export default function Contact() {
             renderDirects={true}
             renderParagraph={false}
             renderRendezVous={true}
-            renderNotification={true}
+            renderNotification={false}
             renderLink={false}
           />
         </div>
