@@ -87,62 +87,53 @@ export default function About({ nombreClients, establishedDate }) {
           role="PRÉSIDENT & FONDATEUR, COMPTABLE"
         >
           Daniel est le président et fondateur de Gestion Desroches Inc.
-          Passionné par la comptabilité depuis l'âge de 16 ans, il s'est
-          toujours intéressé à la fiscalité et a décroché un diplôme en
-          comptabilité à l'Université du Québec à Trois-Rivières. En{" "}
-          {establishedDate}, il a décidé de fonder son propre cabinet et il sert
-          aujourd'hui plus de {nombreClients} clients satisfaits.
+          Passionné par la comptabilité depuis l'âge de 16 ans, il s'est toujours intéressé à la fiscalité 
+          et a obtenu un diplôme en comptabilité à l'Université du Québec à Trois-Rivières. En {establishedDate}, 
+          il a décidé de fonder son propre cabinet, qui accompagne aujourd'hui plus de {nombreClients} clients satisfaits.
+        </Bio>
+        <Bio
+          image={{ webp: willWebp, fallback: will }}
+          name="William Desroches"
+          role="COMPTABLE, SERVICE DE PAIE, TENUE DE LIVRES, IMPÔTS DES PARTICULIERS"
+        >
+          William est titulaire d'un baccalauréat en sciences comptables de l'Université du Québec à Montréal.
+          Ayant débuté sa carrière en 2019 dans l'entreprise familiale, il a rapidement bâti sa propre clientèle.
+          Passionné par la fiscalité et la comptabilité, il accompagne ses clients avec rigueur afin de les aider à prospérer,
+          tant sur le plan personnel que professionnel. Son approche personnalisée et son souci du détail font de lui un
+          partenaire de confiance pour ceux qui souhaitent assurer la croissance de leur entreprise.
         </Bio>
         <Bio
           image={{ webp: alexWebp, fallback: alex }}
           name="Alexandre Desroches"
           role="TENUE DE LIVRES, DÉVELOPPEMENT INFORMATIQUE & LOGICIEL FINANCE D"
         >
-          Alexandre détient une attestation professionnelle en comptabilité et
-          s'occupe de la tenue de livres de plus de 60 entreprises. Il est
-          rapide, innovateur, perfectionniste et capable de trouver des
-          solutions pour améliorer la situation de ses clients. Il est également
-          passionné par la programmation. Son logiciel de facturation et tenue
-          de livres gratuit a été conçu d'après son expérience chez Gestion
-          Desroches et est accessible à partir de{" "}
+          Alexandre détient une attestation professionnelle en comptabilité et assure la tenue de livres de plus de 60 entreprises.
+          Rapide, innovateur et perfectionniste, il sait trouver des solutions efficaces pour améliorer la situation de ses clients.
+          Passionné par la programmation, il a développé un logiciel de facturation et de tenue de livres gratuit, basé sur son expérience chez Gestion Desroches.
+          Ce logiciel est accessible sur{" "}
           <a
             href="https://finance-d.com/"
             className="blue-text text-link no-wrap"
           >
             Finance-D.com
           </a>
-          .
-        </Bio>
-        <Bio
-          image={{ webp: willWebp, fallback: will }}
-          name="William Desroches"
-          role="SERVICE DE PAIE, TENUE DE LIVRES, IMPÔTS DES PARTICULIERS"
-        >
-          William possède une technique en comptabilité et gestion. Il a
-          commencé à travailler en 2019 dans la société familiale. En date du
-          dernier trimestre de 2020, il se spécialise dans nos services de paies
-          pour entreprises, dans la tenue de livres avec Sage 50, ainsi que pour
-          les impôts des particuliers en collaboration avec Daniel. Le travail
-          de William est toujours effectué avec excellence.
         </Bio>
         <Bio
           image={{ webp: mattWebp, fallback: matt }}
           name="Matthieu Desroches"
           role="COMPTABLE, IMPÔTS DES PARTICULIERS"
         >
-          Matthieu a rejoint l'entreprise familiale en 2015 après la fin de ses
-          études en comptabilité. Il détient un baccalauréat en Sciences
-          Comptables qu'il a décroché à l'École des Sciences de la Gestion et se
-          spécialise aujourd'hui dans les déclarations d'impôts de particuliers.
-          Matthieu est également formateur en organisation et gestion du temps
-          et publie des articles/podcasts chaque semaine sur son site&nbsp;:{" "}
+          Matthieu a rejoint l'entreprise familiale en 2015 après avoir terminé ses études en comptabilité.
+          Il détient un baccalauréat en sciences comptables de l'École des sciences de la gestion et se 
+          spécialise aujourd'hui dans les déclarations d'impôts pour les particuliers. 
+          Matthieu est également formateur en organisation et gestion du temps. 
+          Chaque semaine, il publie des articles et des podcasts sur son site&nbsp;:{" "}
           <a
             href="https://matthieudesroches.com"
             className="blue-text text-link no-wrap"
           >
             matthieudesroches.com
           </a>
-          .
         </Bio>
       </div>
 

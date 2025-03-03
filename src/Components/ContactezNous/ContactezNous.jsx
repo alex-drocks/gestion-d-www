@@ -106,9 +106,11 @@ export default function ContactezNous({
 
       {renderNotification ? (
         <NotificationCard>
-          Veuillez noter que pour la période actuelle, notre capacité est à son
-          maximum. Nous sommes dans l'impossibilité d'accepter de nouveaux
-          clients. Merci de votre compréhension.
+          <span className="not-available">
+            Veuillez noter que pour la période actuelle, notre capacité est à son
+            maximum. Nous sommes dans l'impossibilité d'accepter de nouveaux
+            clients. Merci de votre compréhension.
+          </span>
           {renderLink ? (
             <>
               <br />
@@ -121,6 +123,14 @@ export default function ContactezNous({
             ""
           )}
         </NotificationCard>
+      ) : (
+        ""
+      )}
+
+      {renderLink && !renderNotification ? (
+        <CustomNavLink to="/contact" className="text-link blue-text">
+          Contact
+        </CustomNavLink>
       ) : (
         ""
       )}

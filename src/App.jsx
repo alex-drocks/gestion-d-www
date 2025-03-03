@@ -59,7 +59,7 @@ export default function App() {
     <>
       <BrowserRouter>
 
-        <AnnouncementBar />
+        {/* <AnnouncementBar /> */}
         <Header />
 
         <Suspense fallback={<></>}>
